@@ -4,824 +4,788 @@
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- <link rel='icon' href='demo/img/payme-logo.png' type='image/x-icon'/> -->
-	<title>PayMe | PayMe Dashboard</title>
+    <!-- <link rel='icon' href='demo/img/payme-logo.png' type='image/x-icon'/> -->
+    <title>PayMe | PayMe Dashboard</title>
 
-	<!-- icon fonts -->
+    <!-- icon fonts -->
 
-	<link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
-	<link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
-	<link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
-	<link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
 
-	<!-- Vendor styles -->
-	<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
-	<link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/flaticon-font/flaticon.css">
 
-	<link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" href="vendors/animate.css/animate.min.css">
-	<link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
-	<link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
-	<link rel="stylesheet" href="vendors/select2/css/select2.min.css">
-	<link rel="stylesheet" href="vendors/dropzone/dropzone.css">
-	<link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
-	<link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
-	<link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
-	<link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
-	<link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+    <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
 
-	<!-- App styles -->
-	<link rel="stylesheet" href="css/app.min.css">
-	<link rel="stylesheet" href="css/daterangepicker.css">
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
 
 </head>
 
 <body data-ma-theme="green">
-	<main class="main">
-		<div class="page-loader">
-			<div class="page-loader__spinner">
-				<svg viewBox="25 25 50 50">
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <svg viewBox="25 25 50 50">
 					<circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
 				</svg>
-				<img src="demo/img/gifs/preloader.gif">
-			</div>
-			<span class="powerd-container">
+                <img src="demo/img/gifs/preloader.gif">
+            </div>
+            <span class="powerd-container">
 				<strong>PayMe Dashboard by</strong>
 				<img src="demo/img/logo-files/nouveta-orange.svg">
 
 			</span>
-		</div>
+        </div>
 
-		<header class="header">
-			<div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
-				<div class="navigation-trigger__inner">
-					<i class="navigation-trigger__line"></i>
-					<i class="navigation-trigger__line"></i>
-					<i class="navigation-trigger__line"></i>
-				</div>
-			</div>
-			<div class="header__logo hidden-sm-down">
-				<a href="index.html"><img class="the-logo" src="demo/img/payme-logo@2x.png"></a>
-			</div>
-			<div class="d-flex align-items-center flex-grow-1">
-				<div class="header__title">
-					<div class="inst__name text-capitalize">Institutions Name</div>
-					<div class="syst__role text-uppercase">system role</div>
-				</div>
-			</div>
-			<div class="user__info" data-toggle="dropdown">
-				<div class="avatar-char mr-3 font-weight-bold">JD</div>
-				<div>
-					<div class="user__name">Jane Doe Kamau</div>
-					<div class="user__email">34 Min Online</div>
-				</div>
-				<div class="ml-3">
-					<a href="#"><i class="zmdi zmdi-chevron-down drop-down-icon"></i></a>
-				</div>
-			</div>
-		</header>
+        <header class="header">
+            <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                <div class="navigation-trigger__inner">
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                </div>
+            </div>
+            <div class="header__logo hidden-sm-down">
+                <a href="index.html"><img class="the-logo" src="demo/img/payme-logo@2x.png"></a>
+            </div>
+            <div class="d-flex align-items-center flex-grow-1">
+                <div class="header__title">
+                    <div class="inst__name text-capitalize">Institutions Name</div>
+                    <div class="syst__role text-uppercase">system role</div>
+                </div>
+            </div>
+            <div class="user__info" data-toggle="dropdown">
+                <div class="avatar-char mr-3 font-weight-bold">JD</div>
+                <div>
+                    <div class="user__name">Jane Doe Kamau</div>
+                    <div class="user__email">34 Min Online</div>
+                </div>
+                <div class="ml-3">
+                    <a href="#"><i class="zmdi zmdi-chevron-down drop-down-icon"></i></a>
+                </div>
+            </div>
+        </header>
 
-		<aside class="sidebar">
-			<div class="scrollbar-inner">
-				<ul class="navigation">
-					<li class="navigation__active"><a href="index.html"> <img src="demo/img/Group 5.svg">Overview</a>
-					</li>
+        <aside class="sidebar main-menu">
+            <div class="scrollbar-inner">
+                <ul class="navigation">
+                    <li class="navigation__active">
+                        <a href="index.html"><i class="flaticon flaticon-menu"></i>Overview</a>
+                    </li>
 
-					<li title="transaction"><a href="transactions.html"> <img src="demo/img/dollar-symbol.svg">
-							Transactions</a>
-					</li>
+                    <li class="navigation__sub">
+                        <a href="#">
+                            <i class="flaticon flaticon-ruler"></i> Projects<i class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
+                        <ul>
+                            <li class="p-0"><a href="#">Ongoing projects</a></li>
+                            <li class="p-0"><a href="#">Completed projects</a></li>
+                        </ul>
+                    </li>
 
-					<li class="navigation__sub">
-						<a href="#"> <img src="demo/img/google-docs.svg"> Reports<i
-								class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
-						<ul>
-							<li><a href="#">All Reports</a></li>
-						</ul>
-					</li>
+                    <li><a href="#"><i class="flaticon flaticon-dollar-symbol"></i>Finance</a></li>
+                    <li class="navigation__sub">
+                        <a href="#"> <i class="zmdi zmdi-account-o"></i> My Account<i class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
+                        <ul>
+                            <li><a href="#">Create account</a></li>
+                            <li><a href="#">All accounts</a></li>
+                            <li><a href="#">Inactive accounts</a></li>
+                        </ul>
+                    </li>
 
-					<li class="navigation__sub">
-						<a href="#"> <img src="/demo/img/user (2).svg"> My Account<i
-								class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
-						<ul>
-							<li><a href="#">Create account</a></li>
-							<li><a href="#">All accounts</a></li>
-							<li><a href="#">Inactive accounts</a></li>
-						</ul>
-					</li>
+                    <li title="support">
+                        <a href="#"> <img src="demo/img/lifesaver.svg" alt=""> Support</a>
+                    </li>
 
-					<li title="support"><a href="#"> <img src="demo/img/lifesaver.svg" alt=""> Support</a></li>
-
-					<li>
-						<button type="button" class="btn btn-success btn--icon-text btn-transact" title="transact"
-							data-toggle="modal" data-target="#transact">
-							Transact &nbsp <img src="demo/img/send.svg">
+                    <li>
+                        <button type="button" class="btn btn-success btn--icon-text btn-transact btn-lg" title="transact" data-toggle="modal" data-target="#transact">
+							New Project <i class="zmdi zmdi-plus"></i>
 						</button>
-					</li>
-					<li class="navigation__sub navigation__logout-link">
-						<a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
-					</li>
+                    </li>
+                    <li class="navigation__sub navigation__logout-link">
+                        <a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
+                    </li>
 
-				</ul>
-			</div>
-		</aside>
+                </ul>
+            </div>
+        </aside>
 
-		<div class="content--full map-main-container d-none">
-			<div class="col-12">
-				<header class="content__title px-0 border-0">
-					<div class="row">
-						<div class="col-md-6 col-sm-12">
-							<span class="rev-title-container">
+        <div class="content--full map-main-container d-none">
+            <div class="col-12">
+                <header class="content__title px-0 border-0">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <span class="rev-title-container">
 								<h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
 							</span>
-							<div class="">
-								<ol class="breadcrumb border-0">
-									<li class="breadcrumb-item">Home</li>
-									<li class="breadcrumb-item active">Dashboard</li>
+                            <div class="">
+                                <ol class="breadcrumb border-0">
+                                    <li class="breadcrumb-item">Home</li>
+                                    <li class="breadcrumb-item active">Dashboard</li>
 
-								</ol>
+                                </ol>
 
-							</div>
-						</div>
-					</div>
-				</header>
-			</div>
-			<div class="pb-4">
-				<div class="col-12">
-					<h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
-					<div id="the-map-container">
-					</div>
-					<!--							control buttons-->
-					<div class="row map-buttons d-flex">
-						<span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
-						<div class="col">
-							<button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
-							<button id="this-week"><span></span>This Week: 15,237,895,897</button>
-							<button id="this-month"><span></span>June 2020: 21,237,895,897</button>
-							<button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
-						</div>
-					</div>
-					<!--							control buttons-->
-				</div>
-			</div>
-		</div>
-		<section class="content light-body">
-			<header class="content__title px-0 border-0">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<span class="rev-title-container">
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="pb-4">
+                <div class="col-12">
+                    <h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
+                    <div id="the-map-container">
+                    </div>
+                    <!--							control buttons-->
+                    <div class="row map-buttons d-flex">
+                        <span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
+                        <div class="col">
+                            <button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
+                            <button id="this-week"><span></span>This Week: 15,237,895,897</button>
+                            <button id="this-month"><span></span>June 2020: 21,237,895,897</button>
+                            <button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
+                        </div>
+                    </div>
+                    <!--							control buttons-->
+                </div>
+            </div>
+        </div>
+        <section class="content light-body">
+            <header class="content__title px-0 border-0">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <span class="rev-title-container">
 							<h1 class="text-capitalize stream_name m-0">home</h1>
 						</span>
-						<div class="">
-							<ol class="breadcrumb border-0 d-none">
-								<li class="breadcrumb-item active">Home</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</header>
+                        <div class="">
+                            <ol class="breadcrumb border-0 d-none">
+                                <li class="breadcrumb-item active">Home</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-			<div class="row d-flex justify-content-center flex-row clearfix mb-4">
-				<div class="col-sm-12 col-lg-9">
-					<h2>Overview</h2>
-				</div>
-				<div class="col-sm-12 col-lg-3">
-					<div class="actions date_container">
-						<div id="reportrange"
-							style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-							<i class="ti-calendar"></i>&nbsp;
-							<span></span> <i class="fa fa-caret-down"></i>
-						</div>
-						<button class="btn btn-success d-none text-nowrap ml-3" id="date-reset"
-							onclick="reset_date()">Reset Date</button>
-					</div>
-				</div>
+            <div class="row d-flex justify-content-center flex-row clearfix mb-4">
+                <div class="col-sm-12 col-lg-9">
+                    <h2>Overview</h2>
+                </div>
+                <div class="col-sm-12 col-lg-3">
+                    <div class="actions date_container">
+                        <div id="reportrange" style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                            <i class="ti-calendar"></i>&nbsp;
+                            <span></span> <i class="fa fa-caret-down"></i>
+                        </div>
+                        <button class="btn btn-success d-none text-nowrap ml-3" id="date-reset" onclick="reset_date()">Reset Date</button>
+                    </div>
+                </div>
 
-			</div>
-			<div class="row d-none">
-				<div class="col-lg-6 col-md-6 col-lg-6">
-					<div class="card">
-						<div class="card-header new-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Menu Visits
-									</h4>
-								</div>
+            </div>
+            <div class="row d-none">
+                <div class="col-lg-6 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header new-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Menu Visits
+                                    </h4>
+                                </div>
 
-								<div class="col-auto">
-									<div class="actions date_container">
-										<div id="reportrange"
-											style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-											<i class="ti-calendar"></i>&nbsp;
-											<span></span> <i class="fa fa-caret-down"></i>
-										</div>
-										<button class="btn btn-success d-none text-nowrap " id="date-reset"
-											onclick="reset_date()">Reset Date</button>
-									</div>
-								</div>
-							</div>
-							<!-- / .row -->
-						</div>
-						<div class="card-body px-1 pb-1">
-							<div id="perfomance" style="height: 100%;">
+                                <div class="col-auto">
+                                    <div class="actions date_container">
+                                        <div id="reportrange" style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                                            <i class="ti-calendar"></i>&nbsp;
+                                            <span></span> <i class="fa fa-caret-down"></i>
+                                        </div>
+                                        <button class="btn btn-success d-none text-nowrap " id="date-reset" onclick="reset_date()">Reset Date</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <div id="perfomance" style="height: 100%;">
 
-							</div>
+                            </div>
 
-						</div>
-					</div>
-					<div class="quick-stats__item" style="background-color: #fff;">
-						<div class="quick-stats__info mb-0 pb-0">
-							<h4 class="text-black font-weight-medium">Ticket Sessions</h4>
-							<small class="mb-0 pb-0 d-none">22</small>
-							<div class="d-flex justify-content-start process">
-								<div class="p-engaged bg-success"></div>
-								<div class="p-onhold bg-light"></div>
-								<div class="p-unassigned bg-info"></div>
-								<div class="p-closed bg-danger"></div>
+                        </div>
+                    </div>
+                    <div class="quick-stats__item" style="background-color: #fff;">
+                        <div class="quick-stats__info mb-0 pb-0">
+                            <h4 class="text-black font-weight-medium">Ticket Sessions</h4>
+                            <small class="mb-0 pb-0 d-none">22</small>
+                            <div class="d-flex justify-content-start process">
+                                <div class="p-engaged bg-success"></div>
+                                <div class="p-onhold bg-light"></div>
+                                <div class="p-unassigned bg-info"></div>
+                                <div class="p-closed bg-danger"></div>
 
-							</div>
-							<div class="d-flex justify-content-start align-items-center">
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
 
-								<div class="engaged bg-success"></div>
-								<div class="m-2">
-									<small>Engaged</small>
-								</div>
-								<div class="onhold bg-light"></div>
-								<div class="m-2">
-									<small>Onhold</small>
-								</div>
-								<div class="unassigned bg-info"></div>
-								<div class="m-2">
-									<small>Unassigned</small>
-								</div>
-								<div class="closed bg-danger"></div>
-								<div class="m-2">
-									<small>Closed</small>
-								</div>
-							</div>
-						</div>
+                                <div class="engaged bg-success"></div>
+                                <div class="m-2">
+                                    <small>Engaged</small>
+                                </div>
+                                <div class="onhold bg-light"></div>
+                                <div class="m-2">
+                                    <small>Onhold</small>
+                                </div>
+                                <div class="unassigned bg-info"></div>
+                                <div class="m-2">
+                                    <small>Unassigned</small>
+                                </div>
+                                <div class="closed bg-danger"></div>
+                                <div class="m-2">
+                                    <small>Closed</small>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="text-white font-36 d-none">
-							<i class="mdi mdi-account-tie-voice-outline"></i>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-lg-6">
-					<div class="card">
-						<div class="card-header new-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Total Collections
-									</h4>
-								</div>
+                        <div class="text-white font-36 d-none">
+                            <i class="mdi mdi-account-tie-voice-outline"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-header new-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Total Collections
+                                    </h4>
+                                </div>
 
-								<div class="col-auto">
-									<div class="actions date_container">
-										<div id="reportrange"
-											style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-											<i class="ti-calendar"></i>&nbsp;
-											<span></span> <i class="fa fa-caret-down"></i>
-										</div>
-										<button class="btn btn-success d-none text-nowrap " id="date-reset"
-											onclick="reset_date()">Reset Date</button>
-									</div>
+                                <div class="col-auto">
+                                    <div class="actions date_container">
+                                        <div id="reportrange" style="background: #f3f3f3; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
+                                            <i class="ti-calendar"></i>&nbsp;
+                                            <span></span> <i class="fa fa-caret-down"></i>
+                                        </div>
+                                        <button class="btn btn-success d-none text-nowrap " id="date-reset" onclick="reset_date()">Reset Date</button>
+                                    </div>
 
-								</div>
-							</div>
-							<!-- / .row -->
-						</div>
-						<div class="card-body px-1 pb-1">
-							<div id="transaction-data" style="height: 100%;">
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <div id="transaction-data" style="height: 100%;">
 
-							</div>
+                            </div>
 
-						</div>
+                        </div>
 
-					</div>
+                    </div>
 
-					<div class="quick-stats__item d-flex align-items-end" style="background-color: #fff;">
-						<div class="quick-stats__info mb-0 pb-0">
-							<h4 class="text-black font-weight-medium">Total Sessions</h2>
-								<small class="mb-0 pb-0 d-none">22</small>
-								<div class="d-flex justify-content-start total-sessions">
-									<div class="t-completed bg-success"></div>
-									<div class="t-abandoned bg-danger"></div>
+                    <div class="quick-stats__item d-flex align-items-end" style="background-color: #fff;">
+                        <div class="quick-stats__info mb-0 pb-0">
+                            <h4 class="text-black font-weight-medium">Total Sessions</h2>
+                                <small class="mb-0 pb-0 d-none">22</small>
+                                <div class="d-flex justify-content-start total-sessions">
+                                    <div class="t-completed bg-success"></div>
+                                    <div class="t-abandoned bg-danger"></div>
 
-								</div>
-								<div class="d-flex justify-content-start align-items-center">
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center">
 
-									<div class="completed bg-success"></div>
-									<div class="m-2">
-										<small>Completed Sessions</small>
-									</div>
-									<div class="abandoned bg-danger"></div>
-									<div class="m-2">
-										<small>Abandoned Sessions</small>
-									</div>
-								</div>
-						</div>
+                                    <div class="completed bg-success"></div>
+                                    <div class="m-2">
+                                        <small>Completed Sessions</small>
+                                    </div>
+                                    <div class="abandoned bg-danger"></div>
+                                    <div class="m-2">
+                                        <small>Abandoned Sessions</small>
+                                    </div>
+                                </div>
+                        </div>
 
-						<div class="text-white font-36 d-none">
-							<i class="mdi mdi-account-tie-voice-outline"></i>
-						</div>
-					</div>
+                        <div class="text-white font-36 d-none">
+                            <i class="mdi mdi-account-tie-voice-outline"></i>
+                        </div>
+                    </div>
 
-				</div>
+                </div>
 
 
-				<div class="col-lg-5 col-sm-12 d-none">
-					<!-- Orders -->
-					<div class="card">
-						<div class="card-header new-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Salary Statistics Performance
-									</h4>
-								</div>
+                <div class="col-lg-5 col-sm-12 d-none">
+                    <!-- Orders -->
+                    <div class="card">
+                        <div class="card-header new-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Salary Statistics Performance
+                                    </h4>
+                                </div>
 
-								<div class="col-auto">
-									<!-- Tabs -->
-									<ul class="nav nav-tabs nav-tabs-sm card-header-tabs opacity-0">
-										<li class="nav-item">
-											<a href="#" title="Show all transactions" class="nav-link active allLoans"
-												data-toggle="tab">
+                                <div class="col-auto">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs opacity-0">
+                                        <li class="nav-item">
+                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
 												All Loans
 											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" title="Show money received" class="nav-link loanBreakdown"
-												data-toggle="tab">
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
 												Loan Breakdown
 											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- / .row -->
-						</div>
-						<div class="card-body">
-							<!-- Chart -->
-							<div class="chart">
-								<div id="perfomance" style="height: 100%"></div>
-							</div>
-							<!-- <div class="chart">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body">
+                            <!-- Chart -->
+                            <div class="chart">
+                                <div id="perfomance" style="height: 100%"></div>
+                            </div>
+                            <!-- <div class="chart">
 								<canvas id="transaction-data" class="chart-canvas"></canvas>
 							</div> -->
-						</div>
-					</div>
-				</div>
+                        </div>
+                    </div>
+                </div>
 
-			</div>
+            </div>
 
-			<div class="row">
-				<div class="col-lg-8 col-md-8 col-lg-8">
-					<div class="card">
-						<div class="card-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Revenue
-									</h4>
-								</div>
-							</div> <!-- / .row -->
-						</div>
-						<div class="card-body">
-							<div class="row d-flex justify-content-between mb-3">
-								<div class="col-auto">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg rounded-circle" style="font-size: 12px;">
-											<span class=""><i class="zmdi zmdi-money font-30"
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Revenue
+                                    </h4>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body">
+                            <div class="row d-flex justify-content-between mb-3">
+                                <div class="col-auto">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-in-bg rounded-circle" style="font-size: 12px;">
+                                            <span class=""><i class="zmdi zmdi-money font-30"
 													style="color: #546290;"></i></span>
-										</div>
-										<div class="ml-3">
-											<span class="font-26"><strong>KES 96,326,369</strong></span>
-											<p class="mb-0"><small style="color: #546290;">Total revenue this
+                                        </div>
+                                        <div class="ml-3">
+                                            <span class="font-26"><strong>KES 96,326,369</strong></span>
+                                            <p class="mb-0"><small style="color: #546290;">Total revenue this
 													month</small></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-auto">
-									<!-- Tabs -->
-									<ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-										<li class="nav-item">
-											<a href="#" title="Show all transactions" class="nav-link all-transactions"
-												data-toggle="tab">
-												<small class="chart-small"><strong>Today</strong></small>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" title="Show money received"
-												class="nav-link credited-transactions" data-toggle="tab">
-												<small class="chart-small"><strong>This Week</strong></small>
-											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" title="Show Debts paid"
-												class="nav-link active debited-transactions" data-toggle="tab">
-												<small><strong>This Month</strong></small>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- Chart -->
-							<div class="chart">
-								<div id="revenue-by-bank" class="highChartStyles" style="height: 300px; "></div>
-								<div id="revenue-by-bank-debited" class="highChartStyles d-none"
-									style="height: 300px; "></div>
-								<div id="revenue-by-bank-credited" class="highChartStyles d-none"
-									style="height: 300px; "></div>
-							</div>
-							<!-- <div class="chart">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
+                                        <li class="nav-item">
+                                            <a href="#" title="Show all transactions" class="nav-link all-transactions" data-toggle="tab">
+                                                <small class="chart-small"><strong>Today</strong></small>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" title="Show money received" class="nav-link credited-transactions" data-toggle="tab">
+                                                <small class="chart-small"><strong>This Week</strong></small>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" title="Show Debts paid" class="nav-link active debited-transactions" data-toggle="tab">
+                                                <small><strong>This Month</strong></small>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Chart -->
+                            <div class="chart">
+                                <div id="revenue-by-bank" class="highChartStyles" style="height: 300px; "></div>
+                                <div id="revenue-by-bank-debited" class="highChartStyles d-none" style="height: 300px; "></div>
+                                <div id="revenue-by-bank-credited" class="highChartStyles d-none" style="height: 300px; "></div>
+                            </div>
+                            <!-- <div class="chart">
 								<canvas id="transaction-data" class="chart-canvas"></canvas>
 							  </div> -->
-						</div>
-						<div class="card-footer chart-summary">
-							<div class="row align-items-center">
-								<div class="col-lg-4 col-md-4 col-lg-4">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg-1 rounded-circle" style="font-size: 12px;">
-											<span class=""><i class="zmdi zmdi-smartphone-iphone font-30"
+                        </div>
+                        <div class="card-footer chart-summary">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4 col-md-4 col-lg-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-in-bg-1 rounded-circle" style="font-size: 12px;">
+                                            <span class=""><i class="zmdi zmdi-smartphone-iphone font-30"
 													style="color: #18481F;"></i></span>
-										</div>
-										<div class="ml-3">
-											<span class="font-20"><strong>KES 3,326,369</strong></span>
-											<p class="mb-0"><small style="color: #546290;">20 Mpesa
+                                        </div>
+                                        <div class="ml-3">
+                                            <span class="font-20"><strong>KES 3,326,369</strong></span>
+                                            <p class="mb-0"><small style="color: #546290;">20 Mpesa
 													Transactions</small></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-lg-4">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg-2 rounded-circle" style="font-size: 12px;">
-											<span class=""> <img src="demo/img/credit-cards-payment.svg"
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-lg-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-in-bg-2 rounded-circle" style="font-size: 12px;">
+                                            <span class=""> <img src="demo/img/credit-cards-payment.svg"
 													style="color: #0015C2;">
 											</span>
-										</div>
-										<div class="ml-3">
-											<span class="font-20"><strong>KES 965,230</strong></span>
-											<p class="mb-0"><small style="color: #546290;">24 Card
+                                        </div>
+                                        <div class="ml-3">
+                                            <span class="font-20"><strong>KES 965,230</strong></span>
+                                            <p class="mb-0"><small style="color: #546290;">24 Card
 													Transactions</small></p>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-4 col-lg-4">
-									<div class="d-flex align-items-center">
-										<div class="icon-in-bg-3 rounded-circle" style="font-size: 12px;">
-											<span class=""> <i class="zmdi zmdi-accounts font-30"
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-lg-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="icon-in-bg-3 rounded-circle" style="font-size: 12px;">
+                                            <span class=""> <i class="zmdi zmdi-accounts font-30"
 													style="color: #F57819;"></i>
 											</span>
-										</div>
-										<div class="ml-3">
-											<span class="font-20"><strong>567</strong></span>
-											<p class="mb-0"><small style="color: #546290;">Clients attended
+                                        </div>
+                                        <div class="ml-3">
+                                            <span class="font-20"><strong>567</strong></span>
+                                            <p class="mb-0"><small style="color: #546290;">Clients attended
 													to</small></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<div class="col-lg-4 col-md-4 col-lg-4">
-					<div class="card card-annual">
-						<div class="card-body text-white" style="background-color: #FE3301!important;">
-							<div class="d-flex flex-column justify-content-center align-items-center"
-								style="margin-top: 2.5rem;">
-								<img src="demo/img/growth.png" alt="growth image" width="50px" height="50px"
-									class="mb-3">
-								<h3 class="text-white"><small><sup class="text-uppercase">kes</sup></small>953,526,360
-								</h3>
-								<p class="text-uppercase pb-5"><small>Annual Collections</small></p>
-							</div>
-							<div class="d-flex justify-content-between" style="margin-top: 5.5rem;">
-								<div class="d-flex align-items-center">
-									<img src="demo/img/user (3).png" alt="users" width="15px">
-									<span class="text-capitalize ml-3"><small>20 Clients</small></span>
-								</div>
-								<div class="d-flex align-items-center">
-									<img src="demo/img/transaction.png" alt="transactions" width="15px">
-									<span class="text-capitalize ml-3"><small>10 Transactions</small></span>
-								</div>
-							</div>
-						</div>
-					</div>
+                <div class="col-lg-4 col-md-4 col-lg-4">
+                    <div class="card card-annual">
+                        <div class="card-body text-white" style="background-color: #FE3301!important;">
+                            <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 2.5rem;">
+                                <img src="demo/img/growth.png" alt="growth image" width="50px" height="50px" class="mb-3">
+                                <h3 class="text-white"><small><sup class="text-uppercase">kes</sup></small>953,526,360
+                                </h3>
+                                <p class="text-uppercase pb-5"><small>Annual Collections</small></p>
+                            </div>
+                            <div class="d-flex justify-content-between" style="margin-top: 5.5rem;">
+                                <div class="d-flex align-items-center">
+                                    <img src="demo/img/user (3).png" alt="users" width="15px">
+                                    <span class="text-capitalize ml-3"><small>20 Clients</small></span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="demo/img/transaction.png" alt="transactions" width="15px">
+                                    <span class="text-capitalize ml-3"><small>10 Transactions</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<div class="row">
-						<div class="col">
-							<div class="card card-collections__today">
-								<div class="card-body text-white text-left" style="background-color: #0015C2;">
-									<span class="text-uppercase"
-										style="font-size: 0.625rem; opacity: 7;"><small>Collections Today</small></span>
-									<h5 class="text-white">KES 62,256</h5>
-									<p class="mt-4" style="font-size: 0.6rem;"><strong><span
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card-collections__today">
+                                <div class="card-body text-white text-left" style="background-color: #0015C2;">
+                                    <span class="text-uppercase" style="font-size: 0.625rem; opacity: 7;"><small>Collections Today</small></span>
+                                    <h5 class="text-white">KES 62,256</h5>
+                                    <p class="mt-4" style="font-size: 0.6rem;"><strong><span
 												style="color: #2DDAB5;">+310</span> since yesterday</strong></p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card card-collections__yesterday">
-								<div class="card-body text-left">
-									<span class="text-uppercase"
-										style="font-size: 0.625rem; opacity: 7; color: #0F1634;"><small>Collections
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-collections__yesterday">
+                                <div class="card-body text-left">
+                                    <span class="text-uppercase" style="font-size: 0.625rem; opacity: 7; color: #0F1634;"><small>Collections
 											Yesterday</small></span>
-									<h5 style="color: #0F1634;">KES 52,256</h5>
-									<p class="mt-4" style="font-size: 0.6rem;"><strong><span
+                                    <h5 style="color: #0F1634;">KES 52,256</h5>
+                                    <p class="mt-4" style="font-size: 0.6rem;"><strong><span
 												style="color: #2DDAB5;">+236</span> since previous day</strong></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-			<div class="row d-none">
-				<div class="col-sm-12 col-md-6 col-lg-7">
-					<div class="card">
-						<div class="card-header new-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Tickets
-									</h4>
-								</div>
+            <div class="row d-none">
+                <div class="col-sm-12 col-md-6 col-lg-7">
+                    <div class="card">
+                        <div class="card-header new-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Tickets
+                                    </h4>
+                                </div>
 
-								<div class="col-auto opacity-0">
-									<!-- Tabs -->
-									<ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-										<li class="nav-item">
-											<a href="#" title="Show all transactions" class="nav-link active allLoans"
-												data-toggle="tab">
+                                <div class="col-auto opacity-0">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
+                                        <li class="nav-item">
+                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
 												A
 											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" title="Show money received" class="nav-link loanBreakdown"
-												data-toggle="tab">
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
 												L
 											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- / .row -->
-						</div>
-						<div class="card-body px-1 pb-1">
-							<div id="active-branches" style="height: 100%;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <div id="active-branches" style="height: 100%;">
 
-							</div>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-5">
-					<div class="card">
-						<div class="card-header new-header">
-							<div class="row align-items-center">
-								<div class="col">
-									<!-- Title -->
-									<h4 class="card-header-title">
-										Sessions
-									</h4>
-								</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5">
+                    <div class="card">
+                        <div class="card-header new-header">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title">
+                                        Sessions
+                                    </h4>
+                                </div>
 
-								<div class="col-auto opacity-0">
-									<!-- Tabs -->
-									<ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-										<li class="nav-item">
-											<a href="#" title="Show all transactions" class="nav-link active allLoans"
-												data-toggle="tab">
+                                <div class="col-auto opacity-0">
+                                    <!-- Tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
+                                        <li class="nav-item">
+                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
 												A
 											</a>
-										</li>
-										<li class="nav-item">
-											<a href="#" title="Show money received" class="nav-link loanBreakdown"
-												data-toggle="tab">
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
 												L
 											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- / .row -->
-						</div>
-						<div class="card-body px-1 pb-1">
-							<div id="members-activity" style="height: 100%;">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body px-1 pb-1">
+                            <div id="members-activity" style="height: 100%;">
 
-							</div>
+                            </div>
 
-						</div>
-					</div>
+                        </div>
+                    </div>
 
-				</div>
+                </div>
 
 
 
-			</div>
+            </div>
 
-			<!-- Modal -->
-			<div class="modal right fade" id="transact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<div>
-								<h4 class="modal-title" id="myModalLabel">Transact</h4>
-								<small>Select Method and input Payment Details</small>
-							</div>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            <!-- Modal -->
+            <div class="modal right fade" id="transact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <h4 class="modal-title" id="myModalLabel">Transact</h4>
+                                <small>Select Method and input Payment Details</small>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 									aria-hidden="true">&times;</span></button>
-						</div>
-						<div class="modal-body">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="w-100 payment-options py-3">
-										<!-- mpesa payment option-->
-										<div class="option-1  active" id="mpesa">
-											<span class="pay-container" title="Pay via Mpesa">
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="w-100 payment-options py-3">
+                                        <!-- mpesa payment option-->
+                                        <div class="option-1  active" id="mpesa">
+                                            <span class="pay-container" title="Pay via Mpesa">
 												<i aria-hidden="true" class="zmdi zmdi-smartphone-iphone"></i>
 												<p class="text-capitalize"><small>MPESA</small></p>
 											</span>
-										</div>
+                                        </div>
 
-										<div class="option-1" id="card">
-											<span class="pay-container" title="Pay via Card">
+                                        <div class="option-1" id="card">
+                                            <span class="pay-container" title="Pay via Card">
 												<i aria-hidden="true" class="zmdi zmdi-card"></i>
 												<p class="text-capitalize"><small>CARD</small></p>
 											</span>
-										</div>
-									</div>
-								</div>
-								<div class="mpesa col-sm-12 fadeIn delay-3s fadeOut delay-4s">
-									<div class="col-sm-12">
-										<div class="form-group">
-											<label for="mpesa-amount" class="text-capitalize text-black"><b>Transaction
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mpesa col-sm-12 fadeIn delay-3s fadeOut delay-4s">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="mpesa-amount" class="text-capitalize text-black"><b>Transaction
 													Amount</b></label>
-											<input type="text" placeholder="Enter Transaction Amount"
-												class="placeholder-fix form-control" name="mpesa-amount">
-										</div>
+                                            <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="mpesa-amount">
+                                        </div>
 
-										<div class="form-group">
-											<label for="mpesa-num" class="text-capitalize text-black"><b>Mpesa
+                                        <div class="form-group">
+                                            <label for="mpesa-num" class="text-capitalize text-black"><b>Mpesa
 													Number</b></label>
-											<input type="text" placeholder="Enter Mpesa Number"
-												class="placeholder-fix form-control" name="mpesa-num">
-										</div>
+                                            <input type="text" placeholder="Enter Mpesa Number" class="placeholder-fix form-control" name="mpesa-num">
+                                        </div>
 
-										<div class="col-md-12 p-0">
-											<button type="button" data-toggle="modal" data-target="#send-request"
-												class="btn btn-success btn-payment" type="submit">Send Payment
+                                        <div class="col-md-12 p-0">
+                                            <button type="button" data-toggle="modal" data-target="#send-request" class="btn btn-success btn-payment" type="submit">Send Payment
 												Request <i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-										</div>
-									</div>
-								</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-								<!-- CARD payment -->
-								<div class="credit_card d-none">
-									<div class="col-sm-12">
-										<div class="mb-3">
-											<p>How would you like to send the request?</p>
-											<input type="radio" name="sendReq" value="option_email" id="opt_email"
-												class="" checked="checked" onclick="select_payment()"> <label
-												for="opt_email">Email</label> <br>
-											<input type="radio" name="sendReq" value="option_text" id="opt_text"
-												class="" onclick="select_payment()"> <label for="opt_text">Text Message
+                                <!-- CARD payment -->
+                                <div class="credit_card d-none">
+                                    <div class="col-sm-12">
+                                        <div class="mb-3">
+                                            <p>How would you like to send the request?</p>
+                                            <input type="radio" name="sendReq" value="option_email" id="opt_email" class="" checked="checked" onclick="select_payment()"> <label for="opt_email">Email</label> <br>
+                                            <input type="radio" name="sendReq" value="option_text" id="opt_text" class="" onclick="select_payment()"> <label for="opt_text">Text Message
 												(SMS)</label>
-										</div>
-										<div class="email-container animated fadeIn">
-											<div class="form-group">
-												<label for="card-amount"
-													class="text-capitalize text-black"><b>Transaction
+                                        </div>
+                                        <div class="email-container animated fadeIn">
+                                            <div class="form-group">
+                                                <label for="card-amount" class="text-capitalize text-black"><b>Transaction
 														Amount</b></label>
-												<input type="text" placeholder="Enter Transaction Amount"
-													class="placeholder-fix form-control" name="card-amount">
-											</div>
-											<div class="form-group">
-												<label for="card-num" class="text-capitalize text-black"><b>Email
+                                                <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="card-amount">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="card-num" class="text-capitalize text-black"><b>Email
 														Address</b></label>
-												<input type="text" placeholder="Enter Email Address"
-													class="placeholder-fix form-control" name="card-num">
-											</div>
-											<div>
-												<p><small>An email with a link to the Card payment gateway will be sent
+                                                <input type="text" placeholder="Enter Email Address" class="placeholder-fix form-control" name="card-num">
+                                            </div>
+                                            <div>
+                                                <p><small>An email with a link to the Card payment gateway will be sent
 														to the client.</small></p>
-											</div>
-											<div class="col-md-12 p-0">
-												<button class="btn btn-success btn-payment" type="submit">Send Email
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <button class="btn btn-success btn-payment" type="submit">Send Email
 													<i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-											</div>
-										</div>
-										<div class="sms-container animated fadeIn d-none">
-											<div class="form-group">
-												<label for="card-amount"
-													class="text-capitalize text-black"><b>Transaction
+                                            </div>
+                                        </div>
+                                        <div class="sms-container animated fadeIn d-none">
+                                            <div class="form-group">
+                                                <label for="card-amount" class="text-capitalize text-black"><b>Transaction
 														Amount</b></label>
-												<input type="text" placeholder="Enter Transaction Amount"
-													class="placeholder-fix form-control" name="card-amount">
-											</div>
-											<div class="form-group">
-												<label for="card-num" class="text-capitalize text-black"><b>Phone
+                                                <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="card-amount">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="card-num" class="text-capitalize text-black"><b>Phone
 														Number</b></label>
-												<input type="text" placeholder="Enter  Number"
-													class="placeholder-fix form-control" name="card-num">
-											</div>
-											<div>
-												<p><small>A text message with a link to the Card payment gateway will be
+                                                <input type="text" placeholder="Enter  Number" class="placeholder-fix form-control" name="card-num">
+                                            </div>
+                                            <div>
+                                                <p><small>A text message with a link to the Card payment gateway will be
 														sent to the client.</small></p>
-											</div>
-											<div class="col-md-12 p-0">
-												<button class="btn btn-success btn-payment" type="submit">Send SMS
+                                            </div>
+                                            <div class="col-md-12 p-0">
+                                                <button class="btn btn-success btn-payment" type="submit">Send SMS
 													<i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div><!-- modal-content -->
-				</div><!-- modal-dialog -->
-			</div><!-- modal -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal-content -->
+                </div>
+                <!-- modal-dialog -->
+            </div>
+            <!-- modal -->
 
 
-			<!-- Modal Send Mpesa Request-->
-			<div class="modal fade send--req__modal" id="send-request" tabindex="-1" role="dialog"
-				aria-labelledby="send-mpesa-request" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-header send--req__header">
-							<h5 class="modal-title send--req__title text-uppercase p-1 text-white bg-success "
-								id="exampleModalLongTitle">Mpesa payment</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <!-- Modal Send Mpesa Request-->
+            <div class="modal fade send--req__modal" id="send-request" tabindex="-1" role="dialog" aria-labelledby="send-mpesa-request" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header send--req__header">
+                            <h5 class="modal-title send--req__title text-uppercase p-1 text-white bg-success " id="exampleModalLongTitle">Mpesa payment</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
-						</div>
-						<div class="modal-body send--req">
-							<h3>Send payment request</h3>
-							<div class="send--req__p">
-								<p>A payment request of <strong>KES 235</strong> will be sent to your phone number
-									<strong>(0704549859) soon</strong> after you <strong>click </strong>the send button
-									below. </p>
-								<p><strong>Remind the customer to check their phone</strong> to <strong>confirm
+                        </div>
+                        <div class="modal-body send--req">
+                            <h3>Send payment request</h3>
+                            <div class="send--req__p">
+                                <p>A payment request of <strong>KES 235</strong> will be sent to your phone number
+                                    <strong>(0704549859) soon</strong> after you <strong>click </strong>the send button below. </p>
+                                <p><strong>Remind the customer to check their phone</strong> to <strong>confirm
 										payment</strong> by entering their Mpesa pin.</p>
-								<p>You can cancel the request by closing this pop up.</p>
-							</div>
-							<div class="col-md-12 p-0">
-								<button type="button" data-toggle="modal" data-target="#print-receipt"
-									class="btn btn-success btn-payment" type="submit" data-dismiss="modal">Send
+                                <p>You can cancel the request by closing this pop up.</p>
+                            </div>
+                            <div class="col-md-12 p-0">
+                                <button type="button" data-toggle="modal" data-target="#print-receipt" class="btn btn-success btn-payment" type="submit" data-dismiss="modal">Send
 									Request</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<!-- Modal Print Receipt -->
-			<div class="modal fade print--receipt__modal" id="print-receipt" tabindex="-1" role="dialog"
-				aria-labelledby="print-receipt" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-body print--receipt__modal_body">
-							<div class="print--receipt__bg">
-								<div class="print--receipt__receipt_bg">
-									<img src="demo/img/receipt.png" alt="receipt img">
-								</div>
-							</div>
-							<h3>Payment Received</h3>
-							<div class="print--receipt__line"></div>
-							<p><strong>KES 230.20</strong> Received from <strong>Kelvin Njuguna</strong> phone number
-								<strong>0704549859.</strong> The <strong>receipt</strong> number is
-								<strong>TRJKJK123.</strong></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-success btn-print-receipt"><i
+            <!-- Modal Print Receipt -->
+            <div class="modal fade print--receipt__modal" id="print-receipt" tabindex="-1" role="dialog" aria-labelledby="print-receipt" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body print--receipt__modal_body">
+                            <div class="print--receipt__bg">
+                                <div class="print--receipt__receipt_bg">
+                                    <img src="demo/img/receipt.png" alt="receipt img">
+                                </div>
+                            </div>
+                            <h3>Payment Received</h3>
+                            <div class="print--receipt__line"></div>
+                            <p><strong>KES 230.20</strong> Received from <strong>Kelvin Njuguna</strong> phone number
+                                <strong>0704549859.</strong> The <strong>receipt</strong> number is
+                                <strong>TRJKJK123.</strong></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success btn-print-receipt"><i
 									class="zmdi zmdi-print mr-2"></i>PRINT RECEIPT</button>
-							<button type="button" class="btn btn-outline-warning btn-print-receipt-close"
-								data-dismiss="modal">CLOSE</button>
-						</div>
-						<p class="foot-note"><b>Powered By PayMe</b></p>
-					</div>
-				</div>
-			</div>
-		</section>
+                            <button type="button" class="btn btn-outline-warning btn-print-receipt-close" data-dismiss="modal">CLOSE</button>
+                        </div>
+                        <p class="foot-note"><b>Powered By PayMe</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-	</main>
+    </main>
 
-	<!-- Older IE warning message -->
-	<!--[if IE]>
+    <!-- Older IE warning message -->
+    <!--[if IE]>
                 <div class="ie-warning">
                     <h1>Warning!!</h1>
                     <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
@@ -855,146 +819,119 @@
                 </div>
             <![endif]-->
 
-	<!-- Javascript -->
-	<!-- Vendors -->
-	<script src="vendors/jquery/jquery.min.js"></script>
-	<script src="vendors/popper.js/popper.min.js"></script>
-	<script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-	<script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+    <!-- Javascript -->
+    <!-- Vendors -->
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/popper.js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
 
-	<script src="vendors/flot/jquery.flot.js"></script>
-	<script src="vendors/flot/jquery.flot.resize.js"></script>
-	<script src="vendors/flot.curvedlines/curvedLines.js"></script>
-	<script src="vendors/jqvmap/jquery.vmap.min.js"></script>
-	<script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
-	<script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="vendors/salvattore/salvattore.min.js"></script>
-	<script src="vendors/sparkline/jquery.sparkline.min.js"></script>
-	<script src="vendors/moment/moment.min.js"></script>
-	<script src="vendors/daterangepicker/daterangepicker.min.js"></script>
-	<script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="vendors/salvattore/salvattore.min.js"></script>
+    <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/daterangepicker/daterangepicker.min.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
 
-	<script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
-	<script src="vendors/select2/js/select2.full.min.js"></script>
-	<script src="vendors/dropzone/dropzone.min.js"></script>
-	<script src="vendors/moment/moment.min.js"></script>
-	<script src="vendors/nouislider/nouislider.min.js"></script>
-	<script src="vendors/trumbowyg/trumbowyg.min.js"></script>
-	<script src="vendors/flatpickr/flatpickr.min.js"></script>
-	<script src="vendors/rateyo/jquery.rateyo.min.js"></script>
-	<script src="vendors/jquery-text-counter/textcounter.min.js"></script>
-	<script src="vendors/autosize/autosize.min.js"></script>
-	<script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="vendors/select2/js/select2.full.min.js"></script>
+    <script src="vendors/dropzone/dropzone.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/nouislider/nouislider.min.js"></script>
+    <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+    <script src="vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+    <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+    <script src="vendors/autosize/autosize.min.js"></script>
+    <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 
-	<!-- Vendors: Data tables -->
-	<script src="vendors/datatables/jquery.dataTables.min.js"></script>
-	<script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
-	<script src="vendors/datatables-buttons/buttons.print.min.js"></script>
-	<script src="vendors/jszip/jszip.min.js"></script>
-	<script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+    <!-- Vendors: Data tables -->
+    <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+    <script src="vendors/jszip/jszip.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
 
-	<!-- Charts and maps-->
-	<script src="demo/js/flot-charts/curved-line.js"></script>
-	<script src="demo/js/flot-charts/dynamic.js"></script>
-	<script src="demo/js/flot-charts/line.js"></script>
-	<script src="demo/js/flot-charts/chart-tooltips.js"></script>
-	<script src="demo/js/other-charts.js"></script>
-	<script src="demo/js/jqvmap.js"></script>
+    <!-- Charts and maps-->
+    <script src="demo/js/flot-charts/curved-line.js"></script>
+    <script src="demo/js/flot-charts/dynamic.js"></script>
+    <script src="demo/js/flot-charts/line.js"></script>
+    <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+    <script src="demo/js/other-charts.js"></script>
+    <script src="demo/js/jqvmap.js"></script>
 
-	<!-- high charts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/highcharts.js"
-		integrity="sha512-PpL09bLaSaj5IzGNx6hsnjiIeLm9bL7Q9BB4pkhEvQSbmI0og5Sr/s7Ns/Ax4/jDrggGLdHfa9IbsvpnmoZYFA=="
-		crossorigin="anonymous"></script>
-	<!-- <script src="assets/libs/highcharts/highchart.js"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/data.min.js"
-		integrity="sha512-z2pVXf6Q3w/tD7NnbA/u/EDW7X8VUISARx3mVRk0vGULcDRcfhA65veFZS3LWW3DM8l/MW2Oxu8PlqJa+Za4Hw=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/drilldown.min.js"
-		integrity="sha512-1F5YJc0seERSBvoF3csYQm+JO6qF9O+1hwUKBbOUKcRj3RnDAmKEEzuqPnCcLOtt/2h2CzsCbSy0bv0yuCfZNQ=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/exporting.min.js"
-		integrity="sha512-DuFO4JhOrZK4Zz+4K0nXseP0K/daLNCrbGjSkRzK+Zibkblwqc0BYBQ1sTN7mC4Kg6vNqr8eMZwLgTcnKXF8mg=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/offline-exporting.min.js"
-		integrity="sha512-5vKhOIyF4HBeTJQ4VvTAWGuAvGMp3BbDwD6CjzZPc0T/h4D8bqvvj+D/IYyJ1ua6s72VcuQ2fPEjBn+CHR6UWQ=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/export-data.min.js"
-		integrity="sha512-JFLRyhQGrSpOOboAjCGEfEm0Z+GvPcucULDdEhRFoGtJJ439x64z/F1f6GTJM7+3PGqXqgkXNc6LO/04RGsW4w=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/accessibility.min.js"
-		integrity="sha512-cN9FFspkIN+ZS37xvtrtP4jfDc7D1BA1ma9l2YPkV47Ac70t98RjOe9gR+2dCBUkiyamLLfFtqXH+/iL0fqhjw=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/es-modules/Series/ItemSeries.min.js"
-		integrity="sha512-UnnyAAfaraMnJOILh+bwawPvAF4+bbOXAPcUv2OREvyYTdi8TPJ4UZ+Ip8IL3mMY+cAY/yzuzq+v/EvmoZx7iA=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/streamgraph.min.js"
-		integrity="sha512-RjmbiCs5aaU692OGy4q5YbGnHmiGexQY54rMmsY2HbaHX6OJ5AxqAtDQ9lVGubnbz+UPanupAF3avZJKY2jNWg=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/series-label.min.js"
-		integrity="sha512-ppfBb+ms2RL9FloNCD8c9mykruT6sI5ACsAdSgS69pDv/Dnn64LGewhmLnMVTCm3Zt5K2LXamZD4Ndr9EFUhMQ=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/annotations.min.js"
-		integrity="sha512-Qq+ClgMyYirIBC34w/LXcHhviIf+DvBzPW7vi3Ekn/jHYArYe+6TCiFp74q7pkUEitJLF543JCgxVQ6ax4xBNg=="
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/bullet.min.js"
-		integrity="sha512-RsB4WtWGLsMOVX4LGEqcG7TQHJBvD/wPgSYrN4zQUSvCzhubwAlxeXgFM1+ROQ7TzKfl0L6AbiBNXyRDBFKNoA=="
-		crossorigin="anonymous"></script>
-	<script src="js/highcharts/theme1.js"></script>
+    <!-- high charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/highcharts.js" integrity="sha512-PpL09bLaSaj5IzGNx6hsnjiIeLm9bL7Q9BB4pkhEvQSbmI0og5Sr/s7Ns/Ax4/jDrggGLdHfa9IbsvpnmoZYFA==" crossorigin="anonymous"></script>
+    <!-- <script src="assets/libs/highcharts/highchart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/data.min.js" integrity="sha512-z2pVXf6Q3w/tD7NnbA/u/EDW7X8VUISARx3mVRk0vGULcDRcfhA65veFZS3LWW3DM8l/MW2Oxu8PlqJa+Za4Hw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/drilldown.min.js" integrity="sha512-1F5YJc0seERSBvoF3csYQm+JO6qF9O+1hwUKBbOUKcRj3RnDAmKEEzuqPnCcLOtt/2h2CzsCbSy0bv0yuCfZNQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/exporting.min.js" integrity="sha512-DuFO4JhOrZK4Zz+4K0nXseP0K/daLNCrbGjSkRzK+Zibkblwqc0BYBQ1sTN7mC4Kg6vNqr8eMZwLgTcnKXF8mg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/offline-exporting.min.js" integrity="sha512-5vKhOIyF4HBeTJQ4VvTAWGuAvGMp3BbDwD6CjzZPc0T/h4D8bqvvj+D/IYyJ1ua6s72VcuQ2fPEjBn+CHR6UWQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/export-data.min.js" integrity="sha512-JFLRyhQGrSpOOboAjCGEfEm0Z+GvPcucULDdEhRFoGtJJ439x64z/F1f6GTJM7+3PGqXqgkXNc6LO/04RGsW4w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/accessibility.min.js" integrity="sha512-cN9FFspkIN+ZS37xvtrtP4jfDc7D1BA1ma9l2YPkV47Ac70t98RjOe9gR+2dCBUkiyamLLfFtqXH+/iL0fqhjw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/es-modules/Series/ItemSeries.min.js" integrity="sha512-UnnyAAfaraMnJOILh+bwawPvAF4+bbOXAPcUv2OREvyYTdi8TPJ4UZ+Ip8IL3mMY+cAY/yzuzq+v/EvmoZx7iA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/streamgraph.min.js" integrity="sha512-RjmbiCs5aaU692OGy4q5YbGnHmiGexQY54rMmsY2HbaHX6OJ5AxqAtDQ9lVGubnbz+UPanupAF3avZJKY2jNWg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/series-label.min.js" integrity="sha512-ppfBb+ms2RL9FloNCD8c9mykruT6sI5ACsAdSgS69pDv/Dnn64LGewhmLnMVTCm3Zt5K2LXamZD4Ndr9EFUhMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/annotations.min.js" integrity="sha512-Qq+ClgMyYirIBC34w/LXcHhviIf+DvBzPW7vi3Ekn/jHYArYe+6TCiFp74q7pkUEitJLF543JCgxVQ6ax4xBNg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/bullet.min.js" integrity="sha512-RsB4WtWGLsMOVX4LGEqcG7TQHJBvD/wPgSYrN4zQUSvCzhubwAlxeXgFM1+ROQ7TzKfl0L6AbiBNXyRDBFKNoA==" crossorigin="anonymous"></script>
+    <script src="js/highcharts/theme1.js"></script>
 
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-	<script src="https://code.highcharts.com/modules/data.js"></script>
-	<script src="https://code.highcharts.com/modules/drilldown.js"></script>
-	<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	<script src="https://code.highcharts.com/modules/export-data.js"></script>
-	<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-	<!-- highcharts zoom -->
-	<script src="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- highcharts zoom -->
+    <script src="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json"></script>
 
-	<!--owl corousel-->
-	<script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+    <!--owl corousel-->
+    <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
 
 
-	<!-- App functions and actions -->
-	<script src="js/wow.js"></script>
-	<script src="js/app.min.js"></script>
-	<script src="js/main.js"></script>
+    <!-- App functions and actions -->
+    <script src="js/wow.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/main.js"></script>
 
-	<script src="js/chart-data/revenue-targets.js"></script>
-	<script src="js/chart-data/revenue-streams.js"></script>
-	<script src="js/chart-data/revenue-by-bank.js"></script>
-	<script src="js/chart-data/revenue-collected.js"></script>
-	<script src="js/chart-data/perfomance.js"></script>
-	<script src="js/chart-data/hourly-revenue-collection.js"></script>
-	<script src="js/chart-data/emp-gender.js"></script>
-	<script src="js/chart-data/customers-served.js"></script>
-	<script src="js/chart-data/active-branches.js"></script>
-	<script src="js/chart-data/members-activity.js"></script>
-
-
-	<!--map scripts-->
-
-	<script src="js/chart-data/map-data.js"></script>
+    <script src="js/chart-data/revenue-targets.js"></script>
+    <script src="js/chart-data/revenue-streams.js"></script>
+    <script src="js/chart-data/revenue-by-bank.js"></script>
+    <script src="js/chart-data/revenue-collected.js"></script>
+    <script src="js/chart-data/perfomance.js"></script>
+    <script src="js/chart-data/hourly-revenue-collection.js"></script>
+    <script src="js/chart-data/emp-gender.js"></script>
+    <script src="js/chart-data/customers-served.js"></script>
+    <script src="js/chart-data/active-branches.js"></script>
+    <script src="js/chart-data/members-activity.js"></script>
 
 
-	<script>
+    <!--map scripts-->
 
-		// select payment option toggle
-		$('body').on('change', '[name="sendReq"]', function () {
-			var theSelectedOption = $(this).val();
-			// alert(theSelectedOption);
-			if (theSelectedOption == "option_email") {
-				$(".sms-container").addClass("d-none");
-				$(".email-container").removeClass("d-none");
-			}
-			if (theSelectedOption == "option_text") {
-				$(".email-container").addClass("d-none");
-				$(".sms-container").removeClass("d-none");
-			}
-		})
+    <script src="js/chart-data/map-data.js"></script>
 
 
-	</script>
+    <script>
+        // select payment option toggle
+        $('body').on('change', '[name="sendReq"]', function() {
+            var theSelectedOption = $(this).val();
+            // alert(theSelectedOption);
+            if (theSelectedOption == "option_email") {
+                $(".sms-container").addClass("d-none");
+                $(".email-container").removeClass("d-none");
+            }
+            if (theSelectedOption == "option_text") {
+                $(".email-container").addClass("d-none");
+                $(".sms-container").removeClass("d-none");
+            }
+        })
+    </script>
 
 
 </body>

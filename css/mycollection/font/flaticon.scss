@@ -1,5 +1,7 @@
+$flaticon-font: "flaticon";
+
 @font-face {
-    font-family: "flaticon";
+    font-family: $flaticon-font;
     src: url("./flaticon.ttf?093caf0645b19aeee93466aca88cd397") format("truetype"),
 url("./flaticon.woff?093caf0645b19aeee93466aca88cd397") format("woff"),
 url("./flaticon.woff2?093caf0645b19aeee93466aca88cd397") format("woff2"),
@@ -18,21 +20,30 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+$flaticon-map: (
+    "time-left": "\f101",
+    "dollar-symbol": "\f102",
+    "ruler": "\f103",
+    "money-bag": "\f104",
+    "dollar": "\f105",
+    "menu": "\f106",
+);
+
 .flaticon-time-left:before {
-    content: "\f101";
+    content: map-get($flaticon-map, "time-left");
 }
 .flaticon-dollar-symbol:before {
-    content: "\f102";
+    content: map-get($flaticon-map, "dollar-symbol");
 }
 .flaticon-ruler:before {
-    content: "\f103";
+    content: map-get($flaticon-map, "ruler");
 }
 .flaticon-money-bag:before {
-    content: "\f104";
+    content: map-get($flaticon-map, "money-bag");
 }
 .flaticon-dollar:before {
-    content: "\f105";
+    content: map-get($flaticon-map, "dollar");
 }
 .flaticon-menu:before {
-    content: "\f106";
+    content: map-get($flaticon-map, "menu");
 }
