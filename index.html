@@ -129,45 +129,6 @@
             </div>
         </aside>
 
-        <div class="content--full map-main-container d-none">
-            <div class="col-12">
-                <header class="content__title px-0 border-0">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <span class="rev-title-container">
-								<h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
-							</span>
-                            <div class="">
-                                <ol class="breadcrumb border-0">
-                                    <li class="breadcrumb-item">Home</li>
-                                    <li class="breadcrumb-item active">Dashboard</li>
-
-                                </ol>
-
-                            </div>
-                        </div>
-                    </div>
-                </header>
-            </div>
-            <div class="pb-4">
-                <div class="col-12">
-                    <h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
-                    <div id="the-map-container">
-                    </div>
-                    <!--							control buttons-->
-                    <div class="row map-buttons d-flex">
-                        <span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
-                        <div class="col">
-                            <button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
-                            <button id="this-week"><span></span>This Week: 15,237,895,897</button>
-                            <button id="this-month"><span></span>June 2020: 21,237,895,897</button>
-                            <button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
-                        </div>
-                    </div>
-                    <!--							control buttons-->
-                </div>
-            </div>
-        </div>
         <section class="content light-body">
             <header class="content__title px-0 border-0">
                 <div class="row">
@@ -330,47 +291,75 @@
                 </div>
 
 
-                <div class="col-lg-5 col-sm-12 d-none">
-                    <!-- Orders -->
-                    <div class="card">
-                        <div class="card-header new-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <!-- Title -->
-                                    <h4 class="card-header-title">
-                                        Salary Statistics Performance
-                                    </h4>
-                                </div>
 
-                                <div class="col-auto">
-                                    <!-- Tabs -->
-                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs opacity-0">
-                                        <li class="nav-item">
-                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
-												All Loans
-											</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
-												Loan Breakdown
-											</a>
-                                        </li>
-                                    </ul>
+
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card light-card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-info-light text-white rounded-circle">
+                                    <span class="text-info"><i class="flaticon flaticon-ruler"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">No. Of projects <strong class="today-full d-none">Sep 9th 21</strong></span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">8 Projects</h4>
                                 </div>
                             </div>
-                            <!-- / .row -->
                         </div>
-                        <div class="card-body">
-                            <!-- Chart -->
-                            <div class="chart">
-                                <div id="perfomance" style="height: 100%"></div>
-                            </div>
-                            <!-- <div class="chart">
-								<canvas id="transaction-data" class="chart-canvas"></canvas>
-							</div> -->
-                        </div>
-                    </div>
+                    </a>
                 </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg text-white rounded-circle bg-success-light text-uppercase">
+                                    <span class="text-success"><i class="flaticon flaticon-money-bag"></i></span> </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Value of all projects</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">$ 120.3 T</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-purple-light text-white rounded-circle">
+                                    <span class="text-purple"><i class="flaticon flaticon-dollar"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Cash used</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">$ 10.30T</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-danger-light  text-white rounded-circle">
+                                    <span class="text-danger"><i class="flaticon flaticon-time-left"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Due projects</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">3 Projects</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
 
             </div>
 
@@ -382,14 +371,27 @@
                                 <div class="col">
                                     <!-- Title -->
                                     <h4 class="card-header-title">
-                                        Revenue
+                                        Project budget vs funds spent
                                     </h4>
                                 </div>
                             </div>
                             <!-- / .row -->
                         </div>
                         <div class="card-body">
-                            <div class="row d-flex justify-content-between mb-3">
+                            <div class="row d-flex  mb-5 pb-2">
+                                <div class="col-auto">
+                                    <div class="d-flex align-items-center mr-3">
+                                        <div class="icon-in-bg rounded-circle" style="font-size: 12px;">
+                                            <span class=""><i class="zmdi zmdi-money font-30"
+													style="color: #546290;"></i></span>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="mb-0">Total Budget</p>
+                                            <span class="font-26 text-budget"><strong>$ 120.3T</strong></span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="col-auto">
                                     <div class="d-flex align-items-center">
                                         <div class="icon-in-bg rounded-circle" style="font-size: 12px;">
@@ -397,389 +399,57 @@
 													style="color: #546290;"></i></span>
                                         </div>
                                         <div class="ml-3">
-                                            <span class="font-26"><strong>KES 96,326,369</strong></span>
-                                            <p class="mb-0"><small style="color: #546290;">Total revenue this
-													month</small></p>
+                                            <p class="mb-0">Total spent</p>
+                                            <span class="font-26"><strong class="text-used">$ 120.3T</strong></span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto">
-                                    <!-- Tabs -->
-                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                        <li class="nav-item">
-                                            <a href="#" title="Show all transactions" class="nav-link all-transactions" data-toggle="tab">
-                                                <small class="chart-small"><strong>Today</strong></small>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" title="Show money received" class="nav-link credited-transactions" data-toggle="tab">
-                                                <small class="chart-small"><strong>This Week</strong></small>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" title="Show Debts paid" class="nav-link active debited-transactions" data-toggle="tab">
-                                                <small><strong>This Month</strong></small>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+
+
                             </div>
                             <!-- Chart -->
                             <div class="chart">
                                 <div id="revenue-by-bank" class="highChartStyles" style="height: 300px; "></div>
-                                <div id="revenue-by-bank-debited" class="highChartStyles d-none" style="height: 300px; "></div>
-                                <div id="revenue-by-bank-credited" class="highChartStyles d-none" style="height: 300px; "></div>
+
                             </div>
                             <!-- <div class="chart">
 								<canvas id="transaction-data" class="chart-canvas"></canvas>
 							  </div> -->
                         </div>
-                        <div class="card-footer chart-summary">
-                            <div class="row align-items-center">
-                                <div class="col-lg-4 col-md-4 col-lg-4">
-                                    <div class="d-flex align-items-center">
-                                        <div class="icon-in-bg-1 rounded-circle" style="font-size: 12px;">
-                                            <span class=""><i class="zmdi zmdi-smartphone-iphone font-30"
-													style="color: #18481F;"></i></span>
-                                        </div>
-                                        <div class="ml-3">
-                                            <span class="font-20"><strong>KES 3,326,369</strong></span>
-                                            <p class="mb-0"><small style="color: #546290;">20 Mpesa
-													Transactions</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-lg-4">
-                                    <div class="d-flex align-items-center">
-                                        <div class="icon-in-bg-2 rounded-circle" style="font-size: 12px;">
-                                            <span class=""> <img src="demo/img/credit-cards-payment.svg"
-													style="color: #0015C2;">
-											</span>
-                                        </div>
-                                        <div class="ml-3">
-                                            <span class="font-20"><strong>KES 965,230</strong></span>
-                                            <p class="mb-0"><small style="color: #546290;">24 Card
-													Transactions</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-lg-4">
-                                    <div class="d-flex align-items-center">
-                                        <div class="icon-in-bg-3 rounded-circle" style="font-size: 12px;">
-                                            <span class=""> <i class="zmdi zmdi-accounts font-30"
-													style="color: #F57819;"></i>
-											</span>
-                                        </div>
-                                        <div class="ml-3">
-                                            <span class="font-20"><strong>567</strong></span>
-                                            <p class="mb-0"><small style="color: #546290;">Clients attended
-													to</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-lg-4">
-                    <div class="card card-annual">
-                        <div class="card-body text-white" style="background-color: #FE3301!important;">
-                            <div class="d-flex flex-column justify-content-center align-items-center" style="margin-top: 2.5rem;">
-                                <img src="demo/img/growth.png" alt="growth image" width="50px" height="50px" class="mb-3">
-                                <h3 class="text-white"><small><sup class="text-uppercase">kes</sup></small>953,526,360
-                                </h3>
-                                <p class="text-uppercase pb-5"><small>Annual Collections</small></p>
-                            </div>
-                            <div class="d-flex justify-content-between" style="margin-top: 5.5rem;">
-                                <div class="d-flex align-items-center">
-                                    <img src="demo/img/user (3).png" alt="users" width="15px">
-                                    <span class="text-capitalize ml-3"><small>20 Clients</small></span>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img src="demo/img/transaction.png" alt="transactions" width="15px">
-                                    <span class="text-capitalize ml-3"><small>10 Transactions</small></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="card card-collections__today">
-                                <div class="card-body text-white text-left" style="background-color: #0015C2;">
-                                    <span class="text-uppercase" style="font-size: 0.625rem; opacity: 7;"><small>Collections Today</small></span>
-                                    <h5 class="text-white">KES 62,256</h5>
-                                    <p class="mt-4" style="font-size: 0.6rem;"><strong><span
-												style="color: #2DDAB5;">+310</span> since yesterday</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-collections__yesterday">
-                                <div class="card-body text-left">
-                                    <span class="text-uppercase" style="font-size: 0.625rem; opacity: 7; color: #0F1634;"><small>Collections
-											Yesterday</small></span>
-                                    <h5 style="color: #0F1634;">KES 52,256</h5>
-                                    <p class="mt-4" style="font-size: 0.6rem;"><strong><span
-												style="color: #2DDAB5;">+236</span> since previous day</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row d-none">
-                <div class="col-sm-12 col-md-6 col-lg-7">
                     <div class="card">
-                        <div class="card-header new-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <!-- Title -->
-                                    <h4 class="card-header-title">
-                                        Tickets
-                                    </h4>
-                                </div>
-
-                                <div class="col-auto opacity-0">
-                                    <!-- Tabs -->
-                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                        <li class="nav-item">
-                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
-												A
-											</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
-												L
-											</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- / .row -->
+                        <div class="card-header">
+                            <h4>Project comparisons by Phases</h4>
                         </div>
-                        <div class="card-body px-1 pb-1">
-                            <div id="active-branches" style="height: 100%;">
+
+                        <div class="card-body">
+                            <div id="project-phase">
 
                             </div>
-
                         </div>
+
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-5">
+
+                <div class="col-12">
                     <div class="card">
-                        <div class="card-header new-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <!-- Title -->
-                                    <h4 class="card-header-title">
-                                        Sessions
-                                    </h4>
-                                </div>
-
-                                <div class="col-auto opacity-0">
-                                    <!-- Tabs -->
-                                    <ul class="nav nav-tabs nav-tabs-sm card-header-tabs">
-                                        <li class="nav-item">
-                                            <a href="#" title="Show all transactions" class="nav-link active allLoans" data-toggle="tab">
-												A
-											</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" title="Show money received" class="nav-link loanBreakdown" data-toggle="tab">
-												L
-											</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- / .row -->
+                        <div class="card-header">
+                            <h4 class="card-header-title">
+                                Project timelines Gant chart
+                            </h4>
                         </div>
-                        <div class="card-body px-1 pb-1">
-                            <div id="members-activity" style="height: 100%;">
+                        <div class="card-body">
+                            <div id="project-timelines"></div>
 
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-            <!-- Modal -->
-            <div class="modal right fade" id="transact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div>
-                                <h4 class="modal-title" id="myModalLabel">Transact</h4>
-                                <small>Select Method and input Payment Details</small>
-                            </div>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-									aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="w-100 payment-options py-3">
-                                        <!-- mpesa payment option-->
-                                        <div class="option-1  active" id="mpesa">
-                                            <span class="pay-container" title="Pay via Mpesa">
-												<i aria-hidden="true" class="zmdi zmdi-smartphone-iphone"></i>
-												<p class="text-capitalize"><small>MPESA</small></p>
-											</span>
-                                        </div>
-
-                                        <div class="option-1" id="card">
-                                            <span class="pay-container" title="Pay via Card">
-												<i aria-hidden="true" class="zmdi zmdi-card"></i>
-												<p class="text-capitalize"><small>CARD</small></p>
-											</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mpesa col-sm-12 fadeIn delay-3s fadeOut delay-4s">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                            <label for="mpesa-amount" class="text-capitalize text-black"><b>Transaction
-													Amount</b></label>
-                                            <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="mpesa-amount">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="mpesa-num" class="text-capitalize text-black"><b>Mpesa
-													Number</b></label>
-                                            <input type="text" placeholder="Enter Mpesa Number" class="placeholder-fix form-control" name="mpesa-num">
-                                        </div>
-
-                                        <div class="col-md-12 p-0">
-                                            <button type="button" data-toggle="modal" data-target="#send-request" class="btn btn-success btn-payment" type="submit">Send Payment
-												Request <i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- CARD payment -->
-                                <div class="credit_card d-none">
-                                    <div class="col-sm-12">
-                                        <div class="mb-3">
-                                            <p>How would you like to send the request?</p>
-                                            <input type="radio" name="sendReq" value="option_email" id="opt_email" class="" checked="checked" onclick="select_payment()"> <label for="opt_email">Email</label> <br>
-                                            <input type="radio" name="sendReq" value="option_text" id="opt_text" class="" onclick="select_payment()"> <label for="opt_text">Text Message
-												(SMS)</label>
-                                        </div>
-                                        <div class="email-container animated fadeIn">
-                                            <div class="form-group">
-                                                <label for="card-amount" class="text-capitalize text-black"><b>Transaction
-														Amount</b></label>
-                                                <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="card-amount">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="card-num" class="text-capitalize text-black"><b>Email
-														Address</b></label>
-                                                <input type="text" placeholder="Enter Email Address" class="placeholder-fix form-control" name="card-num">
-                                            </div>
-                                            <div>
-                                                <p><small>An email with a link to the Card payment gateway will be sent
-														to the client.</small></p>
-                                            </div>
-                                            <div class="col-md-12 p-0">
-                                                <button class="btn btn-success btn-payment" type="submit">Send Email
-													<i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="sms-container animated fadeIn d-none">
-                                            <div class="form-group">
-                                                <label for="card-amount" class="text-capitalize text-black"><b>Transaction
-														Amount</b></label>
-                                                <input type="text" placeholder="Enter Transaction Amount" class="placeholder-fix form-control" name="card-amount">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="card-num" class="text-capitalize text-black"><b>Phone
-														Number</b></label>
-                                                <input type="text" placeholder="Enter  Number" class="placeholder-fix form-control" name="card-num">
-                                            </div>
-                                            <div>
-                                                <p><small>A text message with a link to the Card payment gateway will be
-														sent to the client.</small></p>
-                                            </div>
-                                            <div class="col-md-12 p-0">
-                                                <button class="btn btn-success btn-payment" type="submit">Send SMS
-													<i class="zmdi zmdi-long-arrow-right ml-3"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- modal-content -->
-                </div>
-                <!-- modal-dialog -->
-            </div>
-            <!-- modal -->
-
-
-            <!-- Modal Send Mpesa Request-->
-            <div class="modal fade send--req__modal" id="send-request" tabindex="-1" role="dialog" aria-labelledby="send-mpesa-request" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header send--req__header">
-                            <h5 class="modal-title send--req__title text-uppercase p-1 text-white bg-success " id="exampleModalLongTitle">Mpesa payment</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-                        </div>
-                        <div class="modal-body send--req">
-                            <h3>Send payment request</h3>
-                            <div class="send--req__p">
-                                <p>A payment request of <strong>KES 235</strong> will be sent to your phone number
-                                    <strong>(0704549859) soon</strong> after you <strong>click </strong>the send button below. </p>
-                                <p><strong>Remind the customer to check their phone</strong> to <strong>confirm
-										payment</strong> by entering their Mpesa pin.</p>
-                                <p>You can cancel the request by closing this pop up.</p>
-                            </div>
-                            <div class="col-md-12 p-0">
-                                <button type="button" data-toggle="modal" data-target="#print-receipt" class="btn btn-success btn-payment" type="submit" data-dismiss="modal">Send
-									Request</button>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal Print Receipt -->
-            <div class="modal fade print--receipt__modal" id="print-receipt" tabindex="-1" role="dialog" aria-labelledby="print-receipt" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body print--receipt__modal_body">
-                            <div class="print--receipt__bg">
-                                <div class="print--receipt__receipt_bg">
-                                    <img src="demo/img/receipt.png" alt="receipt img">
-                                </div>
-                            </div>
-                            <h3>Payment Received</h3>
-                            <div class="print--receipt__line"></div>
-                            <p><strong>KES 230.20</strong> Received from <strong>Kelvin Njuguna</strong> phone number
-                                <strong>0704549859.</strong> The <strong>receipt</strong> number is
-                                <strong>TRJKJK123.</strong></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success btn-print-receipt"><i
-									class="zmdi zmdi-print mr-2"></i>PRINT RECEIPT</button>
-                            <button type="button" class="btn btn-outline-warning btn-print-receipt-close" data-dismiss="modal">CLOSE</button>
-                        </div>
-                        <p class="foot-note"><b>Powered By PayMe</b></p>
-                    </div>
-                </div>
-            </div>
         </section>
 
     </main>
@@ -869,6 +539,9 @@
     <!-- high charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/highcharts.js" integrity="sha512-PpL09bLaSaj5IzGNx6hsnjiIeLm9bL7Q9BB4pkhEvQSbmI0og5Sr/s7Ns/Ax4/jDrggGLdHfa9IbsvpnmoZYFA==" crossorigin="anonymous"></script>
     <!-- <script src="assets/libs/highcharts/highchart.js"></script> -->
+
+    <script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/data.min.js" integrity="sha512-z2pVXf6Q3w/tD7NnbA/u/EDW7X8VUISARx3mVRk0vGULcDRcfhA65veFZS3LWW3DM8l/MW2Oxu8PlqJa+Za4Hw==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/drilldown.min.js" integrity="sha512-1F5YJc0seERSBvoF3csYQm+JO6qF9O+1hwUKBbOUKcRj3RnDAmKEEzuqPnCcLOtt/2h2CzsCbSy0bv0yuCfZNQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/exporting.min.js" integrity="sha512-DuFO4JhOrZK4Zz+4K0nXseP0K/daLNCrbGjSkRzK+Zibkblwqc0BYBQ1sTN7mC4Kg6vNqr8eMZwLgTcnKXF8mg==" crossorigin="anonymous"></script>
@@ -888,6 +561,7 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
     <!-- highcharts zoom -->
     <script src="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json"></script>
 
@@ -910,6 +584,8 @@
     <script src="js/chart-data/customers-served.js"></script>
     <script src="js/chart-data/active-branches.js"></script>
     <script src="js/chart-data/members-activity.js"></script>
+    <script src="js/chart-data/project-phases.js"></script>
+    <script src="js/chart-data/project-timelines.js"></script>
 
 
     <!--map scripts-->
@@ -937,5 +613,15 @@
 </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>
+</script>
+
+
+</body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>
 
 </html>

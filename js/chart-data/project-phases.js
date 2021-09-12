@@ -13,7 +13,7 @@ var pieColors = (function() {
 }());
 
 // Build the chart
-Highcharts.chart('container', {
+Highcharts.chart('project-phase', {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
@@ -21,7 +21,7 @@ Highcharts.chart('container', {
         type: 'pie'
     },
     title: {
-        text: 'Browser market shares at a specific website, 2014'
+        text: null
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -33,6 +33,7 @@ Highcharts.chart('container', {
     },
     plotOptions: {
         pie: {
+            // innerSize: '100%',
             allowPointSelect: true,
             cursor: 'pointer',
             colors: pieColors,
@@ -49,14 +50,13 @@ Highcharts.chart('container', {
         }
     },
     series: [{
-        name: 'Share',
+        name: 'Project Phase',
         data: [
-            { name: 'Chrome', y: 61.41 },
-            { name: 'Internet Explorer', y: 11.84 },
-            { name: 'Firefox', y: 10.85 },
-            { name: 'Edge', y: 4.67 },
-            { name: 'Safari', y: 4.18 },
-            { name: 'Other', y: 7.05 }
+            { name: 'Planning', y: 60 },
+            { name: 'Design', y: 9 },
+            { name: 'Development/Implementation', y: 13 },
+            { name: 'Testing/Handover', y: 7 },
+            { name: 'Monitoring', y: 11 }
         ]
     }]
 });

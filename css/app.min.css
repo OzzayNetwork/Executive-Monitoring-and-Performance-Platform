@@ -19885,7 +19885,7 @@ tbody td a.btn {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    border-top: 0.5px solid #C0C5D8;
+    border-top: 0.5px solid #c0c5d817;
 }
 .card-footer strong {
     color: #0F1634;
@@ -20226,4 +20226,25 @@ section .container-fluid {
 .main-menu li {
     padding-right: 2rem;
     padding-left: 2rem;
+}
+.bg-info-light {
+    background-color: #BBDEFC;
+}
+.bg-danger-light {
+    background-color: #FCBBBB;
+}
+.bg-success-light {
+    background-color: #D6FEC7;
+}
+.bg-purple-light {
+    background-color: #EABBFB;
+}
+.font-26 {
+    font-size: 19px;
+}
+.text-budget {
+    color: #97a0bd;
+}
+.text-used {
+    color: #181f48;
 }
