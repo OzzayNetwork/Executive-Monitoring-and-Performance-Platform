@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- <link rel='icon' href='demo/img/payme-logo.png' type='image/x-icon'/> -->
-    <title>PayMe | PayMe Dashboard</title>
+    <title>EMPP | Executive Monitoring and Performance Platform</title>
 
     <!-- icon fonts -->
 
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
     <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
     <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
     <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
     <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
@@ -51,7 +52,7 @@
                 <img src="demo/img/gifs/preloader.gif">
             </div>
             <span class="powerd-container">
-				<strong>PayMe Dashboard by</strong>
+				<strong>Executive Monitoring and Performance Platform</strong>
 				<img src="demo/img/logo-files/nouveta-orange.svg">
 
 			</span>
@@ -66,7 +67,16 @@
                 </div>
             </div>
             <div class="header__logo hidden-sm-down">
-                <a href="index.html"><img class="the-logo" src="demo/img/payme-logo@2x.png"></a>
+                <!-- <a href="index.html"><img class="the-logo" src="demo/img/payme-logo@2x.png"></a> -->
+                <a class="pt-1 pl-4 d-flex pr-0">
+                    <div class="pr-2">
+                        <img src="demo/img/logo-files/logo-demo.svg">
+                    </div>
+                    <div>
+                        <h4 class="text-white mb-0 pb-0">EMPP</h4>
+                        <small class="font-8">Executive Monitoring and Performance Platform</small>
+                    </div>
+                </a>
             </div>
             <div class="d-flex align-items-center flex-grow-1">
                 <div class="header__title">
@@ -117,9 +127,9 @@
                     </li>
 
                     <li>
-                        <button type="button" class="btn btn-success btn--icon-text btn-transact btn-lg" title="transact" data-toggle="modal" data-target="#transact">
+                        <a type="button" class="btn btn-success btn--icon-text btn-transact btn-lg" title="transact" href="new-project.html">
 							New Project <i class="zmdi zmdi-plus"></i>
-						</button>
+						</a>
                     </li>
                     <li class="navigation__sub navigation__logout-link">
                         <a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
@@ -438,13 +448,46 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-header-title">
-                                Project timelines Gant chart
-                            </h4>
+                            <div class="d-flex justify-content-between">
+                                <h4 class="card-header-title">
+                                    Project timelines Gant chart
+                                </h4>
+
+                                <div class="selectpicker" search="true">
+                                    <select title="select a ministry" class="form-control selectpicker" data-live-search="true">
+                                        <option selected>All Ministries</option>
+                                        <option>Ministry for Agriculture, Animal Industry and Fisheries</option>
+                                        <option>Ministry of Information and Communications Technology</option>
+                                        <option>Ministry of Defence and Veterans Affairs</option>
+                                        <option>Ministry of Disaster Preparedness and Refugees</option>
+                                        <option>Ministry of Education and Sports</option>
+                                        <option>Ministry of Energy and Mineral Development</option>
+                                        <option>Ministry of Finance, Planning and Economic Development</option>
+                                        <option>Ministry for Foreign Affairs</option>
+                                        <option>Ministry of Gender, Labour and Social Development</option>
+                                        <option>Minister in Charge of General Duties in the Office of the Prime Minister</option>
+                                        <option>Ministry of Health</option>
+                                        <option>Ministry of Internal Affairs</option>
+                                        <option>Ministry of Justice and Constitutional Affairs</option>
+                                        <option>Ministry of Lands, Housing and Urban Development</option>
+                                        <option>Ministry of Local Government</option>
+                                        <option>Ministry of the Presidency</option>
+                                        <option>Ministry of Public Service</option>
+                                        <option>Ministry of Internal Security</option>
+                                        <option>Ministry of Trade, Industry and Cooperatives</option>
+                                        <option>Ministry of Water and Environment</option>
+                                        <option>Ministry of Works and Transport</option>
+                                        <option>Minister of Science, Technology and Innovation</option>
+                                        <option>Ministry for Karamoja Affairs</option>
+                                        <option>Ministry of Tourism, Wildlife and Antiquities</option>
+                                        <option>Minister for Kampala Capital City Authority</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-body">
                             <div id="project-timelines"></div>
-
                         </div>
                     </div>
                 </div>
@@ -536,37 +579,22 @@
     <script src="demo/js/other-charts.js"></script>
     <script src="demo/js/jqvmap.js"></script>
 
-    <!-- high charts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/highcharts.js" integrity="sha512-PpL09bLaSaj5IzGNx6hsnjiIeLm9bL7Q9BB4pkhEvQSbmI0og5Sr/s7Ns/Ax4/jDrggGLdHfa9IbsvpnmoZYFA==" crossorigin="anonymous"></script>
-    <!-- <script src="assets/libs/highcharts/highchart.js"></script> -->
+
+
+
+
 
     <script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/data.min.js" integrity="sha512-z2pVXf6Q3w/tD7NnbA/u/EDW7X8VUISARx3mVRk0vGULcDRcfhA65veFZS3LWW3DM8l/MW2Oxu8PlqJa+Za4Hw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/drilldown.min.js" integrity="sha512-1F5YJc0seERSBvoF3csYQm+JO6qF9O+1hwUKBbOUKcRj3RnDAmKEEzuqPnCcLOtt/2h2CzsCbSy0bv0yuCfZNQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/exporting.min.js" integrity="sha512-DuFO4JhOrZK4Zz+4K0nXseP0K/daLNCrbGjSkRzK+Zibkblwqc0BYBQ1sTN7mC4Kg6vNqr8eMZwLgTcnKXF8mg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/offline-exporting.min.js" integrity="sha512-5vKhOIyF4HBeTJQ4VvTAWGuAvGMp3BbDwD6CjzZPc0T/h4D8bqvvj+D/IYyJ1ua6s72VcuQ2fPEjBn+CHR6UWQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/export-data.min.js" integrity="sha512-JFLRyhQGrSpOOboAjCGEfEm0Z+GvPcucULDdEhRFoGtJJ439x64z/F1f6GTJM7+3PGqXqgkXNc6LO/04RGsW4w==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/accessibility.min.js" integrity="sha512-cN9FFspkIN+ZS37xvtrtP4jfDc7D1BA1ma9l2YPkV47Ac70t98RjOe9gR+2dCBUkiyamLLfFtqXH+/iL0fqhjw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/es-modules/Series/ItemSeries.min.js" integrity="sha512-UnnyAAfaraMnJOILh+bwawPvAF4+bbOXAPcUv2OREvyYTdi8TPJ4UZ+Ip8IL3mMY+cAY/yzuzq+v/EvmoZx7iA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/streamgraph.min.js" integrity="sha512-RjmbiCs5aaU692OGy4q5YbGnHmiGexQY54rMmsY2HbaHX6OJ5AxqAtDQ9lVGubnbz+UPanupAF3avZJKY2jNWg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/series-label.min.js" integrity="sha512-ppfBb+ms2RL9FloNCD8c9mykruT6sI5ACsAdSgS69pDv/Dnn64LGewhmLnMVTCm3Zt5K2LXamZD4Ndr9EFUhMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/annotations.min.js" integrity="sha512-Qq+ClgMyYirIBC34w/LXcHhviIf+DvBzPW7vi3Ekn/jHYArYe+6TCiFp74q7pkUEitJLF543JCgxVQ6ax4xBNg==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/bullet.min.js" integrity="sha512-RsB4WtWGLsMOVX4LGEqcG7TQHJBvD/wPgSYrN4zQUSvCzhubwAlxeXgFM1+ROQ7TzKfl0L6AbiBNXyRDBFKNoA==" crossorigin="anonymous"></script>
-    <script src="js/highcharts/theme1.js"></script>
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/data.js"></script>
-    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
 
     <!-- highcharts zoom -->
     <script src="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json"></script>
 
+    <script src="js/highcharts/theme1.js"></script>
+
     <!--owl corousel-->
     <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
 
 
     <!-- App functions and actions -->
@@ -621,6 +649,14 @@
 </body>
 
 <!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>
+
+</html>
+
+</html>
+
+</html>
 
 </html>
 

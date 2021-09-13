@@ -2825,21 +2825,21 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #FFF;
-    background-color: #32c787;
-    border-color: #32c787;
+    background-color: #dd4901;
+    border-color: #dd4901;
 }
 
 .btn-primary:hover {
     color: #FFF;
-    background-color: #5cd060;
-    border-color: #5cd060;
+    background-color: #F57819;
+    border-color: #F57819;
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    color: #FFF;
-    background-color: #32c787;
-    border-color: #32c787;
+    color: gray;
+    background-color: #fc903d;
+    border-color: #fc903d;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
@@ -20212,6 +20212,7 @@ section .container-fluid {
     background-clip: padding-box;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border: 1px solid #00000059;
 }
 .auth-slogan {
     display: flex;
@@ -20247,4 +20248,52 @@ section .container-fluid {
 }
 .text-used {
     color: #181f48;
+}
+.font-8 {
+    font-size: 7px !important;
+}
+.font-10 {
+    font-size: 10px;
+}
+
+/* dropify */
+.rotate180 {
+    transform: rotate(180deg);
+}
+.notification-container,
+.drop-file-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000085;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+.close-droper {
+    margin-bottom: 300px;
+    top: -10%;
+    right: -20px;
+}
+*,
+ :active,
+ :focus,
+ :hover {
+    outline: 0!important;
+    -webkit-tap-highlight-color: transparent!important;
+}
+.drop-section-container {
+    border: 2px solid;
+    border-radius: 4px;
+    border-style: dashed;
+    border-color: #03a9f499;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.drop-section-container img {
+    opacity: 0.2;
+    width: 50%;
+    max-width: 400px;
+    margin-top: 20px;
 }

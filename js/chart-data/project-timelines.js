@@ -7,6 +7,9 @@ Highcharts.ganttChart('project-timelines', {
     yAxis: {
         uniqueNames: true
     },
+    chart: {
+        backgroundColor: 'transparent'
+    },
 
     navigator: {
         enabled: true,
@@ -17,6 +20,9 @@ Highcharts.ganttChart('project-timelines', {
             pointPadding: 0.25
         },
         yAxis: {
+            gridLineColor: '#95aac9',
+            gridLineDashStyle: 'ShortDot',
+            gridLineWidth: 0.3,
             min: 0,
             max: 3,
             reversed: true,
