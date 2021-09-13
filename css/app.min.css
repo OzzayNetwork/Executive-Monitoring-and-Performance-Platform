@@ -17359,6 +17359,7 @@ ul.jqtree-tree ul.jqtree_common {
     /* background:linear-gradient(to left,#f26b2c, #000000f0); */
     z-index: -1;
     /* background: rgb(16 16 16); */
+    border-bottom: 1px solid #99999940;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -19670,6 +19671,7 @@ tbody td a.btn {
     /* padding-left: 2rem; */
     
     margin-right: 0.2rem;
+    border-bottom: 1px solid #bbdefc29;
 }
 .header__logo>a {
     padding-right: 0.5rem;

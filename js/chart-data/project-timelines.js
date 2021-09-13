@@ -34,7 +34,7 @@ Highcharts.ganttChart('project-timelines', {
     },
     rangeSelector: {
         enabled: true,
-        selected: 0
+        // selected: 0
     },
 
     series: [{
