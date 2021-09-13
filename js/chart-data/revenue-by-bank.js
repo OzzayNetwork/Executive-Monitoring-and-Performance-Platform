@@ -115,9 +115,9 @@ $(function() {
             formatter: function() {
 
                 var point = this.point,
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:white;">' + this.series.name + '</span><br/><span style="color:white"><span  style="font-size:12px; font-weight:800; color:white;">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
                 if (point.drilldown) {
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:white;">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:white;">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
                     s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
                 }
                 return s;

@@ -177,6 +177,54 @@
                 </div>
             </div>
 
+            <!-- project milestone modal -->
+            <div class="modal fade" id="milestone-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="badge badge-pill badge-success text-uppercase font-10 px-3">Konza Technology City</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title text-capitalize mb-3" id="exampleModalLongTitle">
+                                Add project milestone
+                            </h4>
+
+
+                            <form class="row">
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Milestone title</strong></label>
+                                        <input class="form-control" placeholder="Enter Milestone title">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Milestone date</strong></label>
+                                        <input class="form-control date-picker" placeholder="Enter Milestone title">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Amount spent</strong></label>
+                                        <input class="form-control date-picker" placeholder="Enter amount">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-block btn btn-primary">
+                                <i class="mdi mdi-login mr-2"></i> Update milestone
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <header class="content__title px-0 border-0">
                 <div class="row mb-4">
                     <div class="col-sm-12 col-lg-9">
@@ -280,7 +328,16 @@
                                                     <a href="#" class="float-right">6 Feb 2014</a>
                                                     <p>$ 36,250,000</p>
                                                 </li>
+
+
                                             </ul>
+
+                                            <div class="upload-doc-btn mt-3 pl-4">
+                                                <button class="btn btn-primary btn--icon " data-toggle="modal" data-target="#milestone-modal"><i class="zmdi zmdi-plus"></i></button>
+                                                <span><a href="#" data-toggle="modal" data-target="#milestone-modal">Add a milestone</a></span>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                 </div>
