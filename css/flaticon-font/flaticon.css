@@ -1,6 +1,6 @@
 @font-face {
     font-family: "flaticon";
-    src: url("./flat.ttf?093caf0645b19aeee93466aca88cd397") format("truetype"), url("./flat.woff?093caf0645b19aeee93466aca88cd397") format("woff"), url("./flat.woff2?093caf0645b19aeee93466aca88cd397") format("woff2"), url("./flat.eot?093caf0645b19aeee93466aca88cd397#iefix") format("embedded-opentype"), url("./flaticon.svg?093caf0645b19aeee93466aca88cd397#flaticon") format("svg");
+    src: url("./Flat.ttf") format("truetype"), url("./flat.woff") format("woff"), url("./flat.woff2") format("woff2"), url("./Flaticon.eot") format("embedded-opentype"), url("./Flaticon.svg") format("svg");
 }
 
 i[class^="flaticon-"]:before,
