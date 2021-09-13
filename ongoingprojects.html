@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- <link rel='icon' href='demo/img/payme-logo.png' type='image/x-icon'/> -->
-    <title>PayMe | PayMe Dashboard</title>
+    <title>EMPP | Executive Monitoring and Performance Platform</title>
 
     <!-- icon fonts -->
 
@@ -98,11 +98,11 @@
         <aside class="sidebar main-menu">
             <div class="scrollbar-inner">
                 <ul class="navigation">
-                    <li class="navigation__active">
+                    <li class="">
                         <a href="index.html"><i class="flaticon flaticon-menu"></i>Overview</a>
                     </li>
 
-                    <li class="navigation__sub">
+                    <li class="navigation__sub navigation__active">
                         <a href="#">
                             <i class="flaticon flaticon-ruler"></i> Projects<i class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
                         <ul>
@@ -179,6 +179,54 @@
             </div>
         </div>
         <section class="content light-body">
+
+            <div class="modal fade" id="milestone-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="badge badge-pill badge-success text-uppercase font-10 px-3">Konza Technology City</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title text-capitalize mb-3" id="exampleModalLongTitle">
+                                Add project milestone
+                            </h4>
+
+
+                            <form class="row">
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Milestone title</strong></label>
+                                        <input class="form-control" placeholder="Enter Milestone title">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Milestone date</strong></label>
+                                        <input class="form-control date-picker" placeholder="Enter Milestone title">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Amount spent</strong></label>
+                                        <input class="form-control date-picker" placeholder="Enter amount">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-block btn btn-primary">
+                                <i class="mdi mdi-login mr-2"></i> Update milestone
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <header class="content__title px-0 border-0">
                 <div class="row">
                     <div class="col-md-5 col-sm-12">
@@ -273,104 +321,104 @@
                                                 KES 1,005,770,797
                                             </td>
                                             <td>
-                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
+                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#milestone-modal">
                                                     <i class="zmdi zmdi-edit"></i> Update Milestone
                                                 </button>
-                                                <button class="btn btn-warning btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
-                                                    <i class="zmdi zmdi-eye"></i> Details
-                                                </button>
+                                                <a href="project-details.html" class=" btn btn-warning btn--icon-text ml-2 deactivate-user " title="deactvate this account " data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 Bomet Town-Kapsimotwa ..
                                             </td>
-                                            <td class="the_user">
+                                            <td class="the_user ">
                                                 Ministry of Transport...
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 14 Feb 2012
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 Kenya
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 Lamu Ground breaking
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 14 Feb 2019
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 KES 1,005,770,797
                                                 <td>
-                                                    <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
+                                                    <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#milestone-modal">
                                                     <i class="zmdi zmdi-edit"></i> Update Milestone
                                                 </button>
-                                                    <button class="btn btn-warning btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
-                                                    <i class="zmdi zmdi-eye"></i> Details
-                                                </button>
+                                                    <a href="project-details.html" class=" btn btn-warning btn--icon-text ml-2 deactivate-user " title="deactvate this account " data-toggle="modal " data-target="#deactivate-user ">
+                                                        <i class="zmdi zmdi-eye "></i> Details
+                                                    </a>
                                                 </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 Malaba Town roads
                                             </td>
-                                            <td class="the_user">
+                                            <td class="the_user ">
                                                 Ministry of Land, Ho...
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 2 Jan 2008
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 Israel
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 First complex building complete
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 16 Jun 2020
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 KES 1,005,770,797
                                             </td>
                                             <td>
-                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
+                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#milestone-modal">
                                                     <i class="zmdi zmdi-edit"></i> Update Milestone
                                                 </button>
-                                                <button class="btn btn-warning btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
-                                                    <i class="zmdi zmdi-eye"></i> Details
-                                                </button>
+                                                <a href="project-details.html" class=" btn btn-warning btn--icon-text ml-2 deactivate-user " title="deactvate this account " data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 Iten - Nyaru road
                                             </td>
-                                            <td class="the_user">
+                                            <td class="the_user ">
                                                 Ministry of Land, Ho...
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 14 Feb 2008
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 Israel
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 First complex building complete
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 17 Sep 2021
                                             </td>
-                                            <td class="text-capitalize">
+                                            <td class="text-capitalize ">
                                                 KES 32,000,360,000
                                             </td>
                                             <td>
-                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
+                                                <button class="btn btn-info btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#milestone-modal">
                                                     <i class="zmdi zmdi-edit"></i> Update Milestone
                                                 </button>
-                                                <button class="btn btn-warning btn--icon-text ml-2 deactivate-user" title="deactvate this account" data-toggle="modal" data-target="#deactivate-user">
-                                                    <i class="zmdi zmdi-eye"></i> Details
-                                                </button>
+                                                <a href="project-details.html" class=" btn btn-warning btn--icon-text ml-2 deactivate-user " title="deactvate this account " data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -379,12 +427,12 @@
                         </div>
                     </div>
 
-                    <div class="card animated fade-in d-none">
-                        <div class="card-header new-header">
-                            <div class="row align-items-center">
-                                <div class="col">
+                    <div class="card animated fade-in d-none ">
+                        <div class="card-header new-header ">
+                            <div class="row align-items-center ">
+                                <div class="col ">
                                     <!-- Title -->
-                                    <h4 class="card-header-title py-2">
+                                    <h4 class="card-header-title py-2 ">
                                         New Department
                                     </h4>
                                 </div>
@@ -393,18 +441,18 @@
                             <!-- / .row -->
                         </div>
                         <div class="card-body ">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-4 bg-light">
-                                    <div class="row">
-                                        <div class="col-12 padding-custom pt-4">
-                                            <div class="form-group">
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-4 bg-light ">
+                                    <div class="row ">
+                                        <div class="col-12 padding-custom pt-4 ">
+                                            <div class="form-group ">
                                                 <label><strong>Department Name</strong></label>
-                                                <input type="text" class="form-control" placeholder="Enter Department name">
+                                                <input type="text " class="form-control " placeholder="Enter Department name ">
                                             </div>
 
-                                            <div class="form-group mb-5">
+                                            <div class="form-group mb-5 ">
                                                 <label><strong>Department Head</strong></label>
-                                                <input type="text" class="form-control" placeholder="Enter head'sEmp Num.">
+                                                <input type="text " class="form-control " placeholder="Enter head 'sEmp Num.">
                                                 <small>Enter department's head Employee Number</small>
                                             </div>
 
