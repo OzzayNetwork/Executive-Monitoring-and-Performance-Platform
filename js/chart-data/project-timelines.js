@@ -43,17 +43,17 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2007, 11, 1),
             end: Date.UTC(2018, 1, 2),
             completed: 0.95,
-            name: 'Konza City'
+            name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA'
         }, {
             start: Date.UTC(2008, 1, 2),
             end: Date.UTC(2012, 11, 5),
             completed: 0.5,
-            name: 'The LAPSSET Corridor Program'
+            name: 'LUWEERO FRUIT PROCESSING PROJECT'
         }, {
             start: Date.UTC(2018, 11, 8),
             end: Date.UTC(2021, 11, 9),
             completed: 0.15,
-            name: 'Kenya Standard Gauge Railway'
+            name: 'Maize Milling Project'
         }, {
             start: Date.UTC(2011, 11, 9),
             end: Date.UTC(2018, 11, 19),
@@ -61,27 +61,27 @@ Highcharts.ganttChart('project-timelines', {
                 amount: 0.3,
                 fill: '#fa0'
             },
-            name: 'Nairobi Mombasa Highway expansion project (Kenya)'
+            name: 'Multi Fruit Juice Factory'
         }, {
             start: Date.UTC(2009, 11, 10),
             end: Date.UTC(2013, 11, 23),
             completed: 0.53,
-            name: 'Mombasa port expansion '
+            name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA  '
         }, {
             start: Date.UTC(2008, 11, 25, 8),
             end: Date.UTC(2015, 11, 25, 16),
             completed: 0.73,
-            name: 'Pinnacle Towers'
+            name: 'PEARL RICE LIMITED'
         }, {
             start: Date.UTC(2007, 1, 2, 8),
             end: Date.UTC(2015, 11, 25, 16),
             completed: 0.73,
-            name: 'Malindi–Bagamoyo Highway'
+            name: 'Dairy Value Chain Enhancement for Increased Market Access'
         }, {
             start: Date.UTC(2017, 1, 2, 8),
             end: Date.UTC(2021, 11, 25, 16),
             completed: 0.32,
-            name: 'Tatu city'
+            name: 'Youth Empowerment through Dairy Value Addition'
         }]
     }]
 });
