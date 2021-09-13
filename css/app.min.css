@@ -2897,22 +2897,21 @@ fieldset:disabled a.btn {
 
 .btn-success {
     color: #FFF;
-    background-color: #F57819;
-    border-color: #F57819;
-    width: 100%;
+    background-color: #008b00;
+    border-color: #008b00;
 }
 
 .btn-success:hover {
     color: #FFF;
-    background-color: #F57819;
-    border-color: #F57819;
+    background-color: #41c300;
+    border-color: #41c300;
 }
 
 .btn-success.disabled,
 .btn-success:disabled {
-    color: #FFF;
-    background-color: #F57819;
-    border-color: #F57819;
+    color: #75e900;
+    background-color: #c6f68d;
+    border-color: #c6f68d;
 }
 
 .btn-success:not(:disabled):not(.disabled).active,
@@ -18712,7 +18711,7 @@ th label .error {
 }
 .progressbar li {
     float: left;
-    width: 25%;
+    width: 20%;
     position: relative;
     text-align: center;
     list-style: none;
@@ -18791,13 +18790,15 @@ th label .error {
     color: white
 }
 .progresss-container {
-    background: #f3f3f3;
+    /* background: #f3f3f3; */
+    
     padding-top: 1rem;
     padding-bottom: 1rem;
     /* color: black; */
     
     padding-top: 1rem;
-    padding: 2rem;
+    /* padding: 2rem; */
+    
     overflow: hidden;
     padding-top: 3rem;
 }
@@ -18834,8 +18835,8 @@ th label .error {
 .progress-date {
     position: absolute;
     text-align: center;
-    top: 15px;
-    width: 22%;
+    top: 55px;
+    width: 19%;
     font-weight: bold;
     color: green;
 }
@@ -20166,7 +20167,7 @@ tbody td a.btn {
 }
 .login-body {
     background-color: #FAFAFA;
-    background-image: url(/demo/img/Login.png);
+    background-image: url("/demo/img/Login.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
