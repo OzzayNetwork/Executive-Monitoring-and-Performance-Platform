@@ -22,7 +22,7 @@ $(function() {
             min: 0,
 
             title: {
-                text: 'Money In KES',
+                text: 'Money In $',
                 style: {
                     color: '#12263f'
                 }
@@ -111,13 +111,13 @@ $(function() {
         tooltip: {
             headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
             //		useHTML: true,
-            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
+            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">$ {point.y}</b><br/>',
             formatter: function() {
 
                 var point = this.point,
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
                 if (point.drilldown) {
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
                     s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
                 }
                 return s;
@@ -133,32 +133,32 @@ $(function() {
             color: '#97A0BD', //Blue
             data: [{
 
-                    name: 'Konza city',
-                    y: 5000000000,
+                    name: 'LUWEERO FRUIT PROCESSING PROJECT ',
+                    y: 41323000,
 
                 }, {
-                    name: 'The LAPSSET Corridor Program ',
-                    y: 2000000000,
+                    name: 'NATIONAL FRUIT DEVELOPMENT PROJECT IN UGANDA ',
+                    y: 62670500,
                 }, {
-                    name: 'Kenya Standard Gauge Railway ',
-                    y: 4000000000,
-                }, {
-
-                    name: 'Nairobi Mombasa Highway  expansion project(Kenya)',
-                    y: 5000000000,
-                }, {
-                    name: 'Mombasa port expansion ',
-                    y: 2000000000,
-                }, {
-                    name: 'Pinnacle Towers',
-                    y: 4000000000,
+                    name: 'Multi Fruit Juice Factory',
+                    y: 2369120,
                 }, {
 
-                    name: 'Malindi–Bagamoyo  Highway ',
-                    y: 5000000000,
+                    name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA ',
+                    y: 23000250,
                 }, {
-                    name: 'Tatu city',
-                    y: 2000000000,
+                    name: 'PEARL RICE LIMITED',
+                    y: 1200353,
+                }, {
+                    name: 'Dairy Value Chain Enhancement for Increased Market Access ',
+                    y: 17459312,
+                }, {
+
+                    name: 'Youth Empowerment through Dairy Value Addition ',
+                    y: 900263,
+                }, {
+                    name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA ',
+                    y: 555263,
                 }]
                 //end of the remaining money
         }, {
@@ -167,32 +167,32 @@ $(function() {
             color: '#181F48', // Orange
             data: [{
 
-                    name: 'Konza city',
-                    y: 1222333651,
+                    name: 'LUWEERO FRUIT PROCESSING PROJECT ',
+                    y: 7413000,
 
                 }, {
-                    name: 'The LAPSSET Corridor Program ',
-                    y: 1112225480,
+                    name: 'NATIONAL FRUIT DEVELOPMENT PROJECT IN UGANDA ',
+                    y: 12000000,
                 }, {
-                    name: 'Kenya Standard Gauge Railway ',
-                    y: 2145203000,
-                }, {
-
-                    name: 'Nairobi Mombasa Highway  expansion project(Kenya)',
-                    y: 3222555000,
-                }, {
-                    name: 'Mombasa port expansion ',
-                    y: 999999125,
-                }, {
-                    name: 'Pinnacle Towers',
-                    y: 1256236955,
+                    name: 'Multi Fruit Juice Factory',
+                    y: 3400000,
                 }, {
 
-                    name: 'Malindi–Bagamoyo  Highway ',
-                    y: 3255200000,
+                    name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA ',
+                    y: 57330000,
                 }, {
-                    name: 'Tatu city',
-                    y: 1526203000,
+                    name: 'PEARL RICE LIMITED',
+                    y: 1500000,
+                }, {
+                    name: 'Dairy Value Chain Enhancement for Increased Market Access ',
+                    y: 2900000,
+                }, {
+
+                    name: 'Youth Empowerment through Dairy Value Addition ',
+                    y: 1900000,
+                }, {
+                    name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA ',
+                    y: 916667,
                 }]
                 //end of amount spent
         }],
@@ -444,7 +444,7 @@ $(function() {
             min: 0,
 
             title: {
-                text: 'Money In KES',
+                text: 'Money In $',
                 style: {
                     color: '#12263f'
                 }
@@ -533,13 +533,13 @@ $(function() {
         tooltip: {
             headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
             //		useHTML: true,
-            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
+            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">$ {point.y}</b><br/>',
             formatter: function() {
 
                 var point = this.point,
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
                 if (point.drilldown) {
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
                     s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
                 }
                 return s;
@@ -853,7 +853,7 @@ $(function() {
             min: 0,
 
             title: {
-                text: 'Money In KES',
+                text: 'Money In $',
                 style: {
                     color: '#12263f'
                 }
@@ -942,13 +942,13 @@ $(function() {
         tooltip: {
             headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
             //		useHTML: true,
-            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
+            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">$ {point.y}</b><br/>',
             formatter: function() {
 
                 var point = this.point,
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
                 if (point.drilldown) {
-                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> $ ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
                     s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
                 }
                 return s;
