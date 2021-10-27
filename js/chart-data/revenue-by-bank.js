@@ -103,6 +103,13 @@ $(function() {
                 pointWidth: 15,
                 borderWidth: 0,
                 borderColor: 'black',
+                point: {
+                    events: {
+                        click: function() {
+                            location.href = 'kampala-projects.html'
+                        }
+                    }
+                }
 
 
             },
