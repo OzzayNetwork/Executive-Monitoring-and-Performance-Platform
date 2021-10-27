@@ -133,32 +133,39 @@ $(function() {
             color: '#97A0BD', //Blue
             data: [{
 
-                    name: 'LUWEERO FRUIT PROCESSING PROJECT ',
-                    y: 41323000,
+                    name: 'Kampala',
+                    y: 4133000,
 
                 }, {
-                    name: 'NATIONAL FRUIT DEVELOPMENT PROJECT IN UGANDA ',
-                    y: 62670500,
+                    name: 'Wakiso',
+                    y: 2670500,
                 }, {
-                    name: 'Multi Fruit Juice Factory',
+                    name: 'Kibaale',
                     y: 2369120,
                 }, {
 
-                    name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA ',
-                    y: 23000250,
+                    name: 'Dokolo',
+                    y: 200250,
                 }, {
-                    name: 'PEARL RICE LIMITED',
+                    name: 'Gulu',
                     y: 1200353,
                 }, {
-                    name: 'Dairy Value Chain Enhancement for Increased Market Access ',
-                    y: 17459312,
+                    name: 'Yumbe',
+                    y: 1459312,
                 }, {
 
-                    name: 'Youth Empowerment through Dairy Value Addition ',
+                    name: 'Mbarara',
                     y: 900263,
                 }, {
-                    name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA ',
+                    name: 'Kyenjonjo',
                     y: 555263,
+                }, {
+
+                    name: 'Kamuli',
+                    y: 356263,
+                }, {
+                    name: 'Kasese',
+                    y: 299263,
                 }]
                 //end of the remaining money
         }, {
@@ -167,32 +174,39 @@ $(function() {
             color: '#181F48', // Orange
             data: [{
 
-                    name: 'LUWEERO FRUIT PROCESSING PROJECT ',
-                    y: 7413000,
+                    name: 'Kampala',
+                    y: 413000,
 
                 }, {
-                    name: 'NATIONAL FRUIT DEVELOPMENT PROJECT IN UGANDA ',
-                    y: 12000000,
+                    name: 'Wakiso',
+                    y: 1000000,
                 }, {
-                    name: 'Multi Fruit Juice Factory',
+                    name: 'Kibaale',
                     y: 3400000,
                 }, {
 
-                    name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA ',
-                    y: 57330000,
+                    name: 'Dokolo',
+                    y: 5330000,
                 }, {
-                    name: 'PEARL RICE LIMITED',
+                    name: 'Gulu',
                     y: 1500000,
                 }, {
-                    name: 'Dairy Value Chain Enhancement for Increased Market Access ',
-                    y: 2900000,
+                    name: 'Yumbe',
+                    y: 900000,
                 }, {
 
-                    name: 'Youth Empowerment through Dairy Value Addition ',
+                    name: 'Mbarara',
                     y: 1900000,
                 }, {
-                    name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA ',
+                    name: 'Kyenjonjo',
                     y: 916667,
+                }, {
+
+                    name: 'Kamuli',
+                    y: 326263,
+                }, {
+                    name: 'Kasese',
+                    y: 399263,
                 }]
                 //end of amount spent
         }],

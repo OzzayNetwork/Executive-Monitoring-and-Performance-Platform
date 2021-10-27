@@ -158,7 +158,7 @@
                 </div>
             </header>
 
-            <div class="row mb-4">
+            <div class="row mb-4 d">
                 <div class="col-sm-12 col-lg-9">
                     <h2>Overview</h2>
                 </div>
@@ -308,52 +308,303 @@
 
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="d-flex justify-content-between">
-                                <h4 class="card-header-title">
-                                    Project timelines Gant chart
-                                </h4>
-
-                                <div class="selectpicker" search="true">
-                                    <select title="select a ministry" class="form-control selectpicker" data-live-search="true">
-                                        <option selected>All Ministries</option>
-                                        <option>Ministry for Agriculture, Animal Industry and Fisheries</option>
-                                        <option>Ministry of Information and Communications Technology</option>
-                                        <option>Ministry of Defence and Veterans Affairs</option>
-                                        <option>Ministry of Disaster Preparedness and Refugees</option>
-                                        <option>Ministry of Education and Sports</option>
-                                        <option>Ministry of Energy and Mineral Development</option>
-                                        <option>Ministry of Finance, Planning and Economic Development</option>
-                                        <option>Ministry for Foreign Affairs</option>
-                                        <option>Ministry of Gender, Labour and Social Development</option>
-                                        <option>Minister in Charge of General Duties in the Office of the Prime Minister</option>
-                                        <option>Ministry of Health</option>
-                                        <option>Ministry of Internal Affairs</option>
-                                        <option>Ministry of Justice and Constitutional Affairs</option>
-                                        <option>Ministry of Lands, Housing and Urban Development</option>
-                                        <option>Ministry of Local Government</option>
-                                        <option>Ministry of the Presidency</option>
-                                        <option>Ministry of Public Service</option>
-                                        <option>Ministry of Internal Security</option>
-                                        <option>Ministry of Trade, Industry and Cooperatives</option>
-                                        <option>Ministry of Water and Environment</option>
-                                        <option>Ministry of Works and Transport</option>
-                                        <option>Minister of Science, Technology and Innovation</option>
-                                        <option>Ministry for Karamoja Affairs</option>
-                                        <option>Ministry of Tourism, Wildlife and Antiquities</option>
-                                        <option>Minister for Kampala Capital City Authority</option>
-                                    </select>
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card light-card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-info-light text-white rounded-circle">
+                                    <span class="text-info"><i class="flaticon flaticon-ruler"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">No. Of projects <strong class="today-full d-none">Sep 9th 21</strong></span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">8 Projects</h4>
                                 </div>
                             </div>
                         </div>
+                    </a>
+                </div>
 
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
                         <div class="card-body">
-                            <div id="project-timelines"></div>
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg text-white rounded-circle bg-success-light text-uppercase">
+                                    <span class="text-success"><i class="flaticon flaticon-money-bag"></i></span> </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Value of all projects</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">$ 43,520,950</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-purple-light text-white rounded-circle">
+                                    <span class="text-purple"><i class="flaticon flaticon-dollar"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Cash used</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">$ 16,484,493</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="card calc-34">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-in-bg bg-danger-light  text-white rounded-circle">
+                                    <span class="text-danger"><i class="flaticon flaticon-time-left"></i></span>
+                                </div>
+                                <div class="ml-4">
+                                    <span class="font-12">Due projects</span>
+                                    <h4 class="mt-1 mb-0 font-weight-medium">69 Projects</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card table-custom-bg animated fade-in">
+                        <div class="card-header" style="background: white; padding: 2rem 1rem 0rem 2rem;">
+                            <div class="row d-flex justify-content-center flex-row clearfix mb-4">
+                                <div class="col-8">
+                                    <h4>Projects overview across all districts</h4>
+                                </div>
+                                <div class="col-4">
+                                    <div>
+                                        <div class="form-group mb-0 pb-0 d-flex justify-content-end">
+                                            <select title="select a ministry" class="form-control selectpicker w-auto" data-live-search="true">
+                                                <option selected>All Ministries</option>
+                                                <option>Ministry for Agriculture, Animal Industry and Fisheries</option>
+                                                <option>Ministry of Information and Communications Technology</option>
+                                                <option>Ministry of Defence and Veterans Affairs</option>
+                                                <option>Ministry of Disaster Preparedness and Refugees</option>
+                                                <option>Ministry of Education and Sports</option>
+                                                <option>Ministry of Energy and Mineral Development</option>
+                                                <option>Ministry of Finance, Planning and Economic Development</option>
+                                                <option>Ministry for Foreign Affairs</option>
+                                                <option>Ministry of Gender, Labour and Social Development</option>
+                                                <option>Minister in Charge of General Duties in the Office of the Prime Minister</option>
+                                                <option>Ministry of Health</option>
+                                                <option>Ministry of Internal Affairs</option>
+                                                <option>Ministry of Justice and Constitutional Affairs</option>
+                                                <option>Ministry of Lands, Housing and Urban Development</option>
+                                                <option>Ministry of Local Government</option>
+                                                <option>Ministry of the Presidency</option>
+                                                <option>Ministry of Public Service</option>
+                                                <option>Ministry of Internal Security</option>
+                                                <option>Ministry of Trade, Industry and Cooperatives</option>
+                                                <option>Ministry of Water and Environment</option>
+                                                <option>Ministry of Works and Transport</option>
+                                                <option>Minister of Science, Technology and Innovation</option>
+                                                <option>Ministry for Karamoja Affairs</option>
+                                                <option>Ministry of Tourism, Wildlife and Antiquities</option>
+                                                <option>Minister for Kampala Capital City Authority</option>
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-custom spacing8" id="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>District</th>
+                                            <th>No. Of projects</th>
+                                            <th>Ongoing projects</th>
+                                            <th>Completed Projects</th>
+                                            <th>Due projects</th>
+                                            <th class="text-right">Money used</th>
+                                            <th class="text-right">Project's value</th>
+                                            <th class="text-right">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Kampala</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 413,000</td>
+                                            <td class="text-right">$ 1,876,500</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Wakiso</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">62</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">37</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">12</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">3</span></td>
+                                            <td class="text-right">$ 1,000,000</td>
+                                            <td class="text-right">$ 2,654,236</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Kibaale</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">12</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">3</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">5</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">3</span></td>
+                                            <td class="text-right">$ 3,400,000</td>
+                                            <td class="text-right">$ 4,856,667</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Dokolo</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">21</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">11</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">8</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 5,330,000</td>
+                                            <td class="text-right">$ 6,230,000</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Gulu</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 1,500,000</td>
+                                            <td class="text-right">$ 3,250,300</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Yumbe</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 900,000</td>
+                                            <td class="text-right">$ 20,235,652</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Mbarara</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 1,900,000</td>
+                                            <td class="text-right">$ 3,256,230</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>Kyenjonjo</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 916,667</td>
+                                            <td class="text-right">$ 1,526,360</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Kamuli</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 326,263</td>
+                                            <td class="text-right">$ 900,000</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Kasese</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 399,263</td>
+                                            <td class="text-right">$ 500,235</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>Buibwe</td>
+                                            <td><span class="badge badge-pill badge-soft-dark">33</span></td>
+                                            <td> <span class="badge badge-pill badge-soft-info">33</span></td>
+                                            <td><span class="badge badge-pill badge-soft-success">7</span></td>
+                                            <td><span class="badge badge-pill badge-soft-danger">7</span></td>
+                                            <td class="text-right">$ 399,300</td>
+                                            <td class="text-right">$ 1,500,000</td>
+                                            <td>
+                                                <a class="btn btn-info btn-sm btn--icon-text text-white" href="kampala-projects.html"><i class="zmdi zmdi-eye"></i>More details</a>
+                                            </td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -477,7 +728,7 @@
     <script src="js/chart-data/active-branches.js"></script>
     <script src="js/chart-data/members-activity.js"></script>
     <script src="js/chart-data/project-phases.js"></script>
-    <script src="js/chart-data/detailed-project-timeline.js"></script>
+    <script src="js/chart-data/project-timelines.js"></script>
 
 
     <!--map scripts-->
