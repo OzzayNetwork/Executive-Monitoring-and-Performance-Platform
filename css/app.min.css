@@ -13620,7 +13620,7 @@ textarea {
 }
 
 .page-loader__spinner img {
-    height: 100px;
+    height: 130px;
 }
 
 .page-loader__spinner svg {
@@ -18019,8 +18019,10 @@ a.badge-white:focus {
 }
 
 .powerd-container img {
-    height: 40px;
+    height: 140px;
     flex-flow: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .listview__content strong {
