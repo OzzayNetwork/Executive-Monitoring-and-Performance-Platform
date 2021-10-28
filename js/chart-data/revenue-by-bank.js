@@ -164,14 +164,14 @@ $(function() {
                     name: 'Mbarara',
                     y: 900263,
                 }, {
-                    name: 'Kyenjonjo',
+                    name: 'Jinja',
                     y: 555263,
                 }, {
 
-                    name: 'Kamuli',
+                    name: 'Koboko',
                     y: 356263,
                 }, {
-                    name: 'Kasese',
+                    name: 'Kabale',
                     y: 299263,
                 }]
                 //end of the remaining money
@@ -205,14 +205,14 @@ $(function() {
                     name: 'Mbarara',
                     y: 1900000,
                 }, {
-                    name: 'Kyenjonjo',
+                    name: 'Jinja',
                     y: 916667,
                 }, {
 
-                    name: 'Kamuli',
+                    name: 'Koboko',
                     y: 326263,
                 }, {
-                    name: 'Kasese',
+                    name: 'Kabale',
                     y: 399263,
                 }]
                 //end of amount spent
