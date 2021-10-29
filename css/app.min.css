@@ -13623,6 +13623,14 @@ textarea {
     height: 130px;
 }
 
+.text-12 {
+    font-size: 12px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
 .page-loader__spinner svg {
     -webkit-animation: rotate 2s linear infinite;
     animation: rotate 2s linear infinite;
@@ -13635,12 +13643,21 @@ textarea {
     left: 0
 }
 
+.progressbar li {
+    margin-bottom: 3rem !important;
+}
+
 .page-loader__spinner svg circle {
     stroke-dasharray: 1, 200;
     stroke-dashoffset: 0;
     -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
     animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
     stroke-linecap: round
+}
+
+.progress-container {
+    padding-bottom: 6rem;
+    padding-top: 2rem;
 }
 
 .login__block,
