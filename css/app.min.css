@@ -20353,3 +20353,6 @@ ul.timeline>li:before {
     border: 1px solid white !important;
     /* background: red !important; */
 }
+ul.timeline a {
+    cursor: default;
+}
