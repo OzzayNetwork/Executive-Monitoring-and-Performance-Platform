@@ -20188,7 +20188,7 @@ tbody td a.btn {
 }
 .login-body {
     background-color: #FAFAFA;
-    background-image: url(/demo/img/Login.png);
+    background-image: url(../demo/img/Login.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
