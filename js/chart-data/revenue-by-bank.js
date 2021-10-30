@@ -137,7 +137,7 @@ $(function() {
         series: [{
             //national bank collections by the months
             name: 'Amount remaining',
-            color: '#97A0BD', //Blue
+            color: '#f4b41a', //Blue
             data: [{
 
                     name: 'Kampala',
