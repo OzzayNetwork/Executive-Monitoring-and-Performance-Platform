@@ -600,8 +600,8 @@ $('.payment-method-container .cash-option').on('click', function() {
 
 //=====================================================================================
 //******************membership form ******************************/
-//=====================================================================================
-$('.membership-form').validate();
+// //=====================================================================================
+// $('.membership-form').validate();
 
 //preventing enter key from submitting membership form
 $('.membership-form input').keydown(function(e) {
@@ -1552,17 +1552,17 @@ if (diff == 0) {
 
 
 // Slick
-$(function() {
-    $('.statistics').slick({
-        autoplay: true,
-        dots: true,
-        arrows: true,
-        prevArrow: $('.card-prev'),
-        nextArrow: $('.card-next '),
-        centerMode: false,
-        pauseOnFocus: true,
-    });
-});
+// $(function() {
+//     $('.statistics').slick({
+//         autoplay: true,
+//         dots: true,
+//         arrows: true,
+//         prevArrow: $('.card-prev'),
+//         nextArrow: $('.card-next '),
+//         centerMode: false,
+//         pauseOnFocus: true,
+//     });
+// });
 
 
 
