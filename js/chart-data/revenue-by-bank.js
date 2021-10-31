@@ -103,10 +103,11 @@ $(function() {
                 pointWidth: 15,
                 borderWidth: 0,
                 borderColor: 'black',
+                cursor: 'pointer',
                 point: {
                     events: {
                         click: function() {
-                            location.href = 'kampala-projects.html'
+                            location.href = this.options.url;
                         }
                     }
                 }
@@ -142,37 +143,46 @@ $(function() {
 
                     name: 'Kampala',
                     y: 4133000,
-
+                    url: 'kampala-projects.html',
                 }, {
                     name: 'Wakiso',
                     y: 2670500,
+                    url: '#',
                 }, {
                     name: 'Kibaale',
                     y: 2369120,
+                    url: '#',
                 }, {
 
                     name: 'Dokolo',
                     y: 200250,
+                    url: '#',
                 }, {
                     name: 'Gulu',
                     y: 1200353,
+                    url: 'gulu-projects.html',
                 }, {
                     name: 'Yumbe',
                     y: 1459312,
+                    url: '#',
                 }, {
 
                     name: 'Mbarara',
                     y: 900263,
+                    url: '#',
                 }, {
                     name: 'Jinja',
                     y: 555263,
+                    url: 'jinja-projects.html',
                 }, {
 
                     name: 'Koboko',
                     y: 356263,
+                    url: 'koboko-projects.html',
                 }, {
                     name: 'Kabale',
                     y: 299263,
+                    url: '#',
                 }]
                 //end of the remaining money
         }, {
@@ -183,37 +193,47 @@ $(function() {
 
                     name: 'Kampala',
                     y: 413000,
+                    url: 'kampala-projects.html',
 
                 }, {
                     name: 'Wakiso',
                     y: 1000000,
+                    url: '#',
                 }, {
                     name: 'Kibaale',
                     y: 3400000,
+                    url: '#',
                 }, {
 
                     name: 'Dokolo',
                     y: 5330000,
+                    url: '#',
                 }, {
                     name: 'Gulu',
                     y: 1500000,
+                    url: 'gulu-projects.html',
                 }, {
                     name: 'Yumbe',
                     y: 900000,
+                    url: '#',
                 }, {
 
                     name: 'Mbarara',
                     y: 1900000,
+                    url: '#',
                 }, {
                     name: 'Jinja',
                     y: 916667,
+                    url: 'jinja-projects.html',
                 }, {
 
                     name: 'Koboko',
                     y: 326263,
+                    url: 'koboko-projects.html',
                 }, {
                     name: 'Kabale',
                     y: 399263,
+                    url: '#',
                 }]
                 //end of amount spent
         }],
