@@ -1569,7 +1569,11 @@ $('.deactivate-user').on('click', function() {
     var theProjectTitle = $(this).parent().siblings('td').eq(0).text();
     // alert(theProjectTitle);
     $('#milestone-modal .the-title').text(theProjectTitle);
-})
+});
+
+// $('.justify-content-between #dropdownMenuButton').on('click', function() {
+//     alert("clciked");
+// })
 
 
 
