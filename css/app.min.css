@@ -20356,3 +20356,6 @@ ul.timeline>li:before {
 ul.timeline a {
     cursor: default;
 }
+.progress {
+    height: 12px;
+}
