@@ -184,26 +184,36 @@
                         </div>
                         <div class="modal-body">
                             <h4 class="modal-title text-capitalize mb-3" id="exampleModalLongTitle">
-                                Add project milestone
+                                Give your project's feedback
                             </h4>
 
 
                             <form class="row">
                                 <div class="col-12">
                                     <div class="form-group p-3 m-0">
-                                        <label><strong>Milestone title</strong></label>
-                                        <input class="form-control" placeholder="Enter Milestone title">
+                                        <label><strong>General Project's Overview</strong></label>
+                                        <select class="form-select form-control" aria-label="Select your general overview">
+                                            <option selected>Satisfactory</option>
+                                            <option value="1">Good</option>
+                                            <option value="2">Excellent</option>
+                                            <option value="3">Outstanding</option>
+                                            <option value="3">Disappointing</option>
+                                            <option value="3">Poor</option>
+                                          </select>
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="form-group p-3 m-0">
                                         <label><strong>Milestone date</strong></label>
-                                        <input class="form-control date-picker" placeholder="Enter Milestone title">
+                                        <input class="form-control date-picker d-none" placeholder="Enter Milestone title">
+                                        <textarea placeholder="Enter a detailed observation" class="form-control">
+
+                                        </textarea>
                                     </div>
                                 </div>
 
-                                <div class="col-12">
+                                <div class="col-12 d-none">
                                     <div class="form-group p-3 m-0">
                                         <label><strong>Amount spent</strong></label>
                                         <input class="form-control " placeholder="Enter amount">
@@ -385,18 +395,63 @@
 
                                             </ul>
 
-                                            <div class="upload-doc-btn mt-3 pl-4">
-                                                <button class="btn btn-primary btn--icon " data-toggle="modal" data-target="#milestone-modal"><i class="zmdi zmdi-plus"></i></button>
-                                                <span><a href="#" data-toggle="modal" data-target="#milestone-modal">Add a milestone</a></span>
+                                            <div class="upload-doc-btn mt-3 pl-4 pt-5 mt-5 pb-3">
+                                                <button class="btn btn-primary btn--icon btn-bg" data-toggle="modal" data-target="#milestone-modal"><i class="zmdi zmdi-comment-more"></i></button>
+                                                <span><a href="#" data-toggle="modal" data-target="#milestone-modal">Give your feedback</a></span>
                                             </div>
 
 
                                         </div>
                                     </div>
+
+                                    <hr>
+                                    <h4>Project manager details</h4>
+                                    <p>
+                                        Establishment of a maize drying Machine
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <strong>Name</strong>
+                                            <p>
+                                                Mr Alex wanjala
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-md-4 col-sm-12">
+                                            <strong>Email address</strong>
+                                            <p>
+                                                <a href="mailto:alexwanjala@mail.com">alexwanjala@email.com</a>
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="col-md-4 col-sm-12">
+                                            <strong>Phone Number</strong>
+                                            <p>
+                                                <a href="tell:255178595693">255178595693</a>
+                                            </p>
+
+                                        </div>
+
+
+                                    </div>
+
                                 </div>
 
                                 <div class="col-sm-12 col-md-4">
-                                    <div class="bg-gray-lighter p-4">
+                                    <div class="bg-gray-lighter p-4 mb-4">
+                                        <div class="row">
+                                            <div class="col-12 widget-pie__item bg-success mb-5">
+
+                                                <div class="easy-pie-chart" data-percent="58" data-size="140" data-track-color="rgba(0,0,0,0.08)" data-bar-color="#fff">
+                                                    <span class="easy-pie-chart__value">58</span>
+                                                </div>
+                                                <div class="widget-pie__title">Project's Completion Percentage (%)</div>
+                                            </div>
+
+                                        </div>
                                         <strong>Ministry</strong>
                                         <p>
                                             Ministry of Trade, Industry and Cooperatives
@@ -418,9 +473,13 @@
                                         </p>
 
                                         <strong>Amount spent</strong>
-                                        <p>
+                                        <p class="mb-0 pb-0 pt-3 mb-2">
                                             $ 2,664,120 (35.93%)
                                         </p>
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 35.5%" aria-valuenow="35.5" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+
 
 
                                         <strong>Supporting Documents</strong>
