@@ -16,7 +16,8 @@ Highcharts.ganttChart('project-timelines', {
         events: {
             load: function() {
                 Highcharts.each(this.series[0].points, function(p) {
-                    p.color = '#c0c5d8'
+                    p.color = "#c5cde0"
+
                 });
             }
         }
