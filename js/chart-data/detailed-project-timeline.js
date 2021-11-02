@@ -43,7 +43,7 @@ Highcharts.ganttChart('project-timelines', {
                 start: Date.UTC(2007, 11, 1),
                 end: Date.UTC(2018, 1, 2),
                 completed: 0.95,
-                name: 'ESTABLISHING INSTANT COFFEE PLANT IN UGANDA',
+                name: 'Establishing instant coffee plant in Uganda',
                 id: 'project1'
             },
             {
@@ -98,7 +98,7 @@ Highcharts.ganttChart('project-timelines', {
                 start: Date.UTC(2008, 1, 2),
                 end: Date.UTC(2012, 11, 5),
                 completed: 0.5,
-                name: 'LUWEERO FRUIT PROCESSING PROJECT'
+                name: 'Luweero Fruit Processing Project'
             }, {
                 start: Date.UTC(2018, 11, 8),
                 end: Date.UTC(2021, 11, 9),
@@ -116,12 +116,12 @@ Highcharts.ganttChart('project-timelines', {
                 start: Date.UTC(2009, 11, 10),
                 end: Date.UTC(2013, 11, 23),
                 completed: 0.53,
-                name: 'SETTING UP A MODERN SLAUGHTERHOUSE IN UGANDA  '
+                name: 'Setting Up A Modern Slaughterhouse In Uganda  '
             }, {
                 start: Date.UTC(2008, 11, 25, 8),
                 end: Date.UTC(2015, 11, 25, 16),
                 completed: 0.73,
-                name: 'PEARL RICE LIMITED'
+                name: 'Pearl Rice Limited'
             }, {
                 start: Date.UTC(2007, 1, 2, 8),
                 end: Date.UTC(2015, 11, 25, 16),
