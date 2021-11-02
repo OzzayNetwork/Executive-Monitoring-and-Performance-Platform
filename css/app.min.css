@@ -18158,7 +18158,7 @@ header .section-header {
 }
 
 .table.table-custom td:last-child button {
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .table-custom-bg {
