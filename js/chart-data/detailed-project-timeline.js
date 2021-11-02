@@ -11,6 +11,10 @@ Highcharts.ganttChart('project-timelines', {
         backgroundColor: 'transparent'
     },
 
+
+
+
+
     navigator: {
         enabled: true,
         liveRedraw: true,
@@ -135,4 +139,13 @@ Highcharts.ganttChart('project-timelines', {
             }
         ]
     }]
+});
+}, {
+    start: Date.UTC(2017, 1, 2, 8),
+    end: Date.UTC(2021, 11, 25, 16),
+    completed: 0.32,
+    name: 'Youth Empowerment through Dairy Value Addition'
+}
+]
+}]
 });
