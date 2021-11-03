@@ -40,7 +40,7 @@ Highcharts.chart('project-phase', {
             // innerSize: '100%',
             allowPointSelect: true,
             cursor: 'pointer',
-            // colors: pieColors,
+            colors: pieColors,
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b><br>{point.percentage:.1f} %',
@@ -51,7 +51,7 @@ Highcharts.chart('project-phase', {
                     value: 4
                 }
             },
-            showInLegend: true,
+            // showInLegend: true,
             // showInLegend: true
         }
     },
@@ -91,15 +91,15 @@ Highcharts.chart('project-phase', {
                 }
             }
         },
-        dataLabels: {
-            distance: 3,
-            format: '{point.name}<br>{point.percentage:.1f} %',
-            // connectorWidth: 0,
-            style: {
-                width: '40px',
-                fontSize: '1em'
-            }
-        }
+        // dataLabels: {
+        //     distance: 3,
+        //     format: '{point.name}<br>{point.percentage:.1f} %',
+        //     // connectorWidth: 0,
+        //     style: {
+        //         width: '40px',
+        //         fontSize: '1em'
+        //     }
+        // }
     }],
 
 

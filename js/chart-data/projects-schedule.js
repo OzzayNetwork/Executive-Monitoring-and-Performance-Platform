@@ -9,7 +9,12 @@ Highcharts.chart('project-status', {
         text: 'Projects Schedule <br>Statuses',
         align: 'center',
         verticalAlign: 'middle',
-        y: 70
+        y: 70,
+        style: {
+            width: '40px',
+            fontSize: '1em',
+            color: 'black'
+        }
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -41,7 +46,7 @@ Highcharts.chart('project-status', {
                     color: 'white'
                 }
             },
-            showInLegend: true,
+            // showInLegend: true,
 
             series: {
                 dataLabels: {
@@ -64,7 +69,7 @@ Highcharts.chart('project-status', {
             {
                 name: 'Projects On Schedule',
                 y: 14,
-                color: '#03824d',
+                color: '#19244b',
                 dataLabels: {
                     enabled: true
                 },
@@ -74,7 +79,7 @@ Highcharts.chart('project-status', {
                 name: 'Projects Behind Schedule',
                 y: 6,
                 fill: '#ff0c39',
-                color: '#ff0c39',
+                color: '#9099b0',
                 dataLabels: {
                     enabled: true
                 },
@@ -97,7 +102,7 @@ Highcharts.chart('project-status', {
             connectorWidth: 0,
             style: {
                 width: '40px',
-                fontSize: '1em',
+                fontSize: '0.8em',
                 color: 'black'
             }
         },
