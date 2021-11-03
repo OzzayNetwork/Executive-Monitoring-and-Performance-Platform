@@ -57,7 +57,7 @@ Highcharts.chart('project-status', {
             startAngle: -90,
             endAngle: 90,
             center: ['50%', '75%'],
-            size: '80%'
+            size: '90%'
         }
     },
     series: [{
