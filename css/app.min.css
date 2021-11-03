@@ -20359,3 +20359,17 @@ ul.timeline a {
 .progress {
     height: 12px;
 }
+.the-headliner {
+    background: black;
+    width: 100%;
+    top: 72 px;
+    left: 0 px;
+    right: 0 px;
+    position: absolute;
+    display: flex;
+}
+.the-headliner .highlight-container {
+    padding: 2px;
+    background: red;
+    color: white;
+}

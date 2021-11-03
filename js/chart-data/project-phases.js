@@ -18,7 +18,8 @@ Highcharts.chart('project-phase', {
         plotBackgroundColor: null,
         plotBorderWidth: null,
         plotShadow: false,
-        type: 'pie'
+        type: 'pie',
+        backgroundColor: 'transparent'
     },
     title: {
         text: null
@@ -46,7 +47,8 @@ Highcharts.chart('project-phase', {
                     operator: '>',
                     value: 4
                 }
-            }
+            },
+            // showInLegend: true
         }
     },
     series: [{
