@@ -53,12 +53,39 @@ Highcharts.chart('project-phase', {
     },
     series: [{
         name: 'Project Phase',
-        data: [
-            { name: 'Planning', y: 60 },
-            { name: 'Design', y: 9 },
-            { name: 'Development/Implementation', y: 13 },
-            { name: 'Testing/Handover', y: 7 },
-            { name: 'Monitoring', y: 11 }
-        ]
+        data: [{
+                name: 'Planning',
+                y: 60,
+                url: 'planning-phase.html',
+            },
+            {
+                name: 'Design',
+                y: 9,
+                url: 'design-phase.html',
+            },
+            {
+                name: 'Development/Implementation',
+                y: 13,
+                url: 'development-phase.html',
+            },
+            {
+                name: 'Testing/Handover',
+                y: 7,
+                url: 'testing-phase.html',
+            },
+            {
+                name: 'Monitoring',
+                y: 11,
+                url: 'monitoring-phase.html',
+            }
+        ],
+        cursor: 'pointer',
+        point: {
+            events: {
+                click: function() {
+                    location.href = this.options.url;
+                }
+            }
+        },
     }]
 });
