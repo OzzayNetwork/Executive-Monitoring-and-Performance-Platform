@@ -92,9 +92,9 @@ Highcharts.chart('project-phase', {
             }
         },
         dataLabels: {
-            distance: 5,
+            distance: 3,
             format: '{point.name}<br>{point.percentage:.1f} %',
-            connectorWidth: 0,
+            // connectorWidth: 0,
             style: {
                 width: '40px',
                 fontSize: '1em'
