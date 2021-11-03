@@ -6,12 +6,12 @@ Highcharts.chart('project-status', {
         backgroundColor: 'transparent'
     },
     title: {
-        text: 'Projects Schedule <br>Statuses',
+        text: null,
         align: 'center',
         verticalAlign: 'middle',
         y: 70,
         style: {
-            width: '40px',
+            width: '100px',
             fontSize: '1em',
             color: 'black'
         }
@@ -57,17 +57,17 @@ Highcharts.chart('project-status', {
             startAngle: -90,
             endAngle: 90,
             center: ['50%', '75%'],
-            size: '110%'
+            size: '80%'
         }
     },
     series: [{
         type: 'pie',
-        name: 'Projects Comparison By Timeline',
+        name: 'Projects',
         innerSize: '50%',
         data: [
 
             {
-                name: 'Projects On Schedule',
+                name: 'On Schedule',
                 y: 14,
                 color: '#19244b',
                 dataLabels: {
@@ -76,7 +76,7 @@ Highcharts.chart('project-status', {
                 url: 'On time-projects.html',
             },
             {
-                name: 'Projects Behind Schedule',
+                name: 'Behind Schedule',
                 y: 6,
                 fill: '#ff0c39',
                 color: '#9099b0',
@@ -103,9 +103,29 @@ Highcharts.chart('project-status', {
             style: {
                 width: '40px',
                 fontSize: '0.8em',
-                color: 'black'
+                color: 'black',
+                extShadow: false,
+                textOutline: false,
+                font: '600 "Muli", sans-serif'
             }
         },
+
+        dataLabels: {
+            type: 'pie',
+            name: 'Percentage Of Projects',
+            enabled: true,
+            distance: 30,
+            format: '{point.name}<br><span style="font-size:1.3em">{point.percentage:.1f}</span> %',
+            style: {
+                width: '60px',
+                fontSize: '0.8em',
+                color: 'black',
+                extShadow: false,
+                textOutline: false,
+                font: '600 "Muli", sans-serif'
+            }
+        },
+
 
 
         point: {
