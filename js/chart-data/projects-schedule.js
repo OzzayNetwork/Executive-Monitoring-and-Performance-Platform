@@ -67,7 +67,8 @@ Highcharts.chart('project-status', {
                 color: '#03824d',
                 dataLabels: {
                     enabled: false
-                }
+                },
+                url: 'ontime-projects.html',
             },
             {
                 name: 'Projects Behind Shedule',
@@ -76,8 +77,28 @@ Highcharts.chart('project-status', {
                 color: '#ff0c39',
                 dataLabels: {
                     enabled: false
+                },
+                url: 'behind-schedule.html',
+            }
+        ],
+
+        cursor: 'pointer',
+        point: {
+            events: {
+                click: function() {
+                    location.href = this.options.url;
                 }
             }
-        ]
+        },
+
+
+        point: {
+
+            events: {
+                click: function() {
+                    location.href = this.options.url;
+                }
+            }
+        }
     }]
 });
