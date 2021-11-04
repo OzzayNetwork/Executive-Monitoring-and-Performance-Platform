@@ -1,140 +1,164 @@
-Highcharts.chart('project-status', {
-    chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: 0,
-        plotShadow: false,
-        backgroundColor: 'transparent'
-    },
-    title: {
-        text: null,
-        align: 'center',
-        verticalAlign: 'middle',
-        y: 70,
-        style: {
-            width: '100px',
-            fontSize: '1em',
-            color: 'black'
-        }
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-    },
-    accessibility: {
-        point: {
-            valueSuffix: '%'
-        }
-    },
+$(function() {
+    $('#project-status').highcharts({
 
-    plotOptions: {
-        pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
-            dataLabels: {
-                enabled: false
+        chart: {
+
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false,
+            backgroundColor: 'transparent',
+            type: 'pie',
+            options3d: {
+                enabled: false,
+                alpha: 0
+            }
+        },
+
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+
+        colors: ['#081969', '#0e2569', '#1e3b81', '#284893', '#30509b'],
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 130,
+                depth: 45
             },
-            showInLegend: true
-        }
-    },
 
-    plotOptions: {
-        pie: {
+            pie: {
+                /* dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white'
+                    }
+                }, */
+                // showInLegend: true,
+
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.1f}%'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%'],
+                size: '100%'
+            }
+        },
+        series: [{
+            type: 'pie',
+            innerSize: '50%',
+            name: 'Delivered amount',
+            data: [
+
+                {
+                    name: 'On Schedule',
+                    y: 14,
+                    color: '#19244b',
+                    dataLabels: {
+                        enabled: true
+                    },
+                    url: 'On time-projects.html',
+                },
+                {
+                    name: 'Behind Schedule',
+                    y: 6,
+                    fill: '#ff0c39',
+                    color: 'black',
+                    formatter: function() {
+                        return this.point.name
+                    },
+                    url: 'behind-schedule.html',
+                }
+            ],
+
+            cursor: 'pointer',
+            point: {
+                events: {
+                    click: function() {
+                        location.href = this.options.url;
+                    }
+                }
+            },
+            size: '110%',
+            innerSize: '50%',
             dataLabels: {
                 enabled: true,
-                distance: -50,
+                color: 'Black',
+                connectorWidth: 1,
+                distance: 5,
+                connectorColor: '#000000',
+                formatter: function() {
+                    return this.point.name
+                },
                 style: {
-                    fontWeight: 'bold',
-                    color: 'white'
+                    width: '60px',
+                    fontSize: '0.8em',
+                    color: 'black',
+                    textShadow: false,
+                    textOutline: false,
+                    font: '600 "Muli", sans-serif'
                 }
-            },
-            // showInLegend: true,
 
-            series: {
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}: {point.y:.1f}%'
-                }
-            },
-            startAngle: -90,
-            endAngle: 90,
-            center: ['50%', '75%'],
-            size: '90%'
-        }
-    },
-    series: [{
-        type: 'pie',
-        name: 'Projects',
-        innerSize: '50%',
-        data: [
+            }
+        }, {
+            name: 'Delivered amount',
+            data: [
 
-            {
-                name: 'On Schedule',
-                y: 14,
-                color: '#19244b',
-                dataLabels: {
-                    enabled: true
+                {
+                    name: 'On Schedule',
+                    y: 14,
+                    color: '#19244b',
+                    dataLabels: {
+                        enabled: true
+                    },
+                    url: 'On time-projects.html',
                 },
-                url: 'On time-projects.html',
+                {
+                    name: 'Behind Schedule',
+                    y: 6,
+                    fill: '#ff0c39',
+                    color: '#9099b0',
+                    dataLabels: {
+                        enabled: true
+                    },
+                    url: 'behind-schedule.html',
+                }
+            ],
+
+            cursor: 'pointer',
+            point: {
+                events: {
+                    click: function() {
+                        location.href = this.options.url;
+                    }
+                }
             },
-            {
-                name: 'Behind Schedule',
-                y: 6,
-                fill: '#ff0c39',
-                color: '#9099b0',
-                dataLabels: {
-                    enabled: true
+            size: '110%',
+            innerSize: '50%',
+            dataLabels: {
+                formatter: function() {
+                    return Math.round(this.percentage) + ' %';
                 },
-                url: 'behind-schedule.html',
-            }
-        ],
-
-        cursor: 'pointer',
-        point: {
-            events: {
-                click: function() {
-                    location.href = this.options.url;
+                color: 'white',
+                distance: -30,
+                style: {
+                    width: '40px',
+                    fontSize: '1.2em',
+                    textShadow: false,
+                    textOutline: false,
+                    font: '600 "Muli", sans-serif'
                 }
             }
-        },
-
-        dataLabels: {
-            distance: 5,
-            format: '{point.name}<br>{point.percentage:.1f} %',
-            connectorWidth: 0,
-            style: {
-                width: '40px',
-                fontSize: '0.8em',
-                color: 'black',
-                extShadow: false,
-                textOutline: false,
-                font: '600 "Muli", sans-serif'
-            }
-        },
-
-        dataLabels: {
-            type: 'pie',
-            name: 'Percentage Of Projects',
-            enabled: true,
-            distance: 30,
-            format: '{point.name}<br><span style="font-size:1.3em">{point.percentage:.1f}</span> %',
-            style: {
-                width: '60px',
-                fontSize: '0.8em',
-                color: 'black',
-                extShadow: false,
-                textOutline: false,
-                font: '600 "Muli", sans-serif'
-            }
-        },
-
-
-
-        point: {
-
-            events: {
-                click: function() {
-                    location.href = this.options.url;
-                }
-            }
-        }
-    }]
+        }]
+    });
 });
