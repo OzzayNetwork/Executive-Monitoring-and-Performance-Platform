@@ -121,7 +121,7 @@ $(function() {
                     dataLabels: {
                         enabled: true
                     },
-                    url: 'Ontime-projects.html',
+                    url: 'ontime-projects.html',
                 },
                 {
                     name: 'Behind Schedule',
