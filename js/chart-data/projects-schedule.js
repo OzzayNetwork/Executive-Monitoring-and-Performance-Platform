@@ -57,7 +57,7 @@ $(function() {
         series: [{
             type: 'pie',
             innerSize: '50%',
-            name: 'Delivered amount',
+            name: 'Projects',
             data: [
 
                 {
@@ -89,29 +89,60 @@ $(function() {
                     }
                 }
             },
-            size: '110%',
+            size: '150%',
             innerSize: '50%',
             dataLabels: {
                 enabled: true,
                 color: 'Black',
                 connectorWidth: 1,
-                distance: 5,
+                distance: 10,
                 connectorColor: '#000000',
+                // alignTo: 'connectors',
+                alignTo: 'plotEdges',
+
+                // connectorShape: function(labelPosition, connectorPosition, options) {
+
+                //     var connectorPadding = options.connectorPadding,
+                //         touchingSliceAt = connectorPosition.touchingSliceAt,
+                //         series = this.series,
+                //         plotWidth = series.chart.plotWidth,
+                //         plotLeft = series.chart.plotLeft,
+                //         alignment = labelPosition.alignment,
+                //         stepDistance = 70, // in px - distance betwenn the step and vertical plot border
+                //         stepX = alignment === 'top' ? plotLeft + plotWidth - stepDistance : plotLeft + stepDistance;
+
+                //     return ['M',
+                //         labelPosition.x + (alignment === 'left' ? 1 : -1) *
+                //         connectorPadding,
+                //         labelPosition.y,
+                //         'L',
+                //         stepX,
+                //         labelPosition.y,
+                //         'L',
+                //         stepX,
+                //         touchingSliceAt.y,
+                //         'L',
+                //         touchingSliceAt.x,
+                //         touchingSliceAt.y
+                //     ];
+
+                // },
+
                 formatter: function() {
                     return this.point.name
                 },
                 style: {
                     width: '60px',
-                    fontSize: '0.8em',
+                    fontSize: '0.85em',
                     color: 'black',
                     textShadow: false,
-                    textOutline: false,
+                    // textOutline: false,
                     font: '600 "Muli", sans-serif'
                 }
 
             }
         }, {
-            name: 'Delivered amount',
+            name: 'Projects',
             data: [
 
                 {
@@ -143,14 +174,14 @@ $(function() {
                     }
                 }
             },
-            size: '110%',
+            size: '150%',
             innerSize: '50%',
             dataLabels: {
                 formatter: function() {
                     return Math.round(this.percentage) + ' %';
                 },
                 color: 'white',
-                distance: -30,
+                distance: -50,
                 style: {
                     width: '40px',
                     fontSize: '1.2em',
