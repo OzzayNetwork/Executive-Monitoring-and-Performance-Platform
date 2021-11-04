@@ -100,7 +100,7 @@ $(function() {
             series: {
                 //connectNulls: true
 
-                pointWidth: 15,
+                pointWidth: 25,
                 borderWidth: 0,
                 borderColor: 'black',
                 cursor: 'pointer',
