@@ -71,7 +71,7 @@ $(function() {
                 },
                 {
                     name: 'Behind Schedule',
-                    y: 6,
+                    y: 16,
                     fill: '#ff0c39',
                     color: 'black',
                     formatter: function() {
@@ -156,7 +156,7 @@ $(function() {
                 },
                 {
                     name: 'Behind Schedule',
-                    y: 6,
+                    y: 16,
                     fill: '#ff0c39',
                     color: '#9099b0',
                     dataLabels: {

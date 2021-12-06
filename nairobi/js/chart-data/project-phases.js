@@ -45,32 +45,32 @@ $(function() {
                 cursor: 'pointer',
                 data: [{
                         name: 'Planning',
-                        y: 60,
+                        y: 45,
                         url: 'planning-phase.html',
                         color: '#00205a'
                     },
 
                     {
                         name: 'Design',
-                        y: 9,
+                        y: 12,
                         url: 'design-phase.html',
                         color: '#00457f'
                     },
                     {
                         name: 'Implementation',
-                        y: 13,
+                        y: 17,
                         url: 'development-phase.html',
                         color: '#0069a3'
                     },
                     {
                         name: 'Testing',
-                        y: 7,
+                        y: 20,
                         url: 'testing-phase.html',
                         color: '#058dc7'
                     },
                     {
                         name: 'Monitoring',
-                        y: 11,
+                        y: 13,
                         url: 'monitoring-phase.html',
                         color: '#29b1eb'
                     }

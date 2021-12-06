@@ -69,7 +69,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2007, 11, 1),
             end: Date.UTC(2018, 1, 2),
             completed: 0.95,
-            name: 'Establishing Instant Coffee Plant In Uganda',
+            name: 'Construction of Full Gospel Rd',
             completed: {
                 amount: 0.95,
                 fill: '#222f5f'
@@ -79,7 +79,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2008, 1, 2),
             end: Date.UTC(2012, 11, 5),
             completed: 0.5,
-            name: 'Luweero Fruit Processing Project',
+            name: 'Expansion of Kahawa Health Centre',
             completed: {
                 amount: 0.5,
                 fill: '#222f5f'
@@ -88,7 +88,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2018, 11, 8),
             end: Date.UTC(2021, 11, 9),
             completed: 0.15,
-            name: 'Maize Milling Project',
+            name: 'Construction of MCH at Kiwamu Health Centre',
             completed: {
                 amount: 0.15,
                 fill: '#222f5f'
@@ -100,12 +100,12 @@ Highcharts.ganttChart('project-timelines', {
                 amount: 0.3,
                 fill: '#222f5f'
             },
-            name: 'Multi Fruit Juice Factory'
+            name: 'Youth Empowerment (Purchase of 10 Incubators)'
         }, {
             start: Date.UTC(2009, 11, 10),
             end: Date.UTC(2013, 11, 23),
             completed: 0.53,
-            name: 'Setting Up A Modern Slaughterhouse In Uganda ',
+            name: 'Completion of Kasarani septic tank in the market ',
             completed: {
                 amount: 0.53,
                 fill: '#222f5f'
@@ -114,7 +114,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2008, 11, 25, 8),
             end: Date.UTC(2015, 11, 25, 16),
             completed: 0.73,
-            name: 'Pearl Rice Limited',
+            name: 'Construction of a cereal depot in Maiella Ward',
             completed: {
                 amount: 0.73,
                 fill: '#222f5f'
@@ -123,7 +123,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2007, 1, 2, 8),
             end: Date.UTC(2015, 11, 25, 16),
             completed: 0.73,
-            name: 'Dairy Value Chain Enhancement for Increased Market Access',
+            name: 'Youth Digital Literacy Program',
             completed: {
                 amount: 0.73,
                 fill: '#222f5f'
@@ -132,7 +132,7 @@ Highcharts.ganttChart('project-timelines', {
             start: Date.UTC(2017, 1, 2, 8),
             end: Date.UTC(2021, 11, 25, 16),
             completed: 0.32,
-            name: 'Youth Empowerment through Dairy Value Addition',
+            name: 'Completion of wells',
             completed: {
                 amount: 0.32,
                 fill: '#222f5f'
