@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./Flat.ttf") format("truetype"), url("./flat.woff") format("woff"), url("./flat.woff2") format("woff2"), url("./Flaticon.eot") format("embedded-opentype"), url("./Flaticon.svg") format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-time-left:before {
+    content: "\f101";
+}
+
+.flaticon-dollar-symbol:before {
+    content: "\f102";
+}
+
+.flaticon-ruler:before {
+    content: "\f103";
+}
+
+.flaticon-money-bag:before {
+    content: "\f104";
+}
+
+.flaticon-dollar:before {
+    content: "\f105";
+}
+
+.flaticon-menu:before {
+    content: "\f106";
+}

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:03 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel='icon' href='demo/img/payme-logo.png' type='image/x-icon'/> -->
+    <title>EORAP | Executive Oversight and Result Assessment Platform</title>
+
+    <!-- icon fonts -->
+
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_1.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_2.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_3.css">
+    <link rel="stylesheet" href="css/icon_fonts/css/icon_set_4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="css/flaticon-font/flaticon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="vendors/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="vendors/jquery-scrollbar/jquery.scrollbar.css">
+    <link rel="stylesheet" href="vendors/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="vendors/select2/css/select2.min.css">
+    <link rel="stylesheet" href="vendors/dropzone/dropzone.css">
+    <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+    <link rel="stylesheet" href="vendors/trumbowyg/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="vendors/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="vendors/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+
+</head>
+
+<body data-ma-theme="green">
+    <main class="main">
+        <div class="page-loader">
+            <div class="page-loader__spinner">
+                <svg viewBox="25 25 50 50">
+                    <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+                <img src="demo/img/logo-files/uganda.png">
+            </div>
+            <span class="powerd-container">
+                <strong>Executive Oversight and Result Assessment Platform</strong>
+                <img class="d-none" src="demo/img/logo-files/nouveta-orange.svg">
+
+            </span>
+        </div>
+
+        <header class="header">
+            <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                <div class="navigation-trigger__inner">
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                    <i class="navigation-trigger__line"></i>
+                </div>
+            </div>
+            <div class="header__logo hidden-sm-down">
+                <!-- <a href="index.html"><img class="the-logo" src="demo/img/payme-logo@2x.png"></a> -->
+                <a href="index.html" class="pt-1 pl-4 d-flex pr-0">
+                    <div class="pr-2 ">
+                        <img src="demo/img/logo-files/logo-demo.svg">
+                    </div>
+                    <div>
+                        <h4 class="text-white mb-0 pb-0">EORAP</h4>
+                        <small class="font-8 text-white">Executive Oversight and Result Assessment Platform</small>
+                    </div>
+                </a>
+            </div>
+            <div class=" align-items-center flex-grow-1 d-none">
+                <div class="header__title">
+                    <div class="inst__name text-capitalize">Institutions Name</div>
+                    <div class="syst__role text-uppercase">system role</div>
+                </div>
+            </div>
+            <div class="user__info" data-toggle="dropdown">
+                <div class="avatar-char mr-3 font-weight-bold">JD</div>
+                <div>
+                    <div class="user__name">John Nantale</div>
+                    <div class="user__email">34 Min Online</div>
+                </div>
+                <div class="ml-3">
+                    <a href="#"><i class="zmdi zmdi-chevron-down drop-down-icon"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <aside class="sidebar main-menu">
+            <div class="scrollbar-inner">
+                <ul class="navigation">
+                    <li class="navigation__active">
+                        <a href="index.html"><i class="flaticon flaticon-menu"></i>Overview</a>
+                    </li>
+                    <li class="">
+                        <a href="all-districts.html"><i class="flaticon flaticon-ruler"></i>Projects</a>
+                    </li>
+                    <li class="navigation__sub d-none">
+                        <a href="all-districts.html"><i class="flaticon flaticon-ruler"></i> Projects<i class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
+                        <ul class="d-none">
+                            <li class="p-0"><a href="ongoingprojects.html">Ongoing projects</a></li>
+                            <li class="p-0"><a href="completedprojects.html">Completed projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="d-none"><a href="finance.html"><i class="flaticon flaticon-dollar-symbol"></i>Finance</a></li>
+                    <li class="navigation__sub d-none">
+                        <a href="#"> <i class="zmdi zmdi-account-o"></i> My Account<i class="zmdi zmdi-chevron-down drop-down-icon-sidebar"></i></a>
+                        <ul>
+                            <li><a href="#">Create account</a></li>
+                            <li><a href="#">All accounts</a></li>
+                            <li><a href="#">Inactive accounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="" title="support">
+                        <a href="login.html"><i class="zmdi zmdi-power"></i> Logout</a>
+                    </li>
+                    <li>
+                        <a type="button" class="btn btn-primary btn--icon-text btn-transact btn-lg px-4" title="transact" href="new-project.html">
+							New Project <i class="zmdi zmdi-plus"></i>
+						</a>
+                    </li>
+                    <li class="navigation__sub navigation__logout-link">
+                        <a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="content--full map-main-container d-none">
+            <div class="col-12">
+                <header class="content__title px-0 border-0">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <span class="rev-title-container">
+                                <h1 class="text-capitalize stream_name m-0">Biller Dashboard</h1>
+                            </span>
+                            <div class="">
+                                <ol class="breadcrumb border-0">
+                                    <li class="breadcrumb-item">Home</li>
+                                    <li class="breadcrumb-item active">Dashboard</li>
+
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="pb-4">
+                <div class="col-12">
+                    <h4 class="text-white text-light d-none">Revenue Collection By Subcounty</h4>
+                    <div id="the-map-container">
+                    </div>
+                    <!--							control buttons-->
+                    <div class="row map-buttons d-flex">
+                        <span class="map-date p-3 text-white ml-3">30 Jun 2020</span>
+                        <div class="col">
+                            <button id="today" disabled="true" class="active"><span></span>Today: 7,895,897</button>
+                            <button id="this-week"><span></span>This Week: 15,237,895,897</button>
+                            <button id="this-month"><span></span>June 2020: 21,237,895,897</button>
+                            <button id="financial-year"><span></span>FY 19/20: 452,237,895,897</button>
+                        </div>
+                    </div>
+                    <!--							control buttons-->
+                </div>
+            </div>
+        </div>
+        <section class="content light-body">
+
+            <div class="modal fade" id="milestone-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="badge badge-pill badge-success text-uppercase font-10 px-3 the-title">Luweero Fruit Processing Project</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title text-capitalize mb-3" id="exampleModalLongTitle">
+                                Give your project's feedback
+                            </h4>
+
+
+                            <form class="row">
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>General Project's Overview</strong></label>
+                                        <select class="form-select form-control" aria-label="Select your general overview">
+                                            <option selected>Satisfactory</option>
+                                            <option value="1">Good</option>
+                                            <option value="2">Excellent</option>
+                                            <option value="3">Outstanding</option>
+                                            <option value="3">Disappointing</option>
+                                            <option value="3">Poor</option>
+                                          </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Detailed feedback</strong></label>
+                                        <input class="form-control date-picker d-none" placeholder="Enter Milestone title">
+                                        <textarea placeholder="Enter a detailed observation" class="form-control">
+
+                                        </textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-none">
+                                    <div class="form-group p-3 m-0">
+                                        <label><strong>Amount spent</strong></label>
+                                        <input class="form-control " placeholder="Enter amount">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-block btn btn-primary" data-dismiss="modal" aria-label="Close">
+                                <i class="mdi mdi-login mr-2"></i> Send Feedback
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <header class="content__title px-0 border-0">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <span class="rev-title-container">
+                            <h1 class="text-capitalize stream_name m-0">Home /
+                                <span class="breadcrumb-item">Projects /</span>
+                        <span class="breadcrumb-item active">Ongoing Projects</span>
+                        </h1>
+                        </span>
+                        <div class="text-capitalize mt-3">
+                            <h2 style="font-size: xx-large; color: #181F48;">Ongoing Projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="row ">
+                <div class="col-12 p-0 to-be-navigated">
+                    <div class="card table-custom-bg animated fade-in">
+                        <div class="card-header" style="background: white; padding: 2rem 1rem 0rem 2rem;">
+                            <div class="row d-flex justify-content-end flex-row clearfix mb-4">
+                                <div class="col-sm-12 col-lg-9 d-none">
+                                    <div class="d-flex">
+                                        <div class="form-group mb-0 pb-0">
+                                            <select title="select a ministry" class="form-control selectpicker w-auto" data-live-search="true">
+                                                <option selected>All Ministries</option>
+                                                <option>Ministry for Agriculture, Animal Industry and Fisheries</option>
+                                                <option>Ministry of Information and Communications Technology</option>
+                                                <option>Ministry of Defence and Veterans Affairs</option>
+                                                <option>Ministry of Disaster Preparedness and Refugees</option>
+                                                <option>Ministry of Education and Sports</option>
+                                                <option>Ministry of Energy and Mineral Development</option>
+                                                <option>Ministry of Finance, Planning and Economic Development</option>
+                                                <option>Ministry for Foreign Affairs</option>
+                                                <option>Ministry of Gender, Labour and Social Development</option>
+                                                <option>Minister in Charge of General Duties in the Office of the Prime Minister</option>
+                                                <option>Ministry of Health</option>
+                                                <option>Ministry of Internal Affairs</option>
+                                                <option>Ministry of Justice and Constitutional Affairs</option>
+                                                <option>Ministry of Lands, Housing and Urban Development</option>
+                                                <option>Ministry of Local Government</option>
+                                                <option>Ministry of the Presidency</option>
+                                                <option>Ministry of Public Service</option>
+                                                <option>Ministry of Internal Security</option>
+                                                <option>Ministry of Trade, Industry and Cooperatives</option>
+                                                <option>Ministry of Water and Environment</option>
+                                                <option>Ministry of Works and Transport</option>
+                                                <option>Minister of Science, Technology and Innovation</option>
+                                                <option>Ministry for Karamoja Affairs</option>
+                                                <option>Ministry of Tourism, Wildlife and Antiquities</option>
+                                                <option>Minister for Kampala Capital City Authority</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="form-group mb-0 pb-0 ml-3">
+                                            <select title="Select a parish" class="form-control selectpicker w-auto" data-live-search="true">
+                                                <option selected>Filter by Parish</option>
+                                                <option>Kanyanya</option>
+                                                <option>Bwaise I</option>
+                                                <option>Bwaise Ii</option>
+                                                <option>Bwaise Iii</option>
+                                                <option>Kawempe I</option>
+                                                <option> Kazo Ward</option>
+                                                <option>Kikaya</option>
+                                                <option>Komamboga</option>
+                                                <option> Kyebando</option>
+                                                <option>Makerere I</option>
+                                                <option>Makerere Ii</option>
+                                                <option>Makerere Iii</option>
+                                                <option>Mpererwe</option>
+                                                <option>Mulago I</option>
+                                                <option>Mulago Ii</option>
+                                                <option>Mulago Iii</option>
+                                                <option>University (makerere)</option>
+                                                <option>Wandegeya</option>
+                                            </select>
+
+                                        </div>
+
+                                        <div class="form-group mb-0 pb-0 ml-3">
+                                            <select title="Select a parish" class="form-control selectpicker w-auto" data-live-search="true">
+                                                <option selected>Filter by sub county</option>
+                                                
+                                                <option>Rubaga Division</option>
+                                                <option>Central Division</option>
+                                                <option>Kawempe Division</option>
+                                                <option>Makindye Division</option>
+                                                <option>Nakawa Division</option>                                                
+                                            </select>
+
+                                        </div>
+
+                                        <div class="form-group mb-0 pb-0 ml-3">
+                                            <select title="Select a parish" class="form-control selectpicker w-auto" data-live-search="true">
+                                                
+                                                          
+                                                <option selected>Filter by Village</option>
+                                                <option>Bishop Mukwaya</option>
+                                                <option>Zone I</option>
+                                                <option>Zone III</option>
+                                                <option>Zone II</option>
+                                                <option>Bubajwe</option>
+                                                <option> Zone A</option>
+                                                <option>Bubajwe</option>
+                                                <option>Zone B</option>
+
+                                                
+                                            </select>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-3">
+                                    <div class="actions date_container">
+                                        <div id="reportrange" style="background: #0015C2;
+                                            cursor: pointer;
+                                            padding: 5px 10px;
+                                            border: 1px solid #0015C2;
+                                            width: 100%;
+                                            color: #e7e7e7;
+                                            font-size: small;">
+                                            <i class="ti-calendar"></i>&nbsp;
+                                            <span></span> <i class="fa fa-caret-down"></i>
+                                        </div>
+                                        <button class="btn btn-success d-none text-nowrap ml-3" id="date-reset" onclick="reset_date()">Reset
+                                            Date</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover table-custom spacing8" id="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Ministry</th>
+                                            <th>Commencement Date</th>
+                                            <th>Sponsor</th>
+                                            <th>Current Milestone</th>
+                                            <th>Last Update</th>
+                                            <th>Amount Spent</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Luweero Fruit Processing Project
+                                            </td>
+                                            <td class="the_user">
+                                                Ministry of Land, Ho...
+                                            </td>
+                                            <td class="text-capitalize">
+                                                14 Feb 2019
+                                            </td>
+                                            <td class="text-capitalize">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize">
+                                                23 Jan 2020
+                                            </td>
+                                            <td class="text-capitalize">
+                                                $7,413,000
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                NATIONAL FRUIT DEVELOPMENT PROJECT IN UGANDA
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Agriculture
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2012
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Kenya
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Lamu Ground breaking
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2019
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $120 M
+                                                <td>
+                                                    <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                    <a href="project-details.html" class=" btn btn-warning btn--icon-text ml-2 deactivate-user " title="deactvate this account " data-toggle="modal " data-target="#deactivate-user ">
+                                                        <i class="zmdi zmdi-eye "></i> Details
+                                                    </a>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Multi Fruit Juice Factory
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Land, Ho...
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                2 Jan 2008
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                16 Jun 2020
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $3,400,000
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Maize Milling Project
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Agriculture
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2008
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                17 Sep 2021
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $5,000,000
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Establishing Instant Coffee Plant In Uganda
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Agriculture
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2008
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                17 Sep 2021
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $57.33 M
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Pearl Rice Limited
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Agriculture
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2008
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                17 Sep 2021
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $15 M
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Dairy Value Chain Enhancement for Increased Market Access
+                                            </td>
+                                            <td class="the_user ">
+                                                Ministry of Agriculture
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                14 Feb 2008
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                Israel
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                First complex building complete
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                17 Sep 2021
+                                            </td>
+                                            <td class="text-capitalize ">
+                                                $2,900,000
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-success btn--icon-text ml-2 deactivate-user" title="Update project's milestone" data-toggle="modal" data-target="#milestone-modal">
+                                                    <i class="zmdi zmdi-edit"></i> Update Milestone
+                                                </button>
+                                                <a href="project-details.html" class=" btn btn-info btn--icon-text ml-2 deactivate-user " title="View more project details" data-toggle="modal " data-target="#deactivate-user ">
+                                                    <i class="zmdi zmdi-eye "></i> Details
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card animated fade-in d-none ">
+                        <div class="card-header new-header ">
+                            <div class="row align-items-center ">
+                                <div class="col ">
+                                    <!-- Title -->
+                                    <h4 class="card-header-title py-2 ">
+                                        New Department
+                                    </h4>
+                                </div>
+
+                            </div>
+                            <!-- / .row -->
+                        </div>
+                        <div class="card-body ">
+                            <div class="row ">
+                                <div class="col-sm-12 col-md-4 bg-light ">
+                                    <div class="row ">
+                                        <div class="col-12 padding-custom pt-4 ">
+                                            <div class="form-group ">
+                                                <label><strong>Department Name</strong></label>
+                                                <input type="text " class="form-control " placeholder="Enter Department name ">
+                                            </div>
+
+                                            <div class="form-group mb-5 ">
+                                                <label><strong>Department Head</strong></label>
+                                                <input type="text " class="form-control " placeholder="Enter head 'sEmp Num.">
+                                                <small>Enter department's head Employee Number</small>
+                                            </div>
+
+                                            <button class="btn btn-primary btn--icon-text mt-5">Add Department</button>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="row">
+                                        <div class="col-12 departmen-image">
+                                            <img class="img" src="demo/img/form-svgs/department.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- Older IE warning message -->
+    <!--[if IE]>
+                <div class="ie-warning">
+                    <h1>Warning!!</h1>
+                    <p>You are using an outdated version of Internet Explorer, please upgrade to any of the following web browsers to access this website.</p>
+
+                    <div class="ie-warning__downloads">
+                        <a href="http://www.google.com/chrome">
+                            <img src="img/browsers/chrome.png" alt="">
+                        </a>
+
+                        <a href="https://www.mozilla.org/en-US/firefox/new">
+                            <img src="img/browsers/firefox.png" alt="">
+                        </a>
+
+                        <a href="http://www.opera.com">
+                            <img src="img/browsers/opera.png" alt="">
+                        </a>
+
+                        <a href="https://support.apple.com/downloads/safari">
+                            <img src="img/browsers/safari.png" alt="">
+                        </a>
+
+                        <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">
+                            <img src="img/browsers/edge.png" alt="">
+                        </a>
+
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="img/browsers/ie.png" alt="">
+                        </a>
+                    </div>
+                    <p>Sorry for the inconvenience!</p>
+                </div>
+            <![endif]-->
+
+    <!-- Javascript -->
+    <!-- Vendors -->
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/popper.js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="vendors/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+    <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/jqvmap/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="vendors/salvattore/salvattore.min.js"></script>
+    <script src="vendors/sparkline/jquery.sparkline.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/fullcalendar/fullcalendar.min.js"></script>
+    <script src="vendors/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="vendors/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="vendors/select2/js/select2.full.min.js"></script>
+    <script src="vendors/dropzone/dropzone.min.js"></script>
+    <script src="vendors/moment/moment.min.js"></script>
+    <script src="vendors/nouislider/nouislider.min.js"></script>
+    <script src="vendors/trumbowyg/trumbowyg.min.js"></script>
+    <script src="vendors/flatpickr/flatpickr.min.js"></script>
+    <script src="vendors/rateyo/jquery.rateyo.min.js"></script>
+    <script src="vendors/jquery-text-counter/textcounter.min.js"></script>
+    <script src="vendors/autosize/autosize.min.js"></script>
+    <script src="vendors/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+
+    <!-- Vendors: Data tables -->
+    <script src="vendors/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables-buttons/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.print.min.js"></script>
+    <script src="vendors/jszip/jszip.min.js"></script>
+    <script src="vendors/datatables-buttons/buttons.html5.min.js"></script>
+
+    <!-- Charts and maps-->
+    <script src="demo/js/flot-charts/curved-line.js"></script>
+    <script src="demo/js/flot-charts/dynamic.js"></script>
+    <script src="demo/js/flot-charts/line.js"></script>
+    <script src="demo/js/flot-charts/chart-tooltips.js"></script>
+    <script src="demo/js/other-charts.js"></script>
+    <script src="demo/js/jqvmap.js"></script>
+
+    <!-- high charts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/highcharts.js" integrity="sha512-PpL09bLaSaj5IzGNx6hsnjiIeLm9bL7Q9BB4pkhEvQSbmI0og5Sr/s7Ns/Ax4/jDrggGLdHfa9IbsvpnmoZYFA==" crossorigin="anonymous"></script>
+    <!-- <script src="assets/libs/highcharts/highchart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/data.min.js" integrity="sha512-z2pVXf6Q3w/tD7NnbA/u/EDW7X8VUISARx3mVRk0vGULcDRcfhA65veFZS3LWW3DM8l/MW2Oxu8PlqJa+Za4Hw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/drilldown.min.js" integrity="sha512-1F5YJc0seERSBvoF3csYQm+JO6qF9O+1hwUKBbOUKcRj3RnDAmKEEzuqPnCcLOtt/2h2CzsCbSy0bv0yuCfZNQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/exporting.min.js" integrity="sha512-DuFO4JhOrZK4Zz+4K0nXseP0K/daLNCrbGjSkRzK+Zibkblwqc0BYBQ1sTN7mC4Kg6vNqr8eMZwLgTcnKXF8mg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/offline-exporting.min.js" integrity="sha512-5vKhOIyF4HBeTJQ4VvTAWGuAvGMp3BbDwD6CjzZPc0T/h4D8bqvvj+D/IYyJ1ua6s72VcuQ2fPEjBn+CHR6UWQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/export-data.min.js" integrity="sha512-JFLRyhQGrSpOOboAjCGEfEm0Z+GvPcucULDdEhRFoGtJJ439x64z/F1f6GTJM7+3PGqXqgkXNc6LO/04RGsW4w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/accessibility.min.js" integrity="sha512-cN9FFspkIN+ZS37xvtrtP4jfDc7D1BA1ma9l2YPkV47Ac70t98RjOe9gR+2dCBUkiyamLLfFtqXH+/iL0fqhjw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/es-modules/Series/ItemSeries.min.js" integrity="sha512-UnnyAAfaraMnJOILh+bwawPvAF4+bbOXAPcUv2OREvyYTdi8TPJ4UZ+Ip8IL3mMY+cAY/yzuzq+v/EvmoZx7iA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/streamgraph.min.js" integrity="sha512-RjmbiCs5aaU692OGy4q5YbGnHmiGexQY54rMmsY2HbaHX6OJ5AxqAtDQ9lVGubnbz+UPanupAF3avZJKY2jNWg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/series-label.min.js" integrity="sha512-ppfBb+ms2RL9FloNCD8c9mykruT6sI5ACsAdSgS69pDv/Dnn64LGewhmLnMVTCm3Zt5K2LXamZD4Ndr9EFUhMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/annotations.min.js" integrity="sha512-Qq+ClgMyYirIBC34w/LXcHhviIf+DvBzPW7vi3Ekn/jHYArYe+6TCiFp74q7pkUEitJLF543JCgxVQ6ax4xBNg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.2.2/modules/bullet.min.js" integrity="sha512-RsB4WtWGLsMOVX4LGEqcG7TQHJBvD/wPgSYrN4zQUSvCzhubwAlxeXgFM1+ROQ7TzKfl0L6AbiBNXyRDBFKNoA==" crossorigin="anonymous"></script>
+    <script src="js/highcharts/theme1.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- highcharts zoom -->
+    <script src="https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/usdeur.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+    <!--owl corousel-->
+    <script src="vendors/OwlCarousel/owl.carousel.min.js"></script>
+
+
+    <!-- App functions and actions -->
+    <script src="js/wow.js"></script>
+    <script src="js/app.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/chart-data/revenue-targets.js"></script>
+    <script src="js/chart-data/revenue-streams.js"></script>
+    <script src="js/chart-data/revenue-by-bank.js"></script>
+    <script src="js/chart-data/revenue-collected.js"></script>
+    <script src="js/chart-data/perfomance.js"></script>
+    <script src="js/chart-data/hourly-revenue-collection.js"></script>
+    <script src="js/chart-data/emp-gender.js"></script>
+    <script src="js/chart-data/customers-served.js"></script>
+
+
+    <!--map scripts-->
+
+    <script src="js/chart-data/map-data.js"></script>
+
+
+
+
+
+</body>
+
+<!-- Mirrored from byrushan.com/projects/material-admin/app/2.6/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2019 11:34:43 GMT -->
+
+</html>
