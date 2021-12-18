@@ -141,46 +141,46 @@ $(function() {
             color: '#f4b41a', //Blue
             data: [{
 
-                    name: 'Westlands',
+                    name: 'Nairobi',
                     y: 4133000,
                     url: 'kampala-projects.html',
                 }, {
-                    name: 'Langata',
+                    name: 'Mombasa',
                     y: 2670500,
                     url: '#',
                 }, {
-                    name: 'Kibra',
+                    name: 'kisumu',
                     y: 2369120,
                     url: '#',
                 }, {
 
-                    name: 'Kasarani',
+                    name: 'Nakuru',
                     y: 200250,
                     url: '#',
                 }, {
-                    name: 'Mathare',
+                    name: 'Kirinyaga',
                     y: 1200353,
                     url: 'gulu-projects.html',
                 }, {
-                    name: 'Ruaraka',
+                    name: 'Narok',
                     y: 1459312,
                     url: '#',
                 }, {
 
-                    name: 'Roysambu',
+                    name: 'Kakamega',
                     y: 900263,
                     url: '#',
                 }, {
-                    name: 'Starehe',
+                    name: 'Embu',
                     y: 555263,
                     url: 'jinja-projects.html',
                 }, {
 
-                    name: 'Dagoreti South',
+                    name: 'Kiambu',
                     y: 356263,
                     url: 'koboko-projects.html',
                 }, {
-                    name: 'Embakasi South',
+                    name: 'Laikipia',
                     y: 299263,
                     url: '#',
                 }]
@@ -191,47 +191,47 @@ $(function() {
             color: '#181F48', // Orange
             data: [{
 
-                    name: 'Westlands',
+                    name: 'Nairobi',
                     y: 413000,
                     url: 'kampala-projects.html',
 
                 }, {
-                    name: 'Langata',
+                    name: 'Mombasa',
                     y: 1000000,
                     url: '#',
                 }, {
-                    name: 'Kibra',
+                    name: 'kisumu',
                     y: 3400000,
                     url: '#',
                 }, {
 
-                    name: 'Kasarani',
+                    name: 'Nakuru',
                     y: 5330000,
                     url: '#',
                 }, {
-                    name: 'Mathare',
+                    name: 'Kirinyaga',
                     y: 1500000,
                     url: 'gulu-projects.html',
                 }, {
-                    name: 'Ruaraka',
+                    name: 'Narok',
                     y: 900000,
                     url: '#',
                 }, {
 
-                    name: 'Roysambu',
+                    name: 'Kakamega',
                     y: 1900000,
                     url: '#',
                 }, {
-                    name: 'Starehe',
+                    name: 'Embu',
                     y: 916667,
                     url: 'jinja-projects.html',
                 }, {
 
-                    name: 'Dagoreti South',
+                    name: 'Kiambu',
                     y: 326263,
                     url: 'koboko-projects.html',
                 }, {
-                    name: 'Embakasi South',
+                    name: 'Laikipia',
                     y: 399263,
                     url: '#',
                 }]
