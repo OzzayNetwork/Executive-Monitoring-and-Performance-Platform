@@ -20373,3 +20373,45 @@ ul.timeline a {
     background: red;
     color: white;
 }
+.the-product-container {
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+    border: 1px solid #0000002e;
+    padding-bottom: 0px;
+    margin: 15px;
+}
+.the-product-container .the-text {
+    padding: 15px 0px;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.the-product-container img {
+    width: 100%;
+}
+.the-header- {
+    padding: 30px;
+}
+.the-bg-is-here {
+    background: url("img/");
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffeb3b2b;
+    background-image: url(../img/the-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    background-attachment: fixed;
+}
+.the-bg-is-here::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #ffffffc9;
+}
