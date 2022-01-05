@@ -47,32 +47,32 @@ $(function() {
                         name: 'Planning',
                         y: 45,
                         url: 'planning-phase.html',
-                        color: '#00205a'
+                        color: '#006803'
                     },
 
                     {
                         name: 'Design',
                         y: 12,
                         url: 'design-phase.html',
-                        color: '#00457f'
+                        color: '#009929'
                     },
                     {
                         name: 'Implementation',
                         y: 17,
                         url: 'development-phase.html',
-                        color: '#0069a3'
+                        color: '#00bb3f'
                     },
                     {
                         name: 'Testing',
                         y: 20,
                         url: 'testing-phase.html',
-                        color: '#058dc7'
+                        color: '#56d17c'
                     },
                     {
                         name: 'Monitoring',
                         y: 13,
                         url: 'monitoring-phase.html',
-                        color: '#29b1eb'
+                        color: '#bcebc7'
                     }
                 ]
             }

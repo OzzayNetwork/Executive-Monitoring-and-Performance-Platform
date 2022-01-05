@@ -16,7 +16,7 @@ Highcharts.ganttChart('project-timelines', {
         events: {
             load: function() {
                 Highcharts.each(this.series[0].points, function(p) {
-                    p.color = "#c5cde0"
+                    p.color = "#8edda3"
 
                 });
             }
@@ -72,7 +72,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Construction of Full Gospel Rd',
             completed: {
                 amount: 0.95,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
 
         }, {
@@ -82,7 +82,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Expansion of Kahawa Health Centre',
             completed: {
                 amount: 0.5,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }, {
             start: Date.UTC(2018, 11, 8),
@@ -91,14 +91,14 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Construction of MCH at Kiwamu Health Centre',
             completed: {
                 amount: 0.15,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }, {
             start: Date.UTC(2011, 11, 9),
             end: Date.UTC(2018, 11, 19),
             completed: {
                 amount: 0.3,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
             name: 'Youth Empowerment (Purchase of 10 Incubators)'
         }, {
@@ -108,7 +108,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Completion of Kasarani septic tank in the market ',
             completed: {
                 amount: 0.53,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }, {
             start: Date.UTC(2008, 11, 25, 8),
@@ -117,7 +117,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Construction of a cereal depot in Maiella Ward',
             completed: {
                 amount: 0.73,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }, {
             start: Date.UTC(2007, 1, 2, 8),
@@ -126,7 +126,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Youth Digital Literacy Program',
             completed: {
                 amount: 0.73,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }, {
             start: Date.UTC(2017, 1, 2, 8),
@@ -135,7 +135,7 @@ Highcharts.ganttChart('project-timelines', {
             name: 'Completion of wells',
             completed: {
                 amount: 0.32,
-                fill: '#222f5f'
+                fill: '#00ab35'
             },
         }]
     }]

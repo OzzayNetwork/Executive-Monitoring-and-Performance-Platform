@@ -2141,7 +2141,7 @@ pre code {
 
 .table .thead-dark th {
     color: #f3f3f3;
-    background-color: #181F48;
+    background-color: #04c65e;
     border-color: #3e464e
 }
 
@@ -10869,7 +10869,7 @@ a.text-dark:hover {
 }
 
 .table:not(.table-dark) thead:not(.thead-dark) {
-    color: #181F48;
+    color: #04c65e;
 }
 
 .table tr[class*=table-] td,
@@ -12376,7 +12376,7 @@ textarea {
 }
 
 .actions:not(.actions--inverse) .actions__item {
-    color: #181F48;
+    color: #04c65e;
 }
 
 .actions:not(.actions--inverse) .actions__item:hover {
@@ -12515,7 +12515,7 @@ textarea {
     padding: 2rem 2rem 2rem 2.4rem;
     /* margin-left: -2rem; */
     cursor: pointer;
-    background: #181F48;
+    background: #04c65e;
     padding-left: 13px;
     height: 72px;
 }
@@ -13082,7 +13082,7 @@ textarea {
 }
 
 .user__name {
-    color: #181F48;
+    color: #04c65e;
     font-weight: 700;
 }
 
@@ -13121,7 +13121,7 @@ textarea {
     /* width: 1.5rem; */
     text-align: center;
     margin-right: .6rem;
-    color: #C0C5D8;
+    color: #ffeb3be8;
 }
 
 .navigation__sub>ul {
@@ -16153,7 +16153,7 @@ textarea {
     height: 0;
     border-style: solid;
     border-width: 0 0 8px 8px;
-    border-color: transparent transparent #181F48;
+    border-color: transparent transparent #04c65e;
 }
 
 @media (max-width:575.98px) {
@@ -17303,7 +17303,7 @@ ul.jqtree-tree ul.jqtree_common {
     top: 0;
     left: 0;
     z-index: -1;
-    background: #181F48;
+    background: #04c65e;
 }
 
 .user__email {
@@ -17313,7 +17313,7 @@ ul.jqtree-tree ul.jqtree_common {
 }
 
 .user__name {
-    color: #181F48;
+    color: #04c65e;
     font-weight: 700;
 }
 
@@ -17487,7 +17487,7 @@ ul.jqtree-tree ul.jqtree_common {
     text-align: left;
     margin-bottom: 25px;
     font-size: .9rem;
-    color: #181F48;
+    color: #04c65e;
     padding-left: 2.2rem;
 }
 
@@ -18097,7 +18097,7 @@ header .section-header {
 
 .table.table-custom thead th,
 .table.table-custom thead th:hover {
-    background: #181F48 !important;
+    background: #04c65e !important;
     border-top: 0;
     border-bottom: 0;
     color: white !important;
@@ -19017,7 +19017,7 @@ th label .error {
 .light-body .card-body {
     background: #fff;
     border: 1px solid #e1e8ed;
-    color: #0F1634;
+    color: #027035;
     border-radius: 3px;
 }
 .light-body h4 {
@@ -19063,13 +19063,13 @@ th label .error {
 .light-body h2 {
     text-transform: capitalize;
     font-size: x-large;
-    color: #181F48;
+    color: #04c65e;
 }
 .font-medium {
     font-size: medium !important;
 }
 .header__logo {
-    background: #181F48;
+    background: #04c65e;
     height: 72px;
     width: 270px;
     /* border-bottom: 1px solid #138c7e; */
@@ -19857,7 +19857,7 @@ tbody td a.btn {
 }
 .inst__name {
     font-weight: 600;
-    color: #181F48;
+    color: #04c65e;
     font-size: medium;
 }
 .syst__role {
@@ -19869,7 +19869,7 @@ tbody td a.btn {
     color: #546290;
 }
 .navigation__active {
-    background-color: #0F1634;
+    background-color: #027035;
 }
 .btn-transact {
     display: flex;
@@ -19878,7 +19878,7 @@ tbody td a.btn {
     align-items: center;
 }
 .chart-small {
-    color: #181F48;
+    color: #04c65e;
 }
 .icon-in-bg-1,
 .icon-in-bg-2,
@@ -19910,7 +19910,7 @@ tbody td a.btn {
     border-top: 0.5px solid #c0c5d817;
 }
 .card-footer strong {
-    color: #0F1634;
+    color: #027035;
 }
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
@@ -20006,7 +20006,7 @@ tbody td a.btn {
     justify-content: center;
 }
 .payment-options .active {
-    border: 2px solid #181F48;
+    border: 2px solid #04c65e;
     background: #E7E7E7;
 }
 .option-1 {
@@ -20038,7 +20038,7 @@ tbody td a.btn {
 .pay-container,
 .active i {
     font-size: 45px;
-    color: #181F48;
+    color: #04c65e;
 }
 .pay-container p {
     font-size: 12px;
@@ -20188,10 +20188,11 @@ tbody td a.btn {
 }
 .login-body {
     background-color: #FAFAFA;
-    background-image: url(../demo/img/Login.png);
+    background-image: url(../demo/img/nairobi.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
+    background-attachment: fixed;
 }
 .login-logo {
     display: flex;
@@ -20269,7 +20270,7 @@ section .container-fluid {
     color: #97a0bd;
 }
 .text-used {
-    color: #181f48;
+    color: #04c65e;
 }
 .font-8 {
     font-size: 7px !important;

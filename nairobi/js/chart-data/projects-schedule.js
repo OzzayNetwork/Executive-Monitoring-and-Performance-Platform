@@ -63,7 +63,7 @@ $(function() {
                 {
                     name: 'On Schedule',
                     y: 14,
-                    color: '#19244b',
+                    color: '#00881b',
                     dataLabels: {
                         enabled: true
                     },
@@ -72,7 +72,7 @@ $(function() {
                 {
                     name: 'Behind Schedule',
                     y: 16,
-                    fill: '#ff0c39',
+                    fill: '#56d17c',
                     color: 'black',
                     formatter: function() {
                         return this.point.name
@@ -148,7 +148,7 @@ $(function() {
                 {
                     name: 'On Schedule',
                     y: 14,
-                    color: '#19244b',
+                    color: '#00881b',
                     dataLabels: {
                         enabled: true
                     },
@@ -157,8 +157,8 @@ $(function() {
                 {
                     name: 'Behind Schedule',
                     y: 16,
-                    fill: '#ff0c39',
-                    color: '#9099b0',
+                    fill: '#56d17c',
+                    color: '#bcebc7',
                     dataLabels: {
                         enabled: true
                     },

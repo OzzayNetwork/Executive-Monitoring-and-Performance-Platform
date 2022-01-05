@@ -12,7 +12,7 @@ $(function() {
         title: {
             text: null,
             style: {
-                color: '#12263f'
+                color: '#04c65e'
             }
         },
         yAxis: {
@@ -24,7 +24,7 @@ $(function() {
             title: {
                 text: 'Money In $',
                 style: {
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
 
             },
@@ -32,7 +32,7 @@ $(function() {
                 enabled: false,
                 style: {
                     fontWeight: 'bold',
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
             }
         },
@@ -56,7 +56,7 @@ $(function() {
                 font: '600 12px "Muli", sans-serif'
             },
             itemHoverStyle: {
-                color: '#12263f',
+                color: '#04c65e',
                 font: '600 12px "Muli", sans-serif'
             },
         },
@@ -143,11 +143,11 @@ $(function() {
 
                     name: 'Nairobi',
                     y: 4133000,
-                    url: 'kampala-projects.html',
+                    url: 'nairobi.html',
                 }, {
                     name: 'Mombasa',
                     y: 2670500,
-                    url: '#',
+                    url: 'mombasa-projects.html',
                 }, {
                     name: 'kisumu',
                     y: 2369120,
@@ -156,11 +156,11 @@ $(function() {
 
                     name: 'Nakuru',
                     y: 200250,
-                    url: '#',
+                    url: 'nakuru.html',
                 }, {
                     name: 'Kirinyaga',
                     y: 1200353,
-                    url: 'gulu-projects.html',
+                    url: '#',
                 }, {
                     name: 'Narok',
                     y: 1459312,
@@ -173,12 +173,12 @@ $(function() {
                 }, {
                     name: 'Embu',
                     y: 555263,
-                    url: 'jinja-projects.html',
+                    url: '#',
                 }, {
 
                     name: 'Kiambu',
                     y: 356263,
-                    url: 'koboko-projects.html',
+                    url: '#',
                 }, {
                     name: 'Laikipia',
                     y: 299263,
@@ -188,17 +188,17 @@ $(function() {
         }, {
             //collections by cooperative bank
             name: 'Amount spent',
-            color: '#181F48', // Orange
+            color: '#04c65e', // Orange
             data: [{
 
                     name: 'Nairobi',
                     y: 413000,
-                    url: 'kampala-projects.html',
+                    url: 'nairobi.html',
 
                 }, {
                     name: 'Mombasa',
                     y: 1000000,
-                    url: '#',
+                    url: 'mombasa-projects.html',
                 }, {
                     name: 'kisumu',
                     y: 3400000,
@@ -207,11 +207,11 @@ $(function() {
 
                     name: 'Nakuru',
                     y: 5330000,
-                    url: '#',
+                    url: 'nakuru.html',
                 }, {
                     name: 'Kirinyaga',
                     y: 1500000,
-                    url: 'gulu-projects.html',
+                    url: '#',
                 }, {
                     name: 'Narok',
                     y: 900000,
@@ -224,12 +224,12 @@ $(function() {
                 }, {
                     name: 'Embu',
                     y: 916667,
-                    url: 'jinja-projects.html',
+                    url: '#',
                 }, {
 
                     name: 'Kiambu',
                     y: 326263,
-                    url: 'koboko-projects.html',
+                    url: '#',
                 }, {
                     name: 'Laikipia',
                     y: 399263,
@@ -475,7 +475,7 @@ $(function() {
         title: {
             text: null,
             style: {
-                color: '#12263f'
+                color: '#04c65e'
             }
         },
         yAxis: {
@@ -487,7 +487,7 @@ $(function() {
             title: {
                 text: 'Money In $',
                 style: {
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
 
             },
@@ -495,7 +495,7 @@ $(function() {
                 enabled: false,
                 style: {
                     fontWeight: 'bold',
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
             }
         },
@@ -519,7 +519,7 @@ $(function() {
                 font: '600 12px "Muli", sans-serif'
             },
             itemHoverStyle: {
-                color: '#12263f',
+                color: '#04c65e',
                 font: '600 12px "Muli", sans-serif'
             },
         },
@@ -593,7 +593,7 @@ $(function() {
         series: [{
             //collections by cooperative bank
             name: 'Card',
-            color: '#181F48', // Orange
+            color: '#04c65e', // Orange
             data: [{
                     name: 'Jan',
                     y: 1,
@@ -884,7 +884,7 @@ $(function() {
         title: {
             text: null,
             style: {
-                color: '#12263f'
+                color: '#04c65e'
             }
         },
         yAxis: {
@@ -896,7 +896,7 @@ $(function() {
             title: {
                 text: 'Money In $',
                 style: {
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
 
             },
@@ -904,7 +904,7 @@ $(function() {
                 enabled: false,
                 style: {
                     fontWeight: 'bold',
-                    color: '#12263f'
+                    color: '#04c65e'
                 }
             }
         },
@@ -928,7 +928,7 @@ $(function() {
                 font: '600 12px "Muli", sans-serif'
             },
             itemHoverStyle: {
-                color: '#12263f',
+                color: '#04c65e',
                 font: '600 12px "Muli", sans-serif'
             },
         },

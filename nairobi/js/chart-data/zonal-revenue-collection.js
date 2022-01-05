@@ -1,7 +1,7 @@
 //=======================================================================================================================================================
 /*revenue streams version two*/
 //=======================================================================================================================================================
-$(function () {
+$(function() {
 
     // Create the chart
     $('#ZonalRevenueCollection').highcharts({
@@ -9,9 +9,9 @@ $(function () {
             type: 'column',
             backgroundColor: 'transparent'
         },
-		lang: {
+        lang: {
             numericSymbols: ['k', 'm']
-    },
+        },
         title: {
             text: null,
             style: {
@@ -36,30 +36,30 @@ $(function () {
         xAxis: {
             type: 'category'
         },
-		
-		
+
+
 
         legend: {
             enabled: true
         },
-		
-		legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'bottom',
-        borderWidth: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#CCC',
-        borderWidth: 1,
-        itemStyle: {
-            color: '#696969',
-            font: '600 10px "Muli", sans-serif'
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'bottom',
+            borderWidth: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            itemStyle: {
+                color: '#696969',
+                font: '600 10px "Muli", sans-serif'
+            },
+            itemHoverStyle: {
+                color: '#000000',
+                font: '600 10px "Muli", sans-serif'
+            },
         },
-        itemHoverStyle: {
-            color: '#000000',
-            font: '600 10px "Muli", sans-serif'
-        },
-    },
 
         plotOptions: {
             series: {
@@ -74,56 +74,56 @@ $(function () {
                 stacking: 'normal'
             }
         },
-		
-		 plotOptions: {
-        column: {
-            stacking: 'normal',
-            grouping: false,
-            dataLabels: {
-                enabled: false
-            },
-            states: {
-                hover: {
+
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                grouping: false,
+                dataLabels: {
                     enabled: false
-                }
+                },
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                },
+                //            point: {
+                //                events: {
+                //                    mouseOver: updateStackColor(0.2),
+                //                    mouseOut: updateStackColor(0)
+                //                }
+                //            }
+
             },
-//            point: {
-//                events: {
-//                    mouseOver: updateStackColor(0.2),
-//                    mouseOut: updateStackColor(0)
-//                }
-//            }
+            series: {
+                //connectNulls: true
+
+                pointWidth: 15,
+                borderWidth: 0,
+                borderColor: 'white',
+
+
+            },
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
+            //		useHTML: true,
+            pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
+            formatter: function() {
+
+                var point = this.point,
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
+                if (point.drilldown) {
+                    s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' + Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
+                    s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
+                }
+                return s;
+            },
+            crosshairs: true
+
 
         },
-        series: {
-            //connectNulls: true
-
-            pointWidth: 15,
-            borderWidth: 0,
-            borderColor: 'white',
-
-
-        },
-    },
-		
-		 tooltip: {
-        headerFormat: '<span style="font-size:16px; font-weight:800;">{series.name}</span><br>',
-//		useHTML: true,
-        pointFormat: '<span  style="font-size:16px; font-weight:800; color:{point.color}">{point.name}</span>: <b style="color:{point.color}">KES {point.y}</b><br/>',
-        formatter: function () {
-
-            var point = this.point,
-                s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><span style="color:' + point.color + '"><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' ' + '</span>';
-            if (point.drilldown) {
-				s = '<span style="font-size:14px; font-weight:600;  color:' + point.color + ';">' + this.series.name + '</span><br/><p><span  style="font-size:16px; font-weight:800; color:' + point.color + ';">' + point.name + '</span> :<b> KES ' + Highcharts.numberFormat(point.y, 0, '.', ',') + ' (' +Highcharts.numberFormat(this.percentage, 0, '.', ',') + '%)</p><br/>';
-                s += '<p>Click to view <b>' + point.name + '</b> Collections </p>';
-            }
-            return s;
-        },
-        crosshairs: true
-
-
-    },
 
         series: [{
             //national bank collections by the months
@@ -131,525 +131,525 @@ $(function () {
             name: 'Private',
             data: [{
 
-                name: 'CBD',
-                y: 5,
-                drilldown: 'Private-CBD',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Kijabe',
-                y: 2,
-                drilldown: 'Private-Kijabe',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Westlands',
-                y: 4,
-                drilldown: 'Private-Westlands',
-                //color: '#e7c500' //yellow
-            }, {
+                    name: 'CBD',
+                    y: 5,
+                    drilldown: 'Private-CBD',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Kijabe',
+                    y: 2,
+                    drilldown: 'Private-Kijabe',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Westlands',
+                    y: 4,
+                    drilldown: 'Private-Westlands',
+                    //color: '#e7c500' //yellow
+                }, {
 
-                name: 'Kilimani',
-                y: 5,
-                drilldown: 'Private-Kilimani',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Upper-Hill',
-                y: 2,
-                drilldown: 'Private-Upper-Hill',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Kombo',
-                y: 4,
-                drilldown: 'Private-Kombo',
-                //color: '#e7c500' //yellow
-            }, {
+                    name: 'Kilimani',
+                    y: 5,
+                    drilldown: 'Private-Kilimani',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Upper-Hill',
+                    y: 2,
+                    drilldown: 'Private-Upper-Hill',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Kombo',
+                    y: 4,
+                    drilldown: 'Private-Kombo',
+                    //color: '#e7c500' //yellow
+                }, {
 
-                name: 'Comm',
-                y: 5,
-                drilldown: 'Private-Comm',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Ngara',
-                y: 12,
-                drilldown: 'Private-Ngara',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Highridge',
-                y: 4,
-                drilldown: 'Private-Highridge',
-                //color: '#e7c500' //yellow
-            }, {
+                    name: 'Comm',
+                    y: 5,
+                    drilldown: 'Private-Comm',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Ngara',
+                    y: 12,
+                    drilldown: 'Private-Ngara',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Highridge',
+                    y: 4,
+                    drilldown: 'Private-Highridge',
+                    //color: '#e7c500' //yellow
+                }, {
 
-                name: 'Ind. Area',
-                y: 15,
-                drilldown: 'Private-Ind. Area',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Yaya',
-                y: 2,
-                drilldown: 'Private-Yaya',
-                //color: '#e7c500' //yellow
-            }, {
-                name: 'Buru',
-                y: 4,
-                drilldown: 'Private-Buru',
-                //color: '#e7c500' //yellow
-            }]
-            //end of Private collections
+                    name: 'Ind. Area',
+                    y: 15,
+                    drilldown: 'Private-Ind. Area',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Yaya',
+                    y: 2,
+                    drilldown: 'Private-Yaya',
+                    //color: '#e7c500' //yellow
+                }, {
+                    name: 'Buru',
+                    y: 4,
+                    drilldown: 'Private-Buru',
+                    //color: '#e7c500' //yellow
+                }]
+                //end of Private collections
         }, {
             //Pickup collections
             name: 'Pickups',
             data: [{
-                name: 'CBD',
-                y: 11,
-                drilldown: 'pickup-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 5,
-                drilldown: 'pickup-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 2,
-                drilldown: 'pickup-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'pickup-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 5,
-                drilldown: 'pickup-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 21,
-                drilldown: 'pickup-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'pickup-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'pickup-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 2,
-                drilldown: 'pickup-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 1,
-                drilldown: 'pickup-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'pickup-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'pickup-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of Pickup collections
+                    name: 'CBD',
+                    y: 11,
+                    drilldown: 'pickup-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 5,
+                    drilldown: 'pickup-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 2,
+                    drilldown: 'pickup-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'pickup-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 5,
+                    drilldown: 'pickup-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 21,
+                    drilldown: 'pickup-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'pickup-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'pickup-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 2,
+                    drilldown: 'pickup-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 1,
+                    drilldown: 'pickup-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'pickup-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'pickup-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of Pickup collections
         }, {
             //Nissan collections
             name: 'Nissan',
             data: [{
-                name: 'CBD',
-                y: 16,
-                drilldown: 'nissan-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'nissan-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 3,
-                drilldown: 'nissan-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'nissan-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 5,
-                drilldown: 'nissan-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 2,
-                drilldown: 'nissan-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'nissan-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'nissan-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 2,
-                drilldown: 'nissan-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 1,
-                drilldown: 'nissan-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'nissan-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'nissan-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of Nissan collections
-        },{
+                    name: 'CBD',
+                    y: 16,
+                    drilldown: 'nissan-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'nissan-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 3,
+                    drilldown: 'nissan-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'nissan-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 5,
+                    drilldown: 'nissan-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 2,
+                    drilldown: 'nissan-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'nissan-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'nissan-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 2,
+                    drilldown: 'nissan-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 1,
+                    drilldown: 'nissan-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'nissan-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'nissan-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of Nissan collections
+        }, {
             //Canter collections
             name: 'Canter',
             data: [{
-                name: 'CBD',
-                y: 11,
-                drilldown: 'canter-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'canter-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 12,
-                drilldown: 'canter-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 19,
-                drilldown: 'canter-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 15,
-                drilldown: 'canter-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 21,
-                drilldown: 'canter-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'canter-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'canter-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 2,
-                drilldown: 'canter-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 13,
-                drilldown: 'canter-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'canter-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'canter-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of Canter collections
-        },{
+                    name: 'CBD',
+                    y: 11,
+                    drilldown: 'canter-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'canter-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 12,
+                    drilldown: 'canter-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 19,
+                    drilldown: 'canter-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 15,
+                    drilldown: 'canter-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 21,
+                    drilldown: 'canter-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'canter-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'canter-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 2,
+                    drilldown: 'canter-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 13,
+                    drilldown: 'canter-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'canter-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'canter-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of Canter collections
+        }, {
             //Lorry rents
             name: 'Lorry',
             data: [{
-                name: 'CBD',
-                y: 1,
-                drilldown: 'lorry-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'lorry-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 2,
-                drilldown: 'lorry-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'lorry-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 15,
-                drilldown: 'lorry-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 2,
-                drilldown: 'lorry-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'lorry-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'lorry-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 7,
-                drilldown: 'lorry-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 13,
-                drilldown: 'lorry-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'lorry-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'lorry-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of lorry collections
-        },{
+                    name: 'CBD',
+                    y: 1,
+                    drilldown: 'lorry-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'lorry-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 2,
+                    drilldown: 'lorry-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'lorry-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 15,
+                    drilldown: 'lorry-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 2,
+                    drilldown: 'lorry-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'lorry-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'lorry-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 7,
+                    drilldown: 'lorry-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 13,
+                    drilldown: 'lorry-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'lorry-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'lorry-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of lorry collections
+        }, {
             //Minibus rents
             name: 'Minibus',
             data: [{
-                name: 'CBD',
-                y: 1,
-                drilldown: 'minibus-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'minibus-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 2,
-                drilldown: 'minibus-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'minibus-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 15,
-                drilldown: 'minibus-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 2,
-                drilldown: 'minibus-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'minibus-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'minibus-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 7,
-                drilldown: 'minibus-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 13,
-                drilldown: 'minibus-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'minibus-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'minibus-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of minibus collections
-        },{
+                    name: 'CBD',
+                    y: 1,
+                    drilldown: 'minibus-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'minibus-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 2,
+                    drilldown: 'minibus-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'minibus-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 15,
+                    drilldown: 'minibus-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 2,
+                    drilldown: 'minibus-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'minibus-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'minibus-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 7,
+                    drilldown: 'minibus-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 13,
+                    drilldown: 'minibus-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'minibus-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'minibus-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of minibus collections
+        }, {
             //Bus rents
             name: 'Bus',
             data: [{
-                name: 'CBD',
-                y: 1,
-                drilldown: 'bus-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'bus-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 2,
-                drilldown: 'bus-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'bus-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 15,
-                drilldown: 'bus-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 2,
-                drilldown: 'bus-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'bus-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'bus-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 7,
-                drilldown: 'bus-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 13,
-                drilldown: 'bus-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'bus-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'bus-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of bus collections
-        },{
+                    name: 'CBD',
+                    y: 1,
+                    drilldown: 'bus-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'bus-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 2,
+                    drilldown: 'bus-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'bus-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 15,
+                    drilldown: 'bus-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 2,
+                    drilldown: 'bus-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'bus-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'bus-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 7,
+                    drilldown: 'bus-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 13,
+                    drilldown: 'bus-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'bus-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'bus-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of bus collections
+        }, {
             //Trailer rents
             name: 'Trailer',
             data: [{
-                name: 'CBD',
-                y: 1,
-                drilldown: 'trailer-CBD',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kijabe',
-                y: 15,
-                drilldown: 'trailer-Kijabe',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Westlands',
-                y: 2,
-                drilldown: 'trailer-Westlands',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kilimani',
-                y: 1,
-                drilldown: 'trailer-Kilimani',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Upper-Hill',
-                y: 15,
-                drilldown: 'trailer-Upper-Hill',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Kombo',
-                y: 2,
-                drilldown: 'trailer-Kombo',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Comm',
-                y: 11,
-                drilldown: 'trailer-Comm',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ngara',
-                y: 5,
-                drilldown: 'trailer-Ngara',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Highridge',
-                y: 7,
-                drilldown: 'trailer-Highridge',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Ind. Area',
-                y: 13,
-                drilldown: 'trailer-Ind. Area',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Yaya',
-                y: 5,
-                drilldown: 'trailer-Yaya',
-                //color: '#0aae8f' // blue
-            }, {
-                name: 'Buru',
-                y: 2,
-                drilldown: 'trailer-Buru',
-                //color: '#0aae8f' // blue
-            }]
-            //end of trailer collections
+                    name: 'CBD',
+                    y: 1,
+                    drilldown: 'trailer-CBD',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kijabe',
+                    y: 15,
+                    drilldown: 'trailer-Kijabe',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Westlands',
+                    y: 2,
+                    drilldown: 'trailer-Westlands',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kilimani',
+                    y: 1,
+                    drilldown: 'trailer-Kilimani',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Upper-Hill',
+                    y: 15,
+                    drilldown: 'trailer-Upper-Hill',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Kombo',
+                    y: 2,
+                    drilldown: 'trailer-Kombo',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Comm',
+                    y: 11,
+                    drilldown: 'trailer-Comm',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ngara',
+                    y: 5,
+                    drilldown: 'trailer-Ngara',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Highridge',
+                    y: 7,
+                    drilldown: 'trailer-Highridge',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Ind. Area',
+                    y: 13,
+                    drilldown: 'trailer-Ind. Area',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Yaya',
+                    y: 5,
+                    drilldown: 'trailer-Yaya',
+                    //color: '#0aae8f' // blue
+                }, {
+                    name: 'Buru',
+                    y: 2,
+                    drilldown: 'trailer-Buru',
+                    //color: '#0aae8f' // blue
+                }]
+                //end of trailer collections
         }],
         drilldown: {
             activeDataLabelStyle: {
@@ -870,9 +870,9 @@ $(function () {
                         ['3rd Buru', 3]
                     ]
                 },
-				
-				//start of SBP daily collections
-				 {
+
+                //start of SBP daily collections
+                {
                     id: 'sbp-Buru',
                     name: 'SBP collections for Buru 2020',
                     /* stack: 1, */
@@ -881,7 +881,7 @@ $(function () {
                         ['2nd Buru', 3],
                         ['3rd Buru', 3]
                     ]
-                },{
+                }, {
                     id: 'sbp-CBD',
                     name: 'SBP collections for CBD 2020',
                     data: [
@@ -971,7 +971,7 @@ $(function () {
                         ['5th Ind. Area', 1]
                     ]
                 },
-				{
+                {
                     id: 'sbp-Yaya',
                     name: 'SBP collections for Ind. Area 2020',
                     /*   stack: 1, */
@@ -983,10 +983,10 @@ $(function () {
                         ['5th Ind. Area', 1]
                     ]
                 },
-				//end of SBP collections
-				
-				//start of market fee collections
-				{
+                //end of SBP collections
+
+                //start of market fee collections
+                {
                     id: 'market-CBD',
                     name: 'Market fee collections for CBD 2020',
                     data: [
@@ -1093,10 +1093,10 @@ $(function () {
                         ['3rd Buru', 3]
                     ]
                 },
-				
-				// end of Canter
-				//start of house and stall rents
-				{
+
+                // end of Canter
+                //start of house and stall rents
+                {
                     id: 'rent-CBD',
                     name: 'Lorry for CBD 2020',
                     data: [
@@ -1203,7 +1203,7 @@ $(function () {
                         ['3rd Buru', 3]
                     ]
                 },
-				
+
             ]
         }
     })
@@ -1276,10 +1276,9 @@ Highcharts.chart('RevenueStreams', {
         headerFormat: '<h3><strong class="mb-3" style="font-size: 20px !important;">{point.x}</strong></h3><br/><br/><br/>',
         /*  pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}', */
         pointFormat: '<strong style="color:{series.color}; font-weight:bold;">{series.name}</strong>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/><br/>',
-		footerFormat	: 
-                 '<table></tbody><tr style="border-top:1px solid black 0.5px; color:white;"><th>Total: </th>'
-        		+'<td style="text-align:right"><b>KES {point.total:,.0f}</b></td></tr>'
-            	+'</tbody></table>',
+        footerFormat: '<table></tbody><tr style="border-top:1px solid black 0.5px; color:white;"><th>Total: </th>' +
+            '<td style="text-align:right"><b>KES {point.total:,.0f}</b></td></tr>' +
+            '</tbody></table>',
         shared: true,
         crosshairs: true
 
@@ -1347,7 +1346,7 @@ Highcharts.chart('RevenueStreams', {
 });
 //		hover effect
 function updateStackColor(alpha) {
-    return function () {
+    return function() {
         const x = this.x
         const color = Highcharts.color
         const colors = Highcharts.getOptions().colors
@@ -1357,11 +1356,13 @@ function updateStackColor(alpha) {
                 const basePointColor = color(colors[i])
 
                 point.update({
-                    color: alpha === 0
-                        ? basePointColor.get() // set original color
-                        : point.x === x
-                        ? basePointColor.brighten(-alpha).get() // brighten original color
-                        : basePointColor.brighten(alpha).get() // dim orignal color
+                    color: alpha === 0 ?
+                        basePointColor.get() // set original color
+                        :
+                        point.x === x ?
+                        basePointColor.brighten(-alpha).get() // brighten original color
+                        :
+                        basePointColor.brighten(alpha).get() // dim orignal color
                 }, false)
             })
         })
@@ -1372,4 +1373,3 @@ function updateStackColor(alpha) {
 
 
 //		hover effect
-
