@@ -20373,3 +20373,9 @@ ul.timeline a {
     background: red;
     color: white;
 }
+.the-sponsors,
+.the-milestones {
+    padding: 30px;
+    background: #f6f6f6;
+    margin-bottom: 16px;
+}

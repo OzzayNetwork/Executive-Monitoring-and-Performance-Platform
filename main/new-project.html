@@ -198,14 +198,14 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-8">
                                     <div class="row">
-                                        <div class="col-12">
+                                        <div class="col-sm-12 col-md-6">
                                             <div class="form-group">
                                                 <label>Project Name</label>
                                                 <input class="form-control" placeholder="Enter the projects name">
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-sm-12 col-md-6">
                                             <div class="form-group">
                                                 <label>Ministry</label>
                                                 <select title="select a ministry" data-live-search="true" class="form-control selectpicker">
@@ -238,7 +238,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-sm-12 col-md-6">
                                             <div class="form-group">
                                                 <label>Completion date</label>
                                                 <input class="form-control date-picker" placeholder="Select project completion date">
@@ -247,17 +247,63 @@
 
                                         <div class="col-6">
                                             <div class="form-group">
-                                                <label>Project's Budget</label>
+                                                <label>Total Project's Budget</label>
                                                 <input class="form-control" placeholder="Enter amount">
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
-                                            <div class="form-group">
-                                                <label>Project sponsor</label>
-                                                <input class="form-control" placeholder="Enter project's sponsor">
+
+                                        <div class="col-12 the-sponsors">
+                                            <div class="row m-0 p-0">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Sponsor</label>
+                                                        <input class="form-control" placeholder="Enter project's sponsor">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Sponsor's Contribution</label>
+                                                        <input class="form-control" placeholder="Enter amount in $">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button class="btn btn-block btn--icon-text"><i class="zmdi zmdi-plus"></i> Add Sponsor</button>
+
+                                                </div>
                                             </div>
                                         </div>
+
+                                        <div class="col-12 the-milestones mt-2">
+                                            <div class="row m-0 p-0">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Milestone title</label>
+                                                        <input class="form-control" placeholder="Enter project's sponsor">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="form-group">
+                                                        <label>Expected completion Date</label>
+                                                        <input class="form-control date-picker" placeholder="Select milestone completion date">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button class="btn btn-block btn--icon-text"><i class="zmdi zmdi-plus"></i> Add A Milestone</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
 
                                         <div class="col-12">
                                             <div class="form-group">
@@ -272,6 +318,47 @@
                                 </div>
                                 <div class="col-sm-12 col-md-4 ">
                                     <div class="w-100 upload-doc-container h-100 bg-light p-4">
+                                        <h4 class="mb-3">Project Phases Deadline</h4>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Planning phase</strong></label>
+                                                    <input class="form-control date-picker" placeholder="Select phase completion date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Design phase</strong></label>
+                                                    <input class="form-control date-picker" placeholder="Select phase completion date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Implementation</strong></label>
+                                                    <input class="form-control date-picker" placeholder="Select phase completion date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Testing phase</strong></label>
+                                                    <input class="form-control date-picker" placeholder="Select phase completion date">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <label><strong>Monitoring phase</strong></label>
+                                                    <input class="form-control date-picker" placeholder="Select phase completion date">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+
+                                        </div>
                                         <h4>Supporting documents</h4>
                                         <p>Use ths section to upload any supporting documents. Kindly note this section can be updated periodically once the project has been created.</p>
                                         <div class="upload-doc-btn mt-3">
@@ -438,5 +525,7 @@
         })
     </script>
 
+
+</body>
 
 </body>
