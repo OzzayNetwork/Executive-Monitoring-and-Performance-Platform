@@ -1607,6 +1607,60 @@ $('.submit-mpesa').on('click', function() {
 
 });
 
+$('body').on('click', '.addMilestone', function() {
+    addNewCloneMilestone()
+})
+
+function addNewCloneMilestone() {
+    // alert('clicked')
+
+    //the button for adding a button for adding a new item
+    var theMilestones = $('.milestoneContainer row')
+        // var btnToclone=$('.btn-add-new');
+        // btnToclone.clone().appendTo(".no-results");
+
+    $(".the-milestone-one .row").eq(0).clone().appendTo(".the-milestone-one");
+    removingDnone()
+
+
+    // $(".milestoneContainer").append(theMilestones);
+    // theAddButton.appendTo(".no-results");
+    $('.no-results').addClass('theNewOneIsHere');
+
+}
+
+function removingDnone() {
+    $('.the-milestone-one .row').each(function(index, value) {
+        var theIndex = index;
+        if (theIndex > 0) {
+            $('.the-milestone-one .row').eq(theIndex).children('.closeTheClone').removeClass('d-none');
+        }
+    });
+}
+
+function removingDnoneSponsor() {
+    $('.sponsors-container .row').each(function(index, value) {
+        var theIndex = index;
+        if (theIndex > 0) {
+            $('.sponsors-container .row').eq(theIndex).children('.closeTheSponsorClone').removeClass('d-none');
+        }
+    });
+}
+
+$('body').on('click', '.close-clone ', function() {
+
+    var toClose = $(this).parent().parent().parent();
+    console.log(toClose);
+    toClose.remove();
+
+});
+
+// cloning the sponsors
+$('body').on('click', '.clone-sponsor', function() {
+    $(".sponser-clone-container").eq(0).clone().appendTo(".sponsors-container");
+    removingDnoneSponsor()
+})
+
 //owl initializer
 $(document).ready(function() {
 

@@ -238,6 +238,53 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <h6>Location Details</h6>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-group">
+                                                <label>District</label>
+                                                <input class="form-control" placeholder="Enter the projects name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-group">
+                                                <label>County</label>
+                                                <input class="form-control" placeholder="Enter the projects name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-group">
+                                                <label>Subcounty</label>
+                                                <input class="form-control" placeholder="Enter the projects name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-group">
+                                                <label>Parish</label>
+                                                <input class="form-control" placeholder="Enter the projects name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-12 col-md-4">
+                                            <div class="form-group">
+                                                <label>Village</label>
+                                                <input class="form-control" placeholder="Enter the projects name">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <hr>
+                                        </div>
+
                                         <div class="col-sm-12 col-md-6">
                                             <div class="form-group">
                                                 <label>Completion date</label>
@@ -255,24 +302,40 @@
 
                                         <div class="col-12 the-sponsors">
                                             <div class="row m-0 p-0">
-                                                <div class="col-md-6 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>Sponsor</label>
-                                                        <input class="form-control" placeholder="Enter project's sponsor">
-                                                    </div>
+                                                <div class="col-12">
+                                                    <h6>Sponsor details</h6>
                                                 </div>
+                                            </div>
 
-                                                <div class="col-md-6 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>Sponsor's Contribution</label>
-                                                        <input class="form-control" placeholder="Enter amount in $">
+                                            <div class="row m-0 p-0">
+
+                                                <div class="col-12 sponsors-container">
+                                                    <div class="row sponser-clone-container">
+                                                        <div class="col-md-6 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label>Sponsor</label>
+                                                                <input class="form-control" placeholder="Enter project's sponsor">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-5 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label>Sponsor's Contribution</label>
+                                                                <input class="form-control" placeholder="Enter amount in $">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 d-none closeTheSponsorClone">
+                                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                                <button class="btn btn-danger btn--icon close-clone"><i class="zmdi zmdi-close"></i></button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
 
                                             </div>
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <button class="btn btn-block btn--icon-text"><i class="zmdi zmdi-plus"></i> Add Sponsor</button>
+                                                    <button class="btn btn-block btn--icon-text clone-sponsor"><i class="zmdi zmdi-plus"></i> Add Sponsor</button>
 
                                                 </div>
                                             </div>
@@ -280,39 +343,59 @@
 
                                         <div class="col-12 the-milestones mt-2">
                                             <div class="row m-0 p-0">
-                                                <div class="col-md-6 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>Milestone title</label>
-                                                        <input class="form-control" placeholder="Enter project's sponsor">
+                                                <div class="col-12">
+                                                    <h6>Project Milestones</h6>
+                                                    <p>Remember to include the percentage that each milestone contributes for the entire project</p>
+
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 milestoneContainer">
+                                                <div class="col-12 the-milestone-one">
+                                                    <div class="row">
+                                                        <div class="col-md-5 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label>Milestone title</label>
+                                                                <input class="form-control" placeholder="Milestone name">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-3 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label>Completion Date</label>
+                                                                <input class="form-control date-picker" placeholder="Select milestone completion date">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3 col-sm-12">
+                                                            <div class="form-group">
+                                                                <label>Milestone percentage</label>
+                                                                <input class="form-control" placeholder="%">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-1 d-none closeTheClone">
+                                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                                <button class="btn btn-danger btn--icon close-clone"><i class="zmdi zmdi-close"></i></button>
+                                                            </div>
+
+                                                        </div>
+
                                                     </div>
                                                 </div>
 
-
-                                                <div class="col-md-6 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>Expected completion Date</label>
-                                                        <input class="form-control date-picker" placeholder="Select milestone completion date">
-                                                    </div>
-                                                </div>
 
                                             </div>
+
+
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <button class="btn btn-block btn--icon-text"><i class="zmdi zmdi-plus"></i> Add A Milestone</button>
+                                                    <button class="btn btn-block btn--icon-text addMilestone"><i class="zmdi zmdi-plus"></i> Add A Milestone</button>
 
                                                 </div>
                                             </div>
                                         </div>
 
 
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label>Project sponsor</label>
-                                                <textarea placeholder="Enter some further details" class="form-control">
-
-                                                </textarea>
-                                            </div>
-                                        </div>
 
                                     </div>
                                 </div>
